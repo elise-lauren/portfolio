@@ -1,0 +1,170 @@
+:root {
+    -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+  }
+
+  * { box-sizing: border-box; } 
+  * { text-decoration: none; color: inherit;} 
+
+/* –——————————————————————————— OVERALL PAGE STYLING –——————————————————————————— */
+
+#work {
+    color: #482d84;
+}
+body {
+    position: relative;
+}
+.line {
+    position: absolute;
+    left: 50px; top: 0px;
+    height: 100%;
+    width: 1.5px;
+    z-index: 1;
+    background-color: #482d84;
+    transition: 0.4s ease;
+}
+.star {
+    height: 25px;
+    fill: #f9f0ef;
+    stroke: #482d84; 
+    stroke-width: 2.5px;
+    z-index: 10;
+    position: absolute;
+    left: -109px; top: 12px;
+    transition: 0.4s ease;
+}
+.pgewrapper {
+    margin: 50px 150px 90px 150px;
+    transition: 0.4s ease;
+}
+h3 {
+    font: 500 16px/.75 signika, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #482d84;
+    margin: 0;
+}
+p {
+    font: 300 14px/1.25 Signika, sans-serif;
+    color: #482d84;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+.description {
+    position: relative;
+    flex-direction: column !important;
+}
+.small-star {
+    height: 18px;
+    fill: #f9f0ef;
+    stroke: #482d84; 
+    stroke-width: 3.2px;
+    z-index: 10;
+    position: absolute;
+    left: -106.5px;
+    top: -3px;
+    transition: 0.4s ease;
+}
+h5 {
+    font: 300 14px/1.25 Signika, sans-serif;
+    color: #D17670;
+}
+h1 {
+    font: 400 40px/1.25 Signika, sans-serif;
+    color: #482d84;
+    margin: 0 0 35px 0;
+}
+
+/* –——————————————————————————— STARTING IMAGE –——————————————————————————— */
+
+.image {
+    display: flex;
+    flex-direction: row;
+}
+.image img {
+    border: 1.5px solid #482d84;
+    border-radius: 10px;
+    display: flex;
+}
+.image img {
+    max-width: 950px;
+    width: 100%;
+    min-width: 400px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    flex-shrink: 1;
+}
+
+/* –——————————————————————————— INTRO –——————————————————————————— */
+.intro {
+    margin: 0 0 100px 0;
+    position: relative;
+}
+.intro h2 {
+    font: 300 17px/1.25 Signika, sans-serif;
+    color: #9d6992;
+    margin: 0;
+}
+
+/* –——————————————————————————— DETAIL IMAGES –——————————————————————————— */
+
+.details {
+    position: relative;
+}
+.details img {
+    border: 1.5px solid #482d84;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+}
+.mockup {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.mockup img {
+    margin-bottom: 30px;
+}
+
+/* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
+
+@media (max-width: 960px) {
+    .image img:nth-child(2) {
+        display: none;
+        position: absolute;
+    }
+    .pgewrapper {
+        margin: 50px 70px 90px 70px;
+    }
+    .line {
+        left: 30px; top: 0px;
+    }
+    .star {
+        left: -49px; top: 12px;
+    }
+    .small-star {
+        left: -46.5px;
+    }
+    .mockup {
+        width: 100%;
+    }
+    .brand {
+        width: 100%;
+    }
+}
+@media (max-width: 615px) {
+    .pgewrapper {
+        margin: 50px 50px 90px 50px;
+    }
+    .line {
+        left: 23px; top: 0px;
+    }
+    .star {
+        left: -36px; top: 12px;
+    }
+    .small-star {
+        left: -33.5px;
+    }
+}
