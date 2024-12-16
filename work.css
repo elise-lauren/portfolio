@@ -19,7 +19,7 @@
 
 .work-previews {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     /* margin: 0 80px; */
     transition: 0.4s ease;
     /* padding-left: 50px; */
@@ -27,7 +27,7 @@
 
 .line {
     position: absolute;
-    left: 50px; top: 710px;
+    left: 50px; top: 650px;
     height: 2140px;
     width: 1.5px;
     z-index: 1;
@@ -64,28 +64,43 @@
 
 /* –——————————————————————————— SLIDER –——————————————————————————— */
 
+.gif-wrapper {
+    /* margin: 0 20px; */
+    width: 95%;
+    margin: 0 auto;
+}
 .scrolling-gif {
     position: relative;
+    overflow-x: hidden;
+    top: -50px;
     display: flex;
-    width: 100vw;
-    min-width: 200px;
     height: 415px;
-    background-color: #9d6992;
-    padding-bottom: 3px;
-    object-fit: cover;
+    max-width: 100%;
+    min-width: 200px;
     justify-self: center;
+    margin: 0;
+    /* margin: 0 20px; */
+    background-color: #9d6992;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     
 }
 .scrolling-gif img {
     transition: .4s ease;
+    display: flex;
     height: 415px;
-    width: 100%;
-    min-width: 200px;
+    max-width: 100%;
+    margin: 0;
+    /* margin-right: 20px;
+    margin-left: 20px; */
     object-fit: cover;
     justify-self: center;
-}
-.scrolling-gif div {
-    box-shadow: inset 0px -11px 5px -10px  rgba(52, 34, 52, 0.3);
+    justify-content: center;
+    border-left: 1.5px solid #482d84;
+    border-right: 1.5px solid #482d84;
+    border-bottom: 1.5px solid #482d84;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .hello {
     color: transparent;
@@ -259,7 +274,7 @@
     }
     .line {
         position: absolute;
-        left: 35px; top: 700px;
+        left: 35px; top: 640px;
     }
     .star {
         position: absolute;
@@ -293,8 +308,8 @@
     }
     .line {
         position: absolute;
-        left: 35px; top: 1075px;
-        height: 2605px;
+        left: 35px; top: 1025px;
+        height: 2590px;
     }
     .pro-preview {
         display: flex;
@@ -328,7 +343,7 @@
     }
     .line {
         position: absolute;
-        left: 22px; top: 1045px;
+        left: 22px; top: 1005px;
         height: 2455px;
     }
     .work-previews h1 {
