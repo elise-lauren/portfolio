@@ -87,7 +87,7 @@ h1 {
     display: flex;
 }
 .image img {
-    max-width: 950px;
+    /* max-width: 950px; */
     width: 100%;
     min-width: 400px;
     object-fit: cover;

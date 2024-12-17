@@ -85,8 +85,8 @@ h5 {
 }
 .images img {
     height: 500px;
-    min-width: 425px;
-    max-width: 950px;
+    min-width: 300px;
+    /* max-width: 950px; */
     width: 100%;
     display: flex;
     object-fit: cover;
