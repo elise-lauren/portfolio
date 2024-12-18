@@ -384,3 +384,9 @@
         border-right: none;
     }
 }
+@media (max-width: 450px) {
+    .pro-preview img {
+    height: 350px;
+    object-fit: cover;
+  }
+}
