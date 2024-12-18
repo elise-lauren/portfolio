@@ -400,9 +400,10 @@
         position: absolute;
         left: -29px;
 /*         margin: 0 0 425px 0; */
-        top: 95px;
+        top: 315px;
     }
     .line {
-        height: 1955px;
+        height: 1995px;
+        top: 880;
     }
 }
