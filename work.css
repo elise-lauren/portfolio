@@ -387,7 +387,7 @@
 }
 @media (max-width: 450px) {
     .pro-preview img {
-        height: 275px !important;
+        height: 175px !important;
         object-fit: cover;
     }
     .pgewrapper {
