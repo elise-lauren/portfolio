@@ -377,6 +377,7 @@
     }
     .scrolling-gif {
         border-radius: 0;
+        top: 0px;
     }
     .scrolling-gif img {
         border-radius: 0;
