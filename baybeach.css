@@ -244,6 +244,7 @@ h2 {
 .process > img {
     max-width: 1200px;
     margin: 30px auto 40px auto;
+    height: 100%;
 }
 .process div img:first-child{
     display: flex;
