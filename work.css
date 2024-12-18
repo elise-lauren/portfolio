@@ -72,17 +72,18 @@
 .scrolling-gif {
     position: relative;
     overflow-x: hidden;
-    top: -50px;
+    top: -46.5px;
     display: flex;
     height: 415px;
     max-width: 100%;
-    min-width: 200px;
+    min-width: 0;
     justify-self: center;
     margin: 0;
     /* margin: 0 20px; */
     background-color: #482d84;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    z-index: 100;
     
 }
 .scrolling-gif img {
@@ -152,7 +153,7 @@
 
 .pro-preview img {
     max-width: 700px;
-    min-width: 400px;
+    min-width: 0;
     height: 450px;
     object-fit: cover;
     flex: 1 0 400px;
@@ -366,7 +367,7 @@
     }
     .pro-preview img {
         flex-basis: auto;
-        min-width: 200px;
+        min-width: 0;
         height: 400px !important;
     }
 }

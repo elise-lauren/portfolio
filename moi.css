@@ -85,7 +85,7 @@ h5 {
 }
 .images img:first-child {
     height: 500px;
-    min-width: 425px;
+    min-width: 0;
     max-width: 750px;
     display: flex;
     object-fit: cover;
@@ -96,7 +96,7 @@ h5 {
     /* max-height: 375px;
     min-height: 300px; */
     max-width: 435px;
-    min-width: 300px;
+    min-width: 0;
     margin-left: 50px;
     width: 100%;
     display: flex;
@@ -234,8 +234,7 @@ h5 {
         position: absolute;
     }
     .images img:first-child {
-        min-width: 100%;
-        max-width: 100%;
+        width: 100%;
     }
 }
 

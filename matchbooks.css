@@ -90,7 +90,8 @@ h5 {
 .image img {
     /* max-width: 950px; */
     width: 100%;
-    min-width: 400px;
+    min-width: 0;
+    max-height: 550px;
     object-fit: cover;
     margin-bottom: 40px;
     flex-shrink: 1;
@@ -128,13 +129,13 @@ h5 {
     display: flex;
     position: static;
     flex-direction: row;
-    min-width: none;
+    min-width: 0;
     width: 100%;
 }
 .details div img {
     width: 100%;
     max-width: 900px;
-    min-width: 100px;
+    min-width: 0;
 }
 .details div img:first-child {
     margin-right: 30px;
@@ -151,7 +152,7 @@ h5 {
     border: 1.5px solid #482d84;
     border-radius: 10px;
     width: 90%;
-    min-width: none;
+    min-width: 0;
 }
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (max-width: 1144px) {

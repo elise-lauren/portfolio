@@ -58,8 +58,8 @@ h2 {
 }
 .images img:first-child {
     height: 500px;
-    min-width: 425px;
-    max-width: 750px;
+    min-width: 0;
+    max-width: 700px;
     display: flex;
     object-fit: cover;
 }
@@ -67,7 +67,7 @@ h2 {
     max-height: 375px;
     min-height: 300px;
     max-width: 375px;
-    min-width: 300px;
+    min-width: 0;
     margin-left: 50px;
     width: 100%;
     display: flex;
@@ -197,7 +197,7 @@ h2 {
 
 #poster {
     width: 100%;
-    min-width: 350px;
+    min-width: 0;
     object-fit: cover;
     height: 700px;
 }
@@ -250,7 +250,7 @@ h2 {
     border: 1.5px solid #482d84;
     border-radius: 10px;
     max-width: 233px;
-    min-width: 98px;
+    min-width: 0;
     /* width: 100%; */
     height: fit-content;
     margin-right: 30px;
@@ -260,7 +260,7 @@ h2 {
     border: 1.5px solid #482d84;
     border-radius: 10px;
     max-width: 600px;
-    min-width: 250px;
+    min-width: 0;
     height: fit-content;
 }
 .process span {
@@ -298,8 +298,7 @@ h2 {
         position: absolute;
     }
     .images img:first-child {
-        min-width: 100%;
-        max-width: 100%;
+        width: 100%;
     }
 }
 
