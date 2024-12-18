@@ -386,10 +386,14 @@
 }
 @media (max-width: 450px) {
     .pro-preview img {
-        height: 350px;
+        height: 275px;
         object-fit: cover;
     }
     .pgewrapper {
         margin: 0px 30px 70px 40px;
+    }
+    .star {
+        position: absolute;
+        left: -29px;
     }
 }
