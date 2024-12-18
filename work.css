@@ -27,7 +27,7 @@
 
 .line {
     position: absolute;
-    left: 50px; top: 620px;
+    left: 50px; top: 610px;
     height: 2130px;
     width: 1.5px;
     z-index: 1;
@@ -386,7 +386,10 @@
 }
 @media (max-width: 450px) {
     .pro-preview img {
-    height: 350px;
-    object-fit: cover;
-  }
+        height: 350px;
+        object-fit: cover;
+    }
+    .pgewrapper {
+        margin: 0px 30px 70px 40px;
+    }
 }
