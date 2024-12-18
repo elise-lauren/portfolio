@@ -384,6 +384,9 @@
         border-left: none;
         border-right: none;
     }
+    .pgewrapper {
+        margin: 30px 40px 70px 50px;
+    }
 }
 @media (max-width: 450px) {
     .pro-preview img {
