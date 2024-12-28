@@ -27,7 +27,7 @@
 
 .line {
     position: absolute;
-    left: 50px; top: 620px;
+    left: 50px; top: 610px;
     height: 2130px;
     width: 1.5px;
     z-index: 1;
@@ -377,10 +377,33 @@
     }
     .scrolling-gif {
         border-radius: 0;
+        top: 0px;
     }
     .scrolling-gif img {
         border-radius: 0;
         border-left: none;
         border-right: none;
+    }
+    .pgewrapper {
+        margin: 30px 40px 70px 50px;
+    }
+}
+@media (max-width: 450px) {
+    .pro-preview img {
+        height: 275px !important;
+        object-fit: cover;
+    }
+    .pgewrapper {
+        margin: 0px 30px 70px 40px;
+    }
+    .star {
+        position: absolute;
+        left: -29.5px;
+/*         margin: 0 0 425px 0; */
+        top: 310px;
+    }
+    .line {
+        height: 2075px;
+        top: 835px;
     }
 }

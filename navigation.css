@@ -13,22 +13,6 @@
     letter-spacing: 0.2px;
     margin: 0;
   }
-
-  /* .pgewrapper, .scrolling-gif {
-      animation: fadeInAnimation ease .5s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-  } 
-  
-  @keyframes fadeInAnimation {
-      0% {
-          opacity: 0;
-      }
-
-      100% {
-          opacity: 1;
-      }
-  } */
    @keyframes fadeInUp {
     0% {
       transform: translateY(100%);
@@ -44,87 +28,11 @@
 }
 
 /* –——————————————————————————— STYLE THE CONTACT INFO BAR –——————————————————————————— */
-/* .contact-head a {
-    display: block;
-    z-index: 1001;
-    transition: .2s ease;
-}
-.contact-head header {
-    display: flexbox;
-    background: #f9f0ef;
-    max-width: 100%;
-    height: 45px;
-    margin: 0 auto;
-    border-bottom: 1.5px solid #482d84;
-
-
-    color: #482d84;
-    font: 500 28px/1 Eckmannpsych, Signika, sans-serif;
-    letter-spacing: 1.5px;
-    font-feature-settings: "ss01";
-
-    
-    position: relative;
-    z-index: 1000;
-} 
-.contact-head header ul {
-    display: flex;
-    padding-left: 0;
-    margin: 0;
-}
-.contact-head header li {
-    list-style: none;
-    flex: 0 0 auto;
-    min-width: 10px;
-    margin: 0px 10px 0;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-content: center;
-}
-.contact-head a:hover {
-    cursor: pointer;
-    color: #D17670;
-}
-.header-icon {
-    fill: #482d84;
-    stroke-width: 0;
-    height: 30px;
-    margin-top: 7px;
-}
-#head-icon {
-    height: 25px; 
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: auto;
-    transition: 0.2s ease;
-}
-#head-logo {
-    height: 30px;
-    margin-top: 7px;
-    transition: 0.2s ease;
-}
-.contact-head li:nth-child(4) {
-    position: relative;
-    top: 10px;
-    left: 30%; right: 30%;
-    justify-self: center;
-    width: auto;
-    text-align: center;
-    white-space: nowrap;
-    margin: auto;
-    align-content: center;
-    transition: 0.2s ease;
-}
-.contact-head li:nth-child(5) {
-    align-items: left;
-    margin-left: auto;
-} */
 .contact-head {
     position: relative;
     width: 100vw;
     height: 35px;
-    z-index: 2000 !important;
+    z-index: 1000 !important;
     background-color: #f9f0ef;
 }
 .contact-head img {
@@ -132,19 +40,8 @@
     width: 100%;
     height: 35px;
     border-bottom: 1.5px solid #482d84;
-    z-index: 2000 !important;
+    /* z-index: 2000 !important; */
 }
-
-/* –——————————————————————————— CONTACT MEDIA QUERIES –——————————————————————————— */
-
-
-/* @media (max-width: 575px) {
-    .contact-head header {font: 500 24px/1 Eckmannpsych, sans-serif; font-feature-settings: "ss01";}
-    #head-icon {height: 22px; margin: 0 -5px;}
-    .contact-head header ul li:first-child {margin-left: 15px;}
-    #head-logo {height: 25px;}
-    .contact-head header ul li {margin-top: 2px;}
-} */
 
 /* –——————————————————————————— STYLE THE NAV & DROPDOWN –——————————————————————————— */
 
@@ -153,8 +50,6 @@
     top: 0;
     z-index: 999;
     display: flex;
-    /* align-content: center; */
-    /* justify-content: center; */
     flex-direction: row;
     flex: 1 0 auto;
     transition: transform 0.2s;
@@ -169,12 +64,6 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    /* background:
-    linear-gradient(150deg, #C79CBE, #D89D8A, transparent 30%),
-    linear-gradient(330deg, #D17670, #C79CBE, transparent 30%),
-    linear-gradient(225deg, #C79CBE, #D89D8A, #B0B9CB, #D17670, #B0B9CB);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
 }
 
 .navbar > ul {
@@ -210,14 +99,14 @@
 }
 
 #left-list {
-    margin-left: 10px;
+    padding-left: 0px;
 }
 
 #right-list {
-    margin-right: 60px;
+    padding-right: 52px;
 }
 
-.navbar > ul > li:nth-child(3), .navbar > ul > li:nth-child(4) {
+.navbar > ul > li:nth-child(2), .navbar > ul > li:nth-child(4), .navbar > ul > li:nth-child(5) {
     /* margin: 5px 0; */
     padding: 15px 0;
 }
