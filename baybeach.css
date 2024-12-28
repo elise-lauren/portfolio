@@ -244,6 +244,8 @@ h2 {
 .process > img {
     max-width: 1200px;
     margin: 30px auto 40px auto;
+    height: 100%;
+    align-self: start;
 }
 .process div img:first-child{
     display: flex;
@@ -252,7 +254,7 @@ h2 {
     max-width: 233px;
     min-width: 0;
     /* width: 100%; */
-    height: fit-content;
+    height: auto;
     margin-right: 30px;
 }
 .process div img:nth-child(2){
@@ -261,7 +263,7 @@ h2 {
     border-radius: 10px;
     max-width: 600px;
     min-width: 0;
-    height: fit-content;
+    height: auto;
 }
 .process span {
     color: #D17670;
