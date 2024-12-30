@@ -55,7 +55,7 @@ body {
 }
 
 .pic-1 {
-    max-width: 600px;
+    max-width: 1000px;
     width: 100%;
     min-width: 0;
     object-fit: cover;
