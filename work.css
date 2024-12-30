@@ -410,4 +410,11 @@ body {
     .line {
         left: 22px; top: 0;
     }
+    .hover-hello {
+        display: none;
+    }
+    .scrolling-gif:hover p {
+        color: transparent;
+        text-shadow: none;
+    }
 }
