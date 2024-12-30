@@ -11,7 +11,9 @@
 #work {
     color: #482d84;
   }
-
+body {
+    position: relative;
+}
 .pgewrapper {
     margin: 0px 100px 70px 150px;
     transition: 0.4s ease;
@@ -27,12 +29,13 @@
 
 .line {
     position: absolute;
-    left: 50px; top: 610px;
-    height: 2130px;
+    left: 50px; top: 0px;
+    height: 100%;
     width: 1.5px;
     z-index: 1;
     background-color: #482d84;
     transition: 0.4s ease;
+    overflow: hidden;
 }
 
 .star {
@@ -44,7 +47,7 @@
     z-index: 10;
     position: absolute;
     left: -111px;
-    top: 75px;
+    top: 62px;
     transition: 0.4s ease;
 }
 @keyframes fadeInDown {
@@ -280,8 +283,7 @@
     }
     .line {
         position: absolute;
-        left: 35px; top: 610px;
-        height: 2130px;
+        left: 35px; top: 0;
     }
     .star {
         position: absolute;
@@ -315,8 +317,7 @@
     }
     .line {
         position: absolute;
-        left: 35px; top: 1025px;
-        height: 2590px;
+        left: 35px; top: 0;
     }
     .pro-preview {
         display: flex;
@@ -330,6 +331,7 @@
     .pro-preview img {
         max-width: 100%;
         margin: 0;
+        height: 400px;
     }
     .work-previews h1 {
         font: 500 38px/1.25 Signika, sans-serif;
@@ -348,11 +350,11 @@
     .star {
         position: absolute;
         left: -39px;
+        top: 435px;
     }
     .line {
         position: absolute;
-        left: 22px; top: 980px;
-        height: 2455px;
+        left: 22px; top: 0;
     }
     .work-previews h1 {
         font: 500 28px/1.25 Signika, sans-serif;
@@ -368,7 +370,6 @@
     .pro-preview img {
         flex-basis: auto;
         min-width: 0;
-        height: 400px !important;
     }
 }
 @media (max-width: 575px) {
@@ -387,6 +388,10 @@
     .pgewrapper {
         margin: 30px 40px 70px 50px;
     }
+    .line {
+        position: absolute;
+        left: 22px; top: 0;
+    }
 }
 @media (max-width: 450px) {
     .pro-preview img {
@@ -403,7 +408,6 @@
         top: 310px;
     }
     .line {
-        height: 2075px;
-        top: 835px;
+        left: 22px; top: 0;
     }
 }

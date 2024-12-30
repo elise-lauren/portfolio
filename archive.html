@@ -15,12 +15,12 @@
         <link rel="stylesheet" href="navigation.css">
         <link rel="stylesheet" href="archive.css">
 
-        <title>Lauren Elise Nickels</title>
+        <title>Lauren Elise Nickels - Archive</title>
     </head>
     <body>
         <div class="contact-head">
             <header class="name-gif">
-                <img src="navigation/name-scroll.gif">
+                <a href="index.html"><img src="navigation/name-scroll.gif"></a>
             </header>
         </div>
         <nav class="navbar">
@@ -31,11 +31,11 @@
                     <div>
                         <a href="index.html" class="navtab" id="work">Work</a>
                         <ul id="work-dropdown">
-                            <li><a href="fieldmuseum.html">The Field Museum Rebrand</a></li>
-                            <li><a href="moi.html">Museum of Illusions Rebrand</a></li>
-                            <li><a href="baybeach.html">Bay Beach Amusement Park Rebrand</a></li>                        
-                            <li><a href="matchbooks.html">Exactitude in Science Matchbooks</a></li>
-                            <li><a href="bitter.html">Bitter Chocolate Co. Packaging</a></li>
+                            <li><a href="fieldmuseum.html" id="fieldmuseum">The Field Museum Rebrand</a></li>
+                            <li><a href="moi.html" id="moi">Museum of Illusions Rebrand</a></li>
+                            <li><a href="baybeach.html" id="baybeach">Bay Beach Amuseument Park Rebrand</a></li>
+                            <li><a href="matchbooks.html" id="matchbooks">Exactitude in Science Matchbooks</a></li>
+                            <li><a href="bitter.html" id="bitter">Bitter Chocolate Co. Packaging</a></li>
                         </ul>
                     </div>
                 </li>
@@ -43,6 +43,40 @@
                 <li><a href="https://indd.adobe.com/view/bd47c0eb-ba92-45ff-8413-e1de48bbddac" target="_blank" class="navtab" id="resume">Resume</a></li>
                 <li id="right-list"></li>
             </ul>
+        </nav>
+        <input id="hamburger" type="checkbox">
+        <nav class="hamburger-nav">
+            <div class="col-1">
+
+                <!-- LABEL -->
+                 <label for="hamburger"></label>
+      
+                 <!-- HAMBURGER -->
+                  <div class="hb_wrapper">
+                    <div class="hb_rotate-wrapper">
+                      <div class="hb_lines"></div>
+                    </div>
+                  </div>
+               </div>
+      
+               <!-- COLUMN 2 > MENU -->
+               <div class="col-2">
+                <ul>
+                  <li><a href="about-me.html" id="about-me">About Me</a></li>
+                  <li><a href="index.html" id="work">Work ↓</a></li>
+                  <li>
+                      <ul class="work-hamburger">
+                          <li><a href="fieldmuseum.html" id="fieldmuseum">The Field Museum Rebrand</a></li>
+                          <li><a href="moi.html" id="moi">Museum of Illusions Rebrand</a></li>
+                          <li><a href="baybeach.html" id="baybeach">Bay Beach Amuseument Park Rebrand</a></li>
+                          <li><a href="matchbooks.html" id="matchbooks">Exactitude in Science Matchbooks</a></li>
+                          <li><a href="bitter.html" id="bitter">Bitter Chocolate Co. Packaging</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="archive.html" id="archive">Archive</a></li>
+                  <li><a href="https://indd.adobe.com/view/bd47c0eb-ba92-45ff-8413-e1de48bbddac" target="_blank">Resume</a></li>
+                </ul>
+              </div>
         </nav>
         <div class="pgewrapper">
             <div class="line"></div>
@@ -70,7 +104,7 @@
                             data-fancybox="modp-gallery"
                             data-src="archive/modp/modp-thumbnail.jpg">
                             <img src="archive/modp/modp-thumbnail.jpg" alt="…" id="modp-img">
-                            <figcaption id="proj-name">Myths of Domestic Perfection</figcaption>
+                            <figcaption id="proj-name">Domestic Perfection</figcaption>
                             <figcaption id="proj-date">Publication Design 2024</figcaption>
                         </figure>
                         <figure class="img-wrapper"
@@ -142,8 +176,8 @@
                             data-fancybox="architecture-gallery"
                             data-src="archive/architecture/architecture-thumbnail.jpg">
                             <img src="archive/architecture/architecture-thumbnail.jpg" alt="…" id="architecture-img">
-                            <figcaption id="proj-name">Architecture Lecture Series</figcaption>
-                            <figcaption id="proj-date">Poster Design 2024</figcaption>
+                            <figcaption id="proj-name">Architecture Lecture</figcaption>
+                            <figcaption id="proj-date">Poster Series 2024</figcaption>
                         </figure>
                         <figure class="img-wrapper"
                             data-fancybox="architecture-gallery"

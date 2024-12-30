@@ -92,6 +92,7 @@ body {
 }
 .img-gallery {
     position: relative;
+    transition: .3s ease;
 }
 
 /* –——————————————————————————— FIGCAPTION –——————————————————————————— */
@@ -139,9 +140,10 @@ body {
   }
 .img-gallery:hover {
     cursor: pointer;
+    transform: scale(103%);
 }
 .img-gallery:hover img {
-    opacity: 70%;
+    opacity: 60%;
 }
 #hover1:hover + svg {
     fill: #482d84;

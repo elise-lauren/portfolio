@@ -322,6 +322,7 @@ body {
     flex-direction: column;
     transition: 0.3s ease;
     max-height: fit-content;
+    position: relative;
 }
 
 .tools > div {
@@ -398,15 +399,17 @@ body {
 }
 
 .colorblock {
+    display: flex;
     height: 100%;
+    /* height: 100%; */
     margin-top: 25px;
-    max-width: auto;
+    width: auto;
     border-radius: 10px;
     background: 
         linear-gradient(150deg, #C79CBE, #D89D8A, transparent 30%),
         linear-gradient(330deg, #D17670, #C79CBE, transparent 30%),
         linear-gradient(225deg, #C79CBE, #D89D8A, #B0B9CB, #D17670, #B0B9CB);
-        border: 1.5px solid #482d84;
+    border: 1.5px solid #482d84;
 }
 .colorstack {
     position: absolute;
@@ -569,7 +572,7 @@ body {
         max-width: 100%;
     }
     .me-des h1  {
-        font: 500 45px/1 Eckmannpsych, Signika, sans-serif;
+        font: 500 45px/1 Eckmannpsych, Tuppence, Signika, sans-serif;
         letter-spacing: 1.5px;
         font-feature-settings: "ss01";
         text-wrap: nowrap;
