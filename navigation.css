@@ -432,3 +432,12 @@
     display: block;
     z-index: 1001;
 }
+
+@media (max-width: 450px) {
+  .footer li a:nth-child(4) {
+    display: none;
+  }
+  .footer li a {
+    transform: scale(95%);
+  }
+}
