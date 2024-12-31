@@ -142,6 +142,10 @@ body {
     display: none;
     position: absolute;
 }
+.scrolling-gif img {
+    display: none;
+    position: absolute;
+}
 
 /* –——————————————————————————— PROJECT STYLING –——————————————————————————— */
 
@@ -424,6 +428,7 @@ body {
     }
     .scrolling-gif img {
         opacity: 70%;
+        display: flex;
     }
     .scrolling-gif div:nth-child(2) {
         display: flex;
