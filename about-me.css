@@ -92,8 +92,10 @@ body {
 }
 
 .me-des h1 {
-    font: 400 65px/1 eckmannpsych-large, Tuppence, Signika, sans-serif;
-    letter-spacing: 1.5px;
+    font: 400 65px/1 eckmannpsych-medium, Tuppence, Signika, sans-serif;
+    /* font: 100 55px/1 "ohno-blazeface", sans-serif;
+    font-style: italic; */
+    /* letter-spacing: 1.5px; */
     font-feature-settings: "ss01";
     text-wrap: nowrap;
     color: #482d84;
