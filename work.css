@@ -138,6 +138,10 @@ body {
     color: #f9f0ef;
     text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
 }
+.scrolling-gif div:nth-child(2) {
+    display: none;
+    position: absolute;
+}
 
 /* –——————————————————————————— PROJECT STYLING –——————————————————————————— */
 
@@ -412,11 +416,25 @@ body {
         display: flex;
     }
     .scrolling-gif {
-        height: 300px
+        height: auto;
     }
-    .scrolling-gif video {
+    .scrolling-gif div:first-child{
+        display: none;
+        position: absolute;
+    }
+    .scrolling-gif img {
         opacity: 70%;
-        height: 300px
+    }
+    .scrolling-gif div:nth-child(2) {
+        display: flex;
+        position: relative;
+        width: 100%;
+        max-width: 2000;
+        min-width: 0;
+    }
+    .scrolling-gif img {
+        width: 100%;
+        height: auto;
     }
     .hello {
         color: #f9f0ef;
@@ -429,7 +447,7 @@ body {
         margin: auto;
         text-align: center;
         justify-self: center;
-        top: 37%;
+        top: 34%;
         width: 100%;
     }
     .name {

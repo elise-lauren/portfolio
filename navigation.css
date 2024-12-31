@@ -122,12 +122,18 @@
     border-bottom: 1.5px solid #482d84;
 } */
 
-@media (max-width: 450px) {
+@media (max-width: 525px) {
   header li:nth-child(4) {
-    display: none;
+    transform: scale(85%);
   }
   header li a {
     transform: scale(95%);
+  }
+}
+
+@media (max-width: 450px) {
+  header li:nth-child(4) {
+    display: none;
   }
 }
 
