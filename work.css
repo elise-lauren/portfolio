@@ -50,7 +50,7 @@ body {
     top: 62px;
     transition: 0.4s ease;
 }
-/* @keyframes fadeInDown {
+@keyframes fadeInDown {
     0% {
       transform: translateY(-100%);
       opacity: 0;
@@ -62,7 +62,7 @@ body {
   }
 .scrolling-gif {
     animation: .5s fadeInDown;
-} */
+}
 
 
 /* –——————————————————————————— SLIDER –——————————————————————————— */
