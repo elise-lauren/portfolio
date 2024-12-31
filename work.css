@@ -429,6 +429,7 @@ body {
     .scrolling-gif img {
         opacity: 70%;
         display: flex;
+        position: relative;
     }
     .scrolling-gif div:nth-child(2) {
         display: flex;
