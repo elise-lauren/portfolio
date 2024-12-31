@@ -7,6 +7,8 @@
   * { text-decoration: none; color: inherit;} 
   * {scroll-behavior: smooth;}
 
+  @import url('');
+
   body {
     background-color: #f9f0ef;
     font: 300 15px/1.5 Signika, sans-serif;
