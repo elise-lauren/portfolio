@@ -409,10 +409,38 @@ body {
         left: 22px; top: 0;
     }
     .hover-hello {
-        display: none;
+        display: flex;
     }
-    .scrolling-gif:hover p {
-        color: transparent;
-        text-shadow: none;
+    .scrolling-gif {
+        height: 300px
+    }
+    .scrolling-gif video {
+        opacity: 70%;
+        height: 300px
+    }
+    .hello {
+        color: #f9f0ef;
+        text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
+        font: 400 57px/.75 eckmannpsych-medium, Signika, sans-serif;
+        letter-spacing: 1.5px;
+        font-feature-settings: "ss01";
+        transition: .4s ease;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        justify-self: center;
+        top: 37%;
+        width: 100%;
+    }
+    .name {
+        color: #f9f0ef;
+        text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
+        font: 500 27px/1 tuppence, sans-serif;
+        transition: .4s ease;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        top: 54%;
+        width: 100%;
     }
 }
