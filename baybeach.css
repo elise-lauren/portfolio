@@ -59,7 +59,8 @@ h2 {
 .images img:first-child {
     height: 500px;
     min-width: 0;
-    max-width: 700px;
+    max-width: 1000px;
+    width: 100%;
     display: flex;
     object-fit: cover;
 }
@@ -346,6 +347,11 @@ h2 {
     }
     .star {
         left: -36px;
+    }
+    .images img:first-child {
+        width: 100%;
+        min-width: 0;
+        height: 300px;
     }
     .small-star {
         left: -33.5px;

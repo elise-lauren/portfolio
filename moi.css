@@ -85,8 +85,9 @@ h5 {
 }
 .images img:first-child {
     height: 500px;
-    min-width: 0;
-    max-width: 750px;
+    min-width: 400px;
+    max-width: 2000px;
+    width: 100%;
     display: flex;
     object-fit: cover;
     border: 1.5px solid #482d84;
@@ -97,7 +98,7 @@ h5 {
     min-height: 300px; */
     max-width: 435px;
     min-width: 0;
-    margin-left: 50px;
+    margin-left: 80px;
     width: 100%;
     display: flex;
     object-fit: contain;
@@ -235,6 +236,8 @@ h5 {
     }
     .images img:first-child {
         width: 100%;
+        min-width: 0;
+        height: 300px;
     }
 }
 
