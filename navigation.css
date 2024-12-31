@@ -30,7 +30,85 @@
 }
 
 /* –——————————————————————————— STYLE THE CONTACT INFO BAR –——————————————————————————— */
-.contact-head {
+
+.contact-head a {
+  display: block;
+  z-index: 1001;
+  transition: .2s ease;
+}
+.contact-head header {
+  display: flexbox;
+  background: #f9f0ef;
+  max-width: 100%;
+  height: 45px;
+  margin: 0 auto;
+  border-bottom: 1.5px solid #482d84;
+
+
+  color: #482d84;
+  font: 400 28px/1 eckmannpsych-medium, Signika, sans-serif;
+  letter-spacing: 1.5px;
+  font-feature-settings: "ss01";
+
+  
+  position: relative;
+  z-index: 1000;
+} 
+.contact-head header ul {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+.contact-head header li {
+  list-style: none;
+  flex: 0 0 auto;
+  min-width: 10px;
+  margin: 0px 10px 0;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+}
+.contact-head a:hover {
+  cursor: pointer;
+  color: #D17670;
+}
+.header-icon {
+  fill: #482d84;
+  stroke-width: 0;
+  height: 30px;
+  margin-top: 7px;
+}
+#head-icon {
+  height: 25px; 
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: auto;
+  transition: 0.2s ease;
+  margin-top: 4px;
+}
+#head-logo {
+  height: 30px;
+  margin-top: 7px;
+  transition: 0.2s ease;
+}
+.contact-head li:nth-child(4) {
+  position: relative;
+  top: 7px;
+  left: 30%; right: 30%;
+  justify-self: center;
+  width: auto;
+  text-align: center;
+  white-space: nowrap;
+  margin: auto;
+  align-content: center;
+  transition: 0.2s ease;
+}
+.contact-head li:nth-child(5) {
+  align-items: left;
+  margin-left: auto;
+}
+/* .contact-head {
     position: relative;
     width: 100vw;
     height: 35px;
@@ -42,7 +120,15 @@
     width: 100%;
     height: 35px;
     border-bottom: 1.5px solid #482d84;
-    /* z-index: 2000 !important; */
+} */
+
+@media (max-width: 450px) {
+  header li:nth-child(4) {
+    display: none;
+  }
+  header li a {
+    transform: scale(95%);
+  }
 }
 
 /* –——————————————————————————— STYLE THE NAV & DROPDOWN –——————————————————————————— */
@@ -208,7 +294,7 @@
   
   /* ======================= Columns ======================= */
   .col-1 {
-    margin-top: 40px;
+    margin-top: 50px;
     align-self: flex-start;
     background: 
         linear-gradient(150deg, #D17670,#D89D8A, transparent 30%),
