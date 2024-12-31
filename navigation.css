@@ -434,10 +434,16 @@
 }
 
 @media (max-width: 450px) {
-  .footer li a:nth-child(4) {
+  footer li:nth-child(4) {
     display: none;
   }
-  .footer li a {
+  footer li a {
     transform: scale(95%);
+  }
+  footer li:first-child {
+    padding-left: 15px;
+  }
+  footer li:last-child {
+    padding-right: 20px;
   }
 }
