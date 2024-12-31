@@ -71,6 +71,7 @@ body {
     /* margin: 0 20px; */
     width: 95%;
     margin: 0 auto;
+    justify-self: center;
 }
 .scrolling-gif {
     position: relative;
@@ -93,7 +94,7 @@ body {
     transition: .4s ease;
     display: flex;
     height: 415px;
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     /* margin-right: 20px;
     margin-left: 20px; */
