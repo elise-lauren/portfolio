@@ -374,12 +374,11 @@ body {
 @media (max-width: 575px) {
     /* .gif-wrapper {
         width: 100vw;
-    }
+    } */
     .scrolling-gif {
-        border-radius: 0;
         top: 0px;
     }
-    .scrolling-gif img {
+    /* .scrolling-gif img {
         border-radius: 0;
         border-left: none;
         border-right: none;
