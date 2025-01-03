@@ -1,0 +1,91 @@
+.intro h1 {
+        font: 800 40px/1.25 "kit-rounded", sans-serif;
+        color: var(--dark);
+        margin: 0 0 15px 0;      
+}
+h2 {
+    font: 600 28px/1.25 "kit-rounded", sans-serif;
+    color: var(--dark);
+    margin: 0 0 15px 0;
+}
+h3 {
+    font: 400 12px/.75 "kit-rounded", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin: 0;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 12px 12px 4px 12px;
+    border: 1.3px solid var(--dark);
+}
+h5 {
+    font: 300 14px/1.25 "kit-rounded", sans-serif;
+    color: var(--red);
+  }
+span {
+    color: var(--red);
+}
+p {
+    font: 300 14px/1.5 "kit-rounded", sans-serif;
+    color: var(--dark);
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+.line {
+    width: 1.2px;
+}
+.star {  
+    height: 25px;
+    fill: var(--cream);
+    stroke: var(--dark); 
+    stroke-width: 1.7px;
+    z-index: 10;
+    margin-top: -30px;
+}
+.intro .star {
+    margin-top: -12px;
+}
+.small-star {
+    z-index: 10;
+    height: 18px;
+    fill: var(--cream);
+    stroke: var(--dark); 
+    stroke-width: 2.5px;
+    margin-top: 8px;
+}
+.images {
+    position: relative;
+    top: -47px;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    align-items: center;
+    position: relative;
+}
+.images img{
+    min-width: 0px;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    z-index: 10;
+    position: relative;
+    animation: .5s fadeInDown;
+    height: 550px;
+}
+
+@keyframes fadeInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+@media (max-width: 615px){
+    .images img{
+        height: 400px;
+    }
+}

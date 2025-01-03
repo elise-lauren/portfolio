@@ -7,10 +7,13 @@
   * { text-decoration: none; color: inherit;} 
 
 /* –——————————————————————————— OVERALL PAGE STYLING –——————————————————————————— */
-
 #baybeach {
-    color: #482d84;
+    color: var(--blue);
 }
+.contact-head a:hover {
+    cursor: pointer;
+    color: var(--blue);
+  }
 body {
     position: relative;
 }
@@ -18,61 +21,19 @@ body {
     position: absolute;
     left: 50px; top: 0px;
     height: 100%;
-    width: 1.5px;
     z-index: 1;
-    background-color: #482d84;
+    background-color: var(--dark);
     transition: 0.4s ease;
 }
 .star {
-    height: 25px;
-    fill: #f9f0ef;
-    stroke: #482d84; 
-    stroke-width: 2.5px;
     z-index: 10;
     position: absolute;
-    left: -109px;
+    left: -109.5px;
     transition: 0.4s ease;
 }
 .pgewrapper {
-    margin: 50px 100px 90px 150px;
+    margin: 10px 100px 90px 150px;
     transition: 0.4s ease;
-}
-h2 {
-    font: 400 28px/1.25 Signika, sans-serif;
-    color: #482d84;
-}
-
-/* –——————————————————————————— BEGINNING IMAGES –——————————————————————————— */
-
-.images img {
-    border: 1.5px solid #482d84;
-    border-radius: 10px;
-}
-
-.images {
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
-    align-items: center;
-    margin: 0 0 30px 0;
-}
-.images img:first-child {
-    height: 500px;
-    min-width: 0;
-    max-width: 1000px;
-    width: 100%;
-    display: flex;
-    object-fit: cover;
-}
-.images img:last-child {
-    max-height: 375px;
-    min-height: 300px;
-    max-width: 375px;
-    min-width: 0;
-    margin-left: 50px;
-    width: 100%;
-    display: flex;
-    object-fit: contain;
 }
 
 /* –——————————————————————————— INTRO –——————————————————————————— */
@@ -82,8 +43,8 @@ h2 {
 }
 .small-star {
     height: 18px;
-    fill: #f9f0ef;
-    stroke: #482d84; 
+    fill: var(--cream);
+    stroke: var(--dark); 
     stroke-width: 3.2px;
     z-index: 10;
     position: absolute;
@@ -95,27 +56,6 @@ h2 {
     position: relative;
     margin-bottom: 80px;
 }
-.intro h1 {
-    font: 400 40px/1.25 Signika, sans-serif;
-    color: #482d84;
-    margin: 0 0 35px 0;
-}
-.intro h4 {
-    font: 500 16px/.75 signika, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #482d84;
-    margin: 0;
-}
-.intro p {
-    font: 300 14px/1.25 Signika, sans-serif;
-    color: #482d84;
-    max-width: 600px;
-    margin-bottom: 50px;
-}
-.intro span {
-    color: #D17670;
-}
 .description {
     position: relative;
     flex-direction: column !important;
@@ -123,37 +63,6 @@ h2 {
 
 
 /* –——————————————————————————— COMPARE –——————————————————————————— */
-
-/* .compare {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    position: relative;
-}
-.compare .star {
-    top: 24px;
-}
-.compare div {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-}
-
-.compare div:first-child {
-    margin-right: 30px;
-}
-
-.compare div img {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    margin: 20px auto;
-    object-fit: contain;
-}
-
-.compare div h2 {
-    margin: 0 auto;
-} */
 
 .compare {
     display: flex;
@@ -198,11 +107,13 @@ h2 {
 .prototypes .star {
     top: 28px;
 }
+.prototypes h2 {
+    margin-top: 25px;
+}
 .prototypes div {
     display: flex;
     height: auto;
     flex-direction: row;
-    margin: 0 0 30px 0;
 }
 
 .prototypes figure {
@@ -212,10 +123,9 @@ h2 {
 .prototypes div img {
     flex: 0 1 33.333%;
     width: 100%;
-    height: 100%;
-    border: 1.5px solid #482d84;
+    height: auto;
     border-radius: 10px;
-    margin: 0;
+    margin: 30px 0 0 0;
 }
 
 .prototypes div figure:nth-child(2) {
@@ -223,11 +133,12 @@ h2 {
 }
 
 .prototypes > img {
-    border: 1.5px solid #482d84;
     border-radius: 10px;
     margin: 0 0 30px 0;
 }
-
+#stationery {
+    margin-top: 20px;
+}
 #poster {
     width: 100%;
     min-width: 0;
@@ -235,16 +146,10 @@ h2 {
     height: 700px;
 }
 .prototypes h4 {
-    font: 500 16px/.75 signika, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #482d84;
     margin: 0;
 }
 .prototypes p {
-    font: 300 14px/1.25 Signika, sans-serif;
-    color: #482d84;
-    max-width: 600px;
+    margin-bottom: 0;
 }
 
 /* –——————————————————————————— PROCESS –——————————————————————————— */
@@ -255,7 +160,7 @@ h2 {
     position: relative;
 }
 .process .star {
-    top: 5px;
+    margin: 0;
 }
 .process > div {
     display: flex;
@@ -268,12 +173,6 @@ h2 {
 .process h2 {
     margin: 0;
 }
-.process p {
-    font: 300 14px/1.25 Signika, sans-serif;
-    color: #482d84;
-    max-width: 600px;
-    margin-bottom: 50px;
-}
 .process > img {
     max-width: 1200px;
     margin: 30px auto 40px auto;
@@ -282,9 +181,8 @@ h2 {
 }
 .process div img:first-child{
     display: flex;
-    border: 1.5px solid #482d84;
     border-radius: 10px;
-    max-width: 233px;
+    max-width: 300px;
     min-width: 0;
     /* width: 100%; */
     height: auto;
@@ -292,20 +190,16 @@ h2 {
 }
 .process div img:nth-child(2){
     display: flex;
-    border: 1.5px solid #482d84;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 700px;
     min-width: 0;
     height: auto;
-}
-.process span {
-    color: #D17670;
 }
 .process h4 {
     font: 500 16px/.75 signika, sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #482d84;
+    color: var(--dark);
     margin: 0;
 }
 
@@ -313,45 +207,33 @@ h2 {
 
 @media (max-width: 1154px) {
     .pgewrapper {
-        margin: 50px 70px 90px 70px;
+        margin: 10px 70px 90px 70px;
     }
     .line {
         position: absolute;
         left: 30px; top: 0px;
     }
     .star {
-        left: -49px;
+        left: -49.5px;
     }
     .small-star {
         left: -46.5px;
     }
 }
 
-@media (max-width: 900px) {
-    .images img:last-child {
-        display: none;
-        position: absolute;
-    }
-    .images img:first-child {
-        width: 100%;
-    }
-}
-
 @media (max-width: 615px) {
     .pgewrapper {
-        margin: 50px 50px 90px 50px;
+        margin: 10px 50px 90px 50px;
     }
     .line {
         position: absolute;
         left: 23px; top: 0px;
     }
     .star {
-        left: -36px;
+        left: -36.5px;
     }
-    .images img:first-child {
-        width: 100%;
-        min-width: 0;
-        height: 300px;
+    #poster {
+        height: 600px;
     }
     .small-star {
         left: -33.5px;
@@ -364,9 +246,6 @@ h2 {
     .current img {
         margin-bottom: 60px;
     }
-    /* .intro h1 {
-        font: 400 32px/1.25 Signika, sans-serif;
-    } */
     .prototypes div figure:nth-child(2) {
         margin-left: 0; margin-right: 0;
     }
@@ -379,6 +258,9 @@ h2 {
     } */
     .prototypes div img {
         margin: 0 0 20px 0;
+    }
+    #stationery {
+        margin-top: 0px;
     }
     .process div img:first-child {
         margin-right: 20px;

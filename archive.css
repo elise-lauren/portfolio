@@ -7,13 +7,16 @@
   * { text-decoration: none; color: inherit;} 
   * {scroll-behavior: smooth;}
 
-#archive {
-    color: #482d84;
-}
 body {
     position: relative;
 }
-
+#archive {
+    color: var(--blue);
+}
+.contact-head a:hover {
+    cursor: pointer;
+    color: var(--blue);
+  }
 /* –——————————————————————————— OVERALL PAGE STYLING –——————————————————————————— */
 .pgewrapper {
     margin: 50px 100px 90px 150px;
@@ -24,29 +27,29 @@ body {
     position: absolute;
     left: 50px; top: 0px;
     height: 100%;
-    width: 1.5px;
+    width: 1.2px;
     z-index: 1;
-    background-color: #482d84;
+    background-color: var(--dark);
     transition: 0.4s ease;
 }
 .star {
     height: 25px;
     fill: none;
     stroke: none; 
-    stroke-width: 2.5px;
+    stroke-width: 1.7px;
     z-index: 10;
     position: absolute;
-    left: -109px; top: 47%;
+    left: -109.5px; top: 47%;
     transition: 0.4s ease;
 }
 .star2 {
     height: 25px;
-    fill: #f9f0ef;
-    stroke: #482d84; 
-    stroke-width: 2.5px;
+    fill: var(--cream);
+    stroke: var(--dark); 
+    stroke-width: 1.7px;
     z-index: 10;
     position: absolute;
-    left: -109px; top: 47%;
+    left: -109.5px; top: 47%;
     transition: 0.4s ease;
 }
 
@@ -66,10 +69,9 @@ body {
     position: relative;
     transition: 0.2s ease;
     border-radius: 10px;
-    background-color: #482d84;
+    background-color: var(--dark);
 }
 .img-gallery img {
-    border: 1.5px solid #482d84;
     border-radius: 10px;
     display: flex;
     flex: 0 1 50%;
@@ -96,15 +98,15 @@ body {
 }
 
 /* –——————————————————————————— FIGCAPTION –——————————————————————————— */
-/* figcaption {
+figcaption {
     transition: 0.2s ease;
-} */
+}
 #proj-name {
     opacity: 0;
-    color: #f9f0ef;
+    color: var(--cream);
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font: 500 25px/1 Signika, sans-serif;
+    letter-spacing: 1.25px;
+    font: 500 25px/1 "kit-rounded", sans-serif;
   
     position: absolute;
     top: 5px; right: 5px; bottom: 30px; left: 5px;
@@ -124,8 +126,8 @@ body {
   }
 #proj-date {
     opacity: 0;
-    color: #f9f0ef;
-    font: 300 14px/1.25 Signika, sans-serif;
+    color: var(--cream);
+    font: 400 14px/1.25 "kit-rounded", sans-serif;
     /* text-transform: uppercase; */
     letter-spacing: 1px;
 
@@ -146,10 +148,10 @@ body {
     opacity: 60%;
 }
 #hover1:hover + svg {
-    fill: #482d84;
+    fill: var(--dark);
 }
 #hover2:hover + svg {
-    fill: #482d84;
+    fill: var(--dark);
 }
 .img-gallery:hover #proj-name, .img-gallery:hover #proj-date {
     opacity: 100%;
@@ -165,8 +167,8 @@ body {
         left: 35px;
     }
     .star {
-        fill: #f9f0ef;
-        stroke: #482d84; 
+        fill: var(--cream);
+        stroke: var(--dark); 
         position: absolute;
         left: -64.5px;
     }
@@ -227,12 +229,12 @@ body {
     }
     .star2 {
         position: absolute;
-        left: -28.5px;
+        left: -27.5px;
         top: 23%
     }
     .star {
         position: absolute;
-        left: -28.5px;
+        left: -27.5px;
         top: 73%
     }
 }

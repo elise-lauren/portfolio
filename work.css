@@ -9,7 +9,11 @@
 /* –——————————————————————————— PAGE STYLING –——————————————————————————— */
 
 #work {
-    color: #482d84;
+    color: var(--red);
+  }
+.contact-head a:hover {
+    cursor: pointer;
+    color: var(--red);
   }
 body {
     position: relative;
@@ -31,9 +35,9 @@ body {
     position: absolute;
     left: 50px; top: 0px;
     height: 100%;
-    width: 1.5px;
+    width: 1.2px;
     z-index: 1;
-    background-color: #482d84;
+    background-color: var(--dark);
     transition: 0.4s ease;
     overflow: hidden;
 }
@@ -41,12 +45,12 @@ body {
 .star {
     height: 25px;
     margin: 0 0 425px 0;
-    fill: #f9f0ef;
-    stroke: #482d84; 
-    stroke-width: 2.5px;
+    fill: var(--cream);
+    stroke: var(--dark); 
+    stroke-width: 1.7px;
     z-index: 10;
     position: absolute;
-    left: -111px;
+    left: -110.5px;
     top: 62px;
     transition: 0.4s ease;
 }
@@ -82,11 +86,11 @@ body {
     min-width: 0;
     justify-self: center;
     margin: 0;
-    background-color: #482d84;
+    background-color: var(--dark);
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
     z-index: 100;
-    border-bottom: 1.5px solid #482d84;
+    /* border-bottom: 1.3px solid var(--dark); */
 }
 .scrolling-gif video {
     transition: .4s ease;
@@ -99,9 +103,9 @@ body {
     object-fit: cover;
     justify-self: center;
     justify-content: center;
-    /* border-left: 1.5px solid #482d84;
-    border-right: 1.5px solid #482d84; */
-    border-bottom: 1.5px solid #482d84;
+    /* border-left: 1.3px solid var(--dark);
+    border-right: 1.3px solid var(--dark); */
+    /* border-bottom: 1.3px solid var(--dark); */
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
@@ -110,32 +114,33 @@ body {
 }
 .hello {
     color: transparent;
-    font: 400 80px/1 eckmannpsych-medium, Signika, sans-serif;
-    letter-spacing: 1.5px;
-    font-feature-settings: "ss01";
+    font: 100 90px/1 "ohno-blazeface", sans-serif;
+    font-style: italic;
+    text-indent: -5px;
     transition: .4s ease;
+    letter-spacing: .25px;
     position: absolute;
     margin: auto;
     text-align: center;
     justify-self: center;
-    top: 37%;
+    top: 33%;
     width: 100%;
 }
 .name {
     color: transparent;
-    font: 500 30px/1 tuppence, sans-serif;
+    font: 500 28px/1 "kit-rounded", sans-serif;
     transition: .4s ease;
     position: absolute;
     margin: auto;
     text-align: center;
-    top: 57%;
+    top: 59%;
     width: 100%;
 }
 .scrolling-gif:hover video {
     opacity: 70%;
 }
 .scrolling-gif:hover p {
-    color: #f9f0ef;
+    color: var(--cream);
     text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
 }
 .scrolling-gif div:nth-child(2) {
@@ -155,7 +160,7 @@ body {
     flex: 1 0 auto;
     margin: 20px 0 50px 0;
     position: relative;
-    border: 1.5px solid transparent;
+    border: 1.3px solid transparent;
     border-radius: 10px;
     padding: 15px;
     transition: 0.2s ease;
@@ -167,7 +172,7 @@ body {
     height: 450px;
     object-fit: cover;
     flex: 1 0 400px;
-    border: 1.5px solid #482d84;
+    /* border: 1.3px solid var(--dark); */
     border-radius: 10px;
     transition: 0.4s ease;
     margin-left: 5px;
@@ -187,21 +192,25 @@ body {
 }
 
 .pro-preview h1 {
-    font: 500 60px/1.25 Signika, sans-serif;
-    color: #482d84;
+    /* font: 500 60px/1.25 Signika, sans-serif; */
+    font: 700 60px/1.25 "kit-rounded", sans-serif;
+    color: var(--dark);
     transition: 0.2s ease;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 .pro-preview p {
-    color: #482d84;
-    font: 100 18px/1.25 Signika, sans-serif;
+    color: var(--dark);
+    /* font: 200 18px/1.25 Signika, sans-serif; */
+    font: 400 16px/1.5 "kit-rounded", sans-serif;
+    letter-spacing: 1;
 }
 
 .pro-des div {
-    color: #482d84;
-    font: 300 16px/.75 Tuppence, sans-serif;
+    color: var(--dark);
+    /* font: 300 16px/.75 Tuppence, sans-serif; */
+    font: 300 16px/.75 "kit-rounded", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: flex;
@@ -214,15 +223,18 @@ body {
 
 .pro-des div div:nth-child(2) {
     justify-self: left;
-    background-color: #f9f0ef;
+    /* background-color: var(--red); */
     width: auto;
-    padding-right: 10px;
+    padding: 12px 12px 4px 12px;
+    margin: 0;
+    border: 1.3px solid var(--dark);
+    border-radius: 8px;
 }
 
 .division {
     width: 100%;
-    height: 1.5px;
-    background-color: #482d84;
+    height: 1.3px;
+    /* background-color: var(--dark); */
     display: flex;
     flex: 1 1 auto;
     width: auto;
@@ -233,8 +245,10 @@ body {
     position: absolute;
     right: 0;
     width: auto;
-    background-color: #f9f0ef;
-    padding-left: 10px;
+    padding: 12px 12px 4px 12px;
+    margin: 0;
+    border: 1.3px solid var(--dark);
+    border-radius: 8px;
 }
 
 .pro-preview img:hover {
@@ -244,16 +258,16 @@ body {
 }
 
 .pro-preview:hover {
-    border: 1.5px solid #482d84;
+    border: 1.3px solid var(--dark);
     border-radius: 10px;
 }
 
 .pro-preview:hover .star {
-    fill: #D17670;
+    fill: var(--red);
 }
 
 .pro-preview a:hover + .star {
-    fill: #482d84;
+    fill: var(--dark);
 }
 
 #right-align {
@@ -294,16 +308,17 @@ body {
     }
     .star {
         position: absolute;
-        left: -66px;
+        left: -65.5px;
 
     }
     .pro-preview h1 {
-        font: 500 46px/1.25 Signika, sans-serif;
-        color: #482d84;
+        font-size: 40px;
+        color: var(--dark);
         transition: 0.2s ease;
     }
     .pro-des div div {
-        font: 300 14px/.75 Tuppence, sans-serif;
+        font-size: 13px;
+        padding: 12px 12px 4px 12px !important;
     }
     /* .line {
         left: 40px; top: 0px;
@@ -319,8 +334,8 @@ body {
     }
     .star {
         position: absolute;
-        left: -46px;
-        top: 440px;
+        left: -45.5px;
+        top: 430px;
     }
     .line {
         position: absolute;
@@ -341,13 +356,19 @@ body {
         height: 400px;
     }
     .work-previews h1 {
-        font: 500 38px/1.25 Signika, sans-serif;
+        font-size: 38px;
         margin-bottom: 0;
         margin-top: 15px;
     }
+    .pro-des p {
+        margin-bottom: 40px;
+    }
     .pro-des div {
+        /* position: absolute;
+        display: none; */
+        /* position: absolute; */
         position: absolute;
-        display: none;
+        bottom: 0px;
     }
 }
 @media (max-width: 615px) {
@@ -356,27 +377,29 @@ body {
     }
     .star {
         position: absolute;
-        left: -39px;
-        top: 435px;
+        left: -38.5px;
+        top: 428px;
     }
     .line {
         position: absolute;
         left: 22px; top: 0;
     }
     .work-previews h1 {
-        font: 500 28px/1.25 Signika, sans-serif;
+        font-size: 28px;
         margin-bottom: 0;
     }
     .pro-preview {
         margin: 20px 0 60px 0;
     }
     .pro-preview p {
-        color: #482d84;
-        font: 100 15px/1.25 Signika, sans-serif;
+        font-size: 15px;
     }
     .pro-preview img {
         flex-basis: auto;
         min-width: 0;
+    }
+    .scrolling-gif p {
+        transform: scale(90%);
     }
 }
 @media (max-width: 575px) {
@@ -409,7 +432,7 @@ body {
     }
     .star {
         position: absolute;
-        left: -29.5px;
+        left: -29px;
 /*         margin: 0 0 425px 0; */
         top: 310px;
     }
@@ -443,28 +466,17 @@ body {
         height: auto;
     }
     .hello {
-        color: #f9f0ef;
-        text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
-        font: 400 57px/.75 eckmannpsych-medium, Signika, sans-serif;
-        letter-spacing: 1.5px;
-        font-feature-settings: "ss01";
+        color: var(--cream);
+        font: 100 65px/1 "ohno-blazeface", sans-serif;
+        font-style: italic;
+        text-indent: -5px;
         transition: .4s ease;
-        position: absolute;
-        margin: auto;
-        text-align: center;
-        justify-self: center;
-        top: 34%;
-        width: 100%;
+        letter-spacing: .25px;
+        text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
     }
     .name {
-        color: #f9f0ef;
+        color: var(--cream);
+        font: 500 20px/1 "kit-rounded", sans-serif;
         text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
-        font: 500 27px/1 tuppence, sans-serif;
-        transition: .4s ease;
-        position: absolute;
-        margin: auto;
-        text-align: center;
-        top: 54%;
-        width: 100%;
     }
 }
