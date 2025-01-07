@@ -484,6 +484,21 @@
     .hamburger-nav {
         display: flex;
     }
+    #about-me:active, #work:active, #archive:active, #resume:active {
+      color: var(--dark);
+    }
+    #about-me:active {
+        background-color: var(--purple);
+    }
+    #work:active {
+      background-color: var(--red);
+    }
+    #archive:active {
+      background-color: var(--blue);
+    }
+    #resume:active {
+      background-color: var(--orange);
+    }
 }
 
 
