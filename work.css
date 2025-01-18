@@ -78,36 +78,13 @@ body {
 } */
 .scrolling-gif {
     position: relative;
-    overflow-x: hidden;
     top: -47px;
-    display: flex;
-    height: 415px;
-    max-width: 100%;
-    min-width: 0;
-    justify-self: center;
-    margin: 0;
-    background-color: var(--dark);
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-    z-index: 100;
-    /* border-bottom: 1.3px solid var(--dark); */
-}
-.scrolling-gif video {
-    transition: .4s ease;
-    display: flex;
     height: 415px;
     width: 100%;
-    margin: 0;
-    /* margin-right: 20px;
-    margin-left: 20px; */
-    object-fit: cover;
     justify-self: center;
-    justify-content: center;
-    /* border-left: 1.3px solid var(--dark);
-    border-right: 1.3px solid var(--dark); */
-    /* border-bottom: 1.3px solid var(--dark); */
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+    margin: 0;
+    background-repeat: repeat-x;
+    z-index: 100;
 }
 .hover-hello {
     width: 100%;
@@ -125,6 +102,7 @@ body {
     justify-self: center;
     top: 33%;
     width: 100%;
+    text-wrap: nowrap;
 }
 .name {
     color: transparent;
@@ -135,21 +113,41 @@ body {
     text-align: center;
     top: 59%;
     width: 100%;
+    text-wrap: nowrap;
 }
-.scrolling-gif:hover video {
+.background-gif-color {
+    background-color: var(--dark);
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+}
+.background-gif-img {
+    background-image: url(headergifbackground.jpg);
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: auto 415px;
+    animation-name: scroll-images;
+    transition: .3s ease;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes scroll-images {
+    from {background-position: 0 0;}
+    to {background-position: -100% 0;}
+}
+.scrolling-gif:hover .background-gif-img {
     opacity: 70%;
 }
 .scrolling-gif:hover p {
     color: var(--cream);
     text-shadow: 0 0 5px rgba(52, 34, 52, 0.3);
-}
-.scrolling-gif div:nth-child(2) {
-    display: none;
-    position: absolute;
-}
-.scrolling-gif img {
-    display: none;
-    position: absolute;
 }
 
 /* –——————————————————————————— PROJECT STYLING –——————————————————————————— */
@@ -297,8 +295,15 @@ body {
 } */
 
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
-
+@media (min-width: 1500px) {
+    .background-gif-img {
+        animation-duration: 8s;
+    }
+}
 @media (max-width: 1044px) {
+    .background-gif-img {
+        animation-duration: 20s;
+    }
     .pgewrapper {
         margin: 0px 70px 70px 90px;
     }
@@ -329,6 +334,9 @@ body {
      */
 }
 @media (max-width: 900px) {
+    .background-gif-img {
+        animation-duration: 25s;
+    }
     .pgewrapper {
         margin: 0px 70px 70px 70px;
     }
@@ -372,6 +380,9 @@ body {
     }
 }
 @media (max-width: 615px) {
+    .background-gif-img {
+        animation-duration: 40s;
+    }
     .pgewrapper {
         margin: 0px 40px 70px 50px;
     }
@@ -403,6 +414,12 @@ body {
     }
 }
 @media (max-width: 575px) {
+    .scrolling-gif {
+        height: 300px;
+    }
+    .background-gif-img {
+        background-size: auto 300px;
+    }
     /* .gif-wrapper {
         width: 100vw;
     } */
@@ -423,6 +440,9 @@ body {
     }
 }
 @media (max-width: 450px) {
+    .background-gif-img {
+        opacity: 70%;
+    }
     .pro-preview img {
         height: 275px !important;
         object-fit: cover;
@@ -441,29 +461,6 @@ body {
     }
     .hover-hello {
         display: flex;
-    }
-    .scrolling-gif {
-        height: auto;
-    }
-    .scrolling-gif div:first-child{
-        display: none;
-        position: absolute;
-    }
-    .scrolling-gif img {
-        opacity: 70%;
-        display: flex;
-        position: relative;
-    }
-    .scrolling-gif div:nth-child(2) {
-        display: flex;
-        position: relative;
-        width: 100%;
-        max-width: 2000;
-        min-width: 0;
-    }
-    .scrolling-gif img {
-        width: 100%;
-        height: auto;
     }
     .hello {
         color: var(--cream);
