@@ -250,6 +250,7 @@ h7 {
 /* —————————————————————————— CHECKBOX RULES —————————————————————————— */
 .magnify-checkbox:hover + .magnifying-glass-wrapper .magnifying-hover-popup {
     opacity: 1;
+    z-index: 5;
 }
 .magnify-checkbox:hover ~ .magnifying-click-popup-wrapper .magnify-close-box {
     background-color: var(--opp-orange);
