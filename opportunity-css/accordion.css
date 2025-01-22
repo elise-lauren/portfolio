@@ -1,0 +1,150 @@
+/* —————————————————————————— ACCORDIAN DROPDOWN —————————————————————————— */
+.description {
+    position: absolute;
+    top: 80px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #cc453625;
+    border-radius: 10px;
+    border: 2px solid var(--opp-orange);
+    width: 200px;
+    z-index: 10;
+  }
+h5 {
+    font: normal 500 13px/1 "transducer", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--opp-orange);
+    margin: 0;
+    padding: 0;
+}
+.accordion {
+    margin: 0;
+}
+.accordion p {
+    margin: 0;
+    padding: 5px;
+    font: normal 400 12px/1.5 "transducer", sans-serif;
+    letter-spacing: .75px;
+    color: var(--opp-orange);
+}
+.map {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+  /*
+  =Accordion 
+  ============================================= */
+  /*
+  =style the accordion */
+.accordion {
+    color: transparent;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+  
+.chv_checkbox:checked ~ .accordion {
+    max-height: 100vh;
+    margin-top: 10px;
+}
+  
+  /*
+  =Checkbox
+  ============================================= */
+.chv_checkbox {
+    position: absolute;
+    top: 0; right: 3px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    z-index: 5;
+    cursor: url(../opportunity-images/cursor-hover.png), auto !important;
+}
+  
+  /*
+  =Chevron + Rotate Wrappers
+  ============================================= */
+  /*
+  =style the chevron wrapper */
+.chv_wrapper {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0; right: 0;
+    padding-right: 5px;
+}
+  
+  /*
+  =style the rotate wrapper */
+.chv_rotate-wrapper {
+    /* background-color: white; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+  
+.chv_checkbox:checked + .chv_wrapper .chv_rotate-wrapper {
+    transform: rotate(180deg);
+}
+  
+  /*
+  =Chevron Lines
+  ============================================= */
+  /*
+  =style the chevron lines */
+.chv_rotate-wrapper::before,
+.chv_rotate-wrapper::after {
+    content: "";
+    background-color: var(--opp-orange);
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+}
+  
+.chv_rotate-wrapper::before {
+    transform: rotate( 45deg) translate(2px, -2px);
+}
+  
+.chv_rotate-wrapper::after {
+    transform: rotate(-45deg) translate(-2px, -2px);
+}
+.endurance .description {
+    border: 2px solid var(--opp-cream);
+}
+.endurance .accordion p {
+    color: var(--opp-cream);
+}
+.endurance .chv_rotate-wrapper::before,
+.endurance .chv_rotate-wrapper::after {
+    background-color: var(--opp-cream);
+}
+.endurance h5 {
+    color: var(--opp-cream);
+}
+.victoria .description {
+    border: 2px solid var(--opp-cream);
+}
+.victoria .accordion p {
+    color: var(--opp-cream);
+}
+.victoria .chv_rotate-wrapper::before,
+.victoria .chv_rotate-wrapper::after {
+    background-color: var(--opp-cream);
+}
+.victoria h5 {
+    color: var(--opp-cream);
+}
+/* —————————————————————————— MEDIA QUERIES —————————————————————————— */
+@media (max-width: 950px) {
+    .description-wrapper {
+        position: absolute;
+        top: 80px; left: 20px;
+    }
+}

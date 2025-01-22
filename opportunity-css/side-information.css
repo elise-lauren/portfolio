@@ -1,0 +1,284 @@
+/* —————————————————————————— CONTAINER SIZE —————————————————————————— */
+.information-container {
+    width: 275px;
+    height: 100%;
+    margin: 0 0 0 auto;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.rotating-mars {
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: var(--opp-purple);
+    border: 2px solid var(--opp-orange);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1 1 25%;
+}
+.rotating-mars img {
+    height: 80%;
+    max-width: 100%;
+    min-width: 0;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: 1s ease;
+    animation: rotating 15s linear infinite;
+}
+.rotating-mars img:hover {
+    animation-play-state: paused;
+}
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* —————————————————————————— BOTTOM CONTAINER —————————————————————————— */
+.information-caption {
+    max-height: 535px;
+    height: 100%;
+    min-height: 0;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid var(--opp-orange);
+    background-color: var(--opp-purple);
+}  
+.mission-scroll {
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* The typing effect */
+  @keyframes typing-small {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret-small {
+    from, to { border-color: transparent }
+    50% { border-color: var(--opp-orange) }
+  }
+.mission {
+    margin: 20px;
+}
+.mission h4:first-child {
+    font: normal 600 14px/1.5 "transducer", sans-serif;
+    letter-spacing: 2px;
+    color: var(--opp-orange);
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+#type-head {
+    color: var(--opp-orange);
+    font: normal 400 12px/1 "transducer", sans-serif;
+    text-transform: uppercase;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 2px solid var(--opp-orange); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 2px; /* Adjust as needed */
+    transition-delay: 2s;
+    animation: 
+      typing-small 4s steps(35, end),
+      blink-caret-small .8s step-end infinite;
+      text-align: left;
+  }
+.mission-line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--opp-orange);
+    border-radius: 5px;
+    margin: 8px 0;
+}
+.mission p {
+    font: normal 400 11px/1.5 "transducer", sans-serif;
+    letter-spacing: .75px;
+    color: var(--opp-orange);
+    margin: 0 0 10px 0;
+}
+.mission-section {
+    border-radius: 10px;
+    border: 2px solid var(--opp-orange);
+    background-color: #cc453625;
+    padding: 10px 10px 2px 10px;
+    margin-top: 20px;
+}
+.across-tutorial {
+    display: flex;
+    flex-direction: row;
+}
+.across-tutorial div {
+    width: 30px;
+    height: 100%;
+    margin-right: 10px;
+}
+.across-tutorial img {
+    width: 30px;
+    height: 30px;    
+    position: relative;
+    margin-top: 9px;
+}
+/* —————————————————————————— HAMBURGER CONTAINER —————————————————————————— */
+.hb-mission-sidebox {
+    display: none;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 100;
+    width: 300px;
+    height: fit-content;
+}
+.hb-mission {
+    position: relative;
+    right: 0; top: 60px;
+    border-radius: 20px;
+    border: 2px solid var(--opp-orange);
+    background-color: var(--opp-purple);
+    padding: 20px;
+    height: 100%;
+    right: -800px;
+    opacity: 0;
+    transition: .65s ease;
+}
+.hb-mission h4:first-child {
+    font: normal 600 14px/1.5 "transducer", sans-serif;
+    letter-spacing: 2px;
+    color: var(--opp-orange);
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+.hb-mission p {
+    font: normal 400 11px/1.5 "transducer", sans-serif;
+    letter-spacing: .75px;
+    color: var(--opp-orange);
+    margin: 0 0 10px 0;
+}
+.hb-mission-head {
+    width: 215px;
+}
+#hb-type-head {
+    color: var(--opp-purple);
+    font: normal 400 12px/1 "transducer", sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden; 
+    margin: 0; 
+  }
+/* —————————————————————————— MAKE SIDEBAR APPEAR —————————————————————————— */
+.hb-open {
+    padding: none;
+    z-index: 100;
+}
+#open {
+    position: absolute;
+    top: 0; right: 0;
+    width: 37px;
+    height: 37px;
+    opacity: 0;
+    cursor: url(../opportunity-images/cursor-hover.png), pointer !important;
+    z-index: 300;
+  }
+.open-nav {
+    position: absolute;
+    top: 0; right: 0;
+    height: 0; width: auto;
+}
+.open_wrapper {
+  border: 2px solid var(--opp-orange);
+  background-color: var(--opp-purple);
+  border-radius: 8px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 0; right: 0;
+  padding: 2px;
+  transition: 0.5s ease;
+}
+.open_rotate-wrapper {
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;  
+}
+.open_icon {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.open_icon p {
+    font: normal 500 40px "transducer-extended", sans-serif;
+    text-align: center;
+    color: var(--opp-orange);
+    justify-self: center;
+    transition: 0.5s ease;
+    margin-bottom: 43px;
+}
+#open:hover + .open-nav {
+    height: auto;
+}
+#open:checked + .open-nav {
+    height: auto;
+}
+#open:checked + .open-nav .hb-mission {
+    opacity: 1;
+    z-index: 10;
+    transform: translateX(-800px);
+}
+#open:checked + .open-nav .open_rotate-wrapper {
+    transform: rotate(360deg);
+}
+#open:checked + .open-nav .hb-mission #hb-type-head {
+    color: var(--opp-orange);
+    font: normal 400 12px/1 "transducer", sans-serif;
+    text-transform: uppercase;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 2px solid var(--opp-orange); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 2px; /* Adjust as needed */
+    width: 225px;
+    animation: 
+      typing-small 3s steps(35, end),
+      blink-caret-small .8s step-end infinite;
+      text-align: left;
+}
+#open:hover + .open-nav .open_wrapper {
+    border: 2px solid var(--opp-purple);
+    background-color: var(--opp-orange);
+    border-radius: 50%;
+}
+#open:hover + .open-nav .open_icon > p {
+    color: var(--opp-purple);
+}
+/* —————————————————————————— MEDIA QUERIES —————————————————————————— */
+@media (max-width: 950px) {
+    .information-container {
+        display: none;
+        position: absolute;
+    }
+    .rotating-mars {
+        display: none;
+        position: absolute;
+    }
+    .hb-mission-sidebox {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20px; right: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .hb-mission-sidebox {
+        position: absolute;
+        top: 15px; right: 15px;
+    }
+}

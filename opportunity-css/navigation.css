@@ -1,0 +1,199 @@
+/* —————————————————————————— CURSOR —————————————————————————— */
+html {
+    cursor: none;
+}
+body {
+    cursor: url(../opportunity-images/cursor-normal.png), auto !important;
+}
+a {
+    cursor: url(../opportunity-images/cursor-hover.png), auto !important;
+}
+li {
+    cursor: url(../opportunity-images/cursor-hover.png), auto !important;
+}
+/* —————————————————————————— POSITIONING —————————————————————————— */
+.navigation {
+    position: absolute;
+    bottom: 30px; left: 30px;
+    z-index: 100;
+}
+/* —————————————————————————— STYLE NAV TABS —————————————————————————— */
+.col-2 ul {
+    padding: 0;
+    margin: 0;
+    transition: .3s ease;
+    transform: scaleZ(0%);
+    transition-delay: 900ms;
+}
+.col-2 li {
+    opacity: 0;
+    margin-bottom: 10px;
+    background-color: var(--opp-purple);
+    border: 2px solid var(--opp-orange);
+    border-radius: 7px;
+    transition: .2s ease;
+    list-style: none;
+    position: relative;
+    top: 40px;
+}
+.col-2 a {
+    text-decoration: none;
+    font: normal 600 10px/1 "transducer", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 200px;
+    color: var(--opp-orange);
+    list-style: none;
+    display: block;
+    width: 100%;
+    padding: 6px 15px 8px 7px;
+    transition: .5s ease;
+}
+.col-2 li:last-child {
+    margin-bottom: 60px;
+}
+.col-2 li:hover {
+    background-color: var(--opp-orange);
+    border: 2px solid var(--opp-purple);
+    transform: translate(10px);
+}
+.col-2 li:hover a {
+    color: var(--opp-purple);
+}
+/* —————————————————————————— STYLE ARROW WRAPPER —————————————————————————— */
+.col-1 {
+    padding: none;
+    z-index: 100;
+}
+#arrow {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 37px;
+    height: 37px;
+    opacity: 0;
+    cursor: url(../opportunity-images/cursor-hover.png), pointer !important;
+    z-index: 105;
+  }
+.arrow_wrapper {
+  background-color: var(--opp-orange);
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  bottom: 0; left: 0;
+  padding: 2px;
+  transition: 0.5s ease;
+}
+.arrow_rotate-wrapper {
+  background-color: var(--opp-purple);
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+#arrow:hover + div .arrow_wrapper {
+    background-color: var(--opp-purple);
+}
+#arrow:hover + div .arrow_rotate-wrapper {
+    background-color: var(--opp-orange);
+}
+#arrow:hover + div div .arrow_lines,
+#arrow:hover + div div .arrow_lines::before,
+#arrow:hover + div div .arrow_lines::after  {
+    background-color: var(--opp-purple);
+}
+#arrow:checked + .arrow-nav .col-2 {
+    transform: scale(100%);
+}
+#arrow:checked + .arrow_wrapper .arrow_rotate-wrapper {
+  transform: rotate(180deg);
+}
+#arrow:checked + div .arrow_rotate-wrapper{
+    transform: rotate(135deg);
+}
+#arrow:checked:hover ~ div .arrow_rotate-wrapper {
+    transform: rotate(315deg);
+}
+/* —————————————————————————— STYLE ARROW LINES —————————————————————————— */
+.arrow_lines,
+.arrow_lines::before,
+.arrow_lines::after {
+    background-color: var(--opp-orange);
+    height: 2px;
+    width: 23px;
+    margin: auto;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+.arrow_lines {
+    position: relative;
+}
+.arrow_lines::before,
+.arrow_lines::after {
+    content: "";
+    position: absolute;
+}
+.arrow_lines::before {top: -6px;}
+.arrow_lines::after {top: 6px;}
+#arrow:checked ~ div .arrow_lines::before,
+#arrow:checked ~ div .arrow_lines::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+#arrow:checked ~ div .arrow_lines::after {
+    opacity: 0;
+}
+/* —————————————————————————— MAKE NAV APPEAR —————————————————————————— */
+#arrow:checked + div .col-2 ul li {
+    display: block;
+    opacity: 1;
+    z-index: 10;
+    top: 0px;
+}
+#arrow:checked + div .col-2 ul {
+    transform: scaleZ(100%);
+    transition-delay: 0ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(9) {
+    transition-delay: 100ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(8) {
+    transition-delay: 150ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(7) {
+    transition-delay: 200ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(6) {
+    transition-delay: 250ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(5) {
+    transition-delay: 300ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(4) {
+    transition-delay: 350ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(3) {
+    transition-delay: 400ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(2) {
+    transition-delay: 450ms;
+}
+#arrow:hover + div .col-2 ul li:nth-child(1) {
+    transition-delay: 500ms;
+}
+/* —————————————————————————— MEDIA QUERIES —————————————————————————— */
+/* TABLET */
+@media (max-width: 950px) {
+    .navigation {
+        position: absolute;
+        bottom: 20px; left: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .navigation {
+        position: absolute;
+        bottom: 15px; left: 15px;
+    }
+}

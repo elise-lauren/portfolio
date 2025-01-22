@@ -1,0 +1,272 @@
+.magnifying-div-wrapper {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: fit-content;
+    /* background-color: aquamarine; */
+}
+.magnifying-glass-wrapper {
+    position: absolute;
+    /* left: 50%; */
+    top: 0;
+    width: auto;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.magnifying-glass-wrapper .magnifying-glass {
+    height: 30px;
+    width: 30px;
+}
+.magnifying-glass-wrapper svg {
+    width: 100%; height: 100%;
+}
+.magnifying-glass-wrapper path {
+    fill: none;
+    stroke: #f3d7be;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+.magnifying-hover-popup {
+    opacity: 0;
+    position: relative;
+    top: 0; right: 0;
+    background-color: var(--opp-orange);
+    border-radius: 20px;
+    border: 2px solid var(--opp-cream);
+    padding: 7px 12px;
+    height: fit-content;
+    margin: 0 10px;
+    transition: .2s ease;
+}
+h6 {
+    font: normal 400 12px/1 "transducer-extended", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--opp-cream);
+    text-wrap: nowrap;
+    margin: 0;
+}
+.magnifying-click-popup-wrapper {
+    position: relative;
+    top: 0; left: 0;
+    width: 250px
+}
+.magnifying-click-popup {
+    position: relative;
+    top: 0; bottom: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--opp-purple);
+    border: 2px solid var(--opp-orange);
+    border-radius: 20px;
+    width: 250px;
+    padding: 15px;
+    transition: .2s ease;
+    transform: scale(80%) translateX(-100px) translateY(-150px);
+    transform-origin: center;
+}
+h7 {
+    font: italic 400 14px/1 "transducer", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--opp-orange);
+    margin: 0 0 5px 0;
+}
+.magnifying-click-popup p {
+    font: normal 300 12px/1.25 "transducer", sans-serif;
+    letter-spacing: .5px;
+    color: var(--opp-orange);
+    margin: 0;
+}
+.magnifying-click-popup img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.magnify-checkbox {
+    height: 30px; width: 30px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-3px) translateY(-3px);
+    display: block;
+    z-index: 30;
+    opacity: 0;
+    cursor: url(../opportunity-images/cursor-hover.png), auto !important;
+}
+.magnify-close-box {
+    width: 35px; height: 35px;
+    background-color: var(--opp-purple);
+    border-radius: 10px;
+    border: 2px solid var(--opp-orange);
+    display: block;
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: 21;
+    transition: .5s ease;
+}
+.magnify-close-box-lines {
+    height: 150%;
+    width: 150%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    /* transform: rotate(45deg); */
+    transform: translateX(-8.75px) translateY(3.5px) rotate(45deg);
+}
+.magnify-close-box-lines::before,
+.magnify-close-box-lines::after {
+    content: "";
+    background-color: var(--opp-orange);
+    width: 50px;
+    height: 2px;
+    border-radius: 2px;
+}
+.magnify-close-box-lines::before {
+    transform: rotate(0deg) translateX(4px) translateY(-8.75px);
+}
+  
+.magnify-close-box-lines::after {
+    transform: rotate(90deg) translateY(22.5px) translateX(-8.75px);
+}
+/* —————————————————————————— ROVER POSITIONING —————————————————————————— */
+.rover > div:nth-of-type(3) {
+    top: 25%;
+}
+.camera-positioning {
+    left: 40%;
+}
+.rover > div:nth-of-type(4) {
+    top: 27%;
+}
+.spectrometer-positioning {
+    left: 49%;
+}
+.rover > div:nth-of-type(5) {
+    top: 50%;
+}
+.magnets-positioning {
+    left: 43%;
+}
+.rover > div:nth-of-type(6) {
+    top: 60%;
+}
+.arm-positioning {
+    left: 33%;
+}
+/* —————————————————————————— EAGLE POSITIONING —————————————————————————— */
+.eagle > div:nth-child(4) {
+    top: 50%;
+}
+.entry01-positioning {
+    left: 50%;
+}
+.eagle > div:nth-child(5) {
+    top: 60%;
+}
+.entry02-positioning {
+    left: 30%;
+}
+.eagle > div:nth-child(6) {
+    top: 55%;
+}
+.entry03-positioning {
+    left: 65%;
+}
+/* —————————————————————————— ENDURANCE POSITIONING —————————————————————————— */
+.endurance > div:nth-child(4) {
+    top: 60%;
+}
+.entry04-positioning {
+    left: 20%;
+}
+.endurance > div:nth-child(5) {
+    top: 55%;
+}
+.entry05-positioning {
+    left: 60%;
+}
+.endurance > div:nth-child(6) {
+    top: 75%;
+}
+.entry06-positioning {
+    left: 45%;
+}
+.endurance > div:nth-child(7) {
+    top: 65%;
+}
+.entry07-positioning {
+    left: 75%;
+}
+/* —————————————————————————— VICTORIA POSITIONING —————————————————————————— */
+.victoria > div:nth-child(4) {
+    top: 25%;
+}
+.entry08-positioning {
+    left: 35%;
+}
+.victoria > div:nth-child(5) {
+    top: 40%;
+}
+.entry09-positioning {
+    left: 65%;
+}
+.victoria > div:nth-child(6) {
+    top: 70%;
+}
+.entry10-positioning {
+    left: 50%;
+}
+/* —————————————————————————— ENDEAVOUR POSITIONING —————————————————————————— */
+.endeavour > div:nth-child(4) {
+    top: 55%;
+}
+.entry11-positioning {
+    left: 25%;
+}
+.endeavour > div:nth-child(5) {
+    top: 30%;
+}
+.entry12-positioning {
+    left: 70%;
+}
+.endeavour > div:nth-child(6) {
+    top: 60%;
+}
+.entry13-positioning {
+    left: 50%;
+}
+.endeavour > div:nth-child(7) {
+    top: 80%;
+}
+.entry14-positioning {
+    left: 65%;
+}
+/* —————————————————————————— CHECKBOX RULES —————————————————————————— */
+.magnify-checkbox:hover + .magnifying-glass-wrapper .magnifying-hover-popup {
+    opacity: 1;
+}
+.magnify-checkbox:hover ~ .magnifying-click-popup-wrapper .magnify-close-box {
+    background-color: var(--opp-orange);
+    border: 2px solid var(--opp-purple);
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+.magnify-checkbox:checked ~ .magnifying-click-popup-wrapper .magnifying-click-popup {
+    opacity: 1;
+    transform: scale(100%) translateX(-100px) translateY(-150px);
+    z-index: 20;
+}
+.magnify-checkbox:hover ~ .magnifying-click-popup-wrapper .magnify-close-box-lines::before,
+.magnify-checkbox:hover ~ .magnifying-click-popup-wrapper .magnify-close-box-lines::after {
+    background-color: var(--opp-purple);
+}
+.magnify-checkbox:checked {
+    width: 35px; height: 35px;
+    transform: translateX(-80px) translateY(-130px);
+}

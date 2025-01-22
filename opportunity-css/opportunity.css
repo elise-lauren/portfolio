@@ -1,0 +1,591 @@
+@charset "UTF-8";
+:root {
+    -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    --opp-orange: #CC4536;
+    --opp-purple: #190F1F;
+    --opp-cream: #f3d7be;
+}
+html { scroll-behavior: smooth; }
+/* —————————————————————————— TYPEWRITER —————————————————————————— */
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--opp-orange) }
+  }
+/* —————————————————————————— BODY ELEMENT & UNIVERSAL STYLING —————————————————————————— */
+body {
+    position: relative;
+    background-color: var(--opp-purple);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    vertical-align: middle;
+    background-image: url(../opportunity-images/background.jpg);
+}
+h2 { /* section heading */
+    font: normal 600 22px/1 "transducer-extended", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+}
+h3 { /* date heading */
+    font: normal 400 18px/1 "transducer", sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+a {
+    scroll-behavior: smooth;
+}
+.section-head-row {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    background-color: #cc453625;
+    border-radius: 10px;
+    border: 2px solid var(--opp-orange)
+}
+.section-head-row .head-line {
+    height: 2px;
+    background-color: var(--opp-orange);
+    width: 100%;
+    margin: 0 15px;
+}
+.section-head-column {
+    margin-top: 10px;
+    position: absolute;
+    display: none;
+    background-color: #cc453625;
+    border-radius: 10px;
+    border: 2px solid var(--opp-orange)
+}
+.date {
+    font: normal 400 20px/1 "transducer-extended", sans-serif;
+    letter-spacing: 1.75px;
+    text-wrap: nowrap;
+    color: var(--opp-orange);
+    text-align: center;
+}
+.event {
+    font: normal 400 14px/1.35 "transducer", sans-serif;
+    letter-spacing: .5px;
+    color: var(--opp-orange);
+    text-align: center;
+}
+.section-caption p {
+    color: var(--opp-orange);
+    font: normal 400 12px/1.5 "transducer", sans-serif;
+    letter-spacing: .25px;
+    margin: 0;
+}
+/* —————————————————————————— SCROLL CONTAINER —————————————————————————— */
+.center-scroll {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+.container {
+    max-width: 1400px;
+    width: 90vw;
+    min-width: 0;
+    height: 95vh;
+    max-height: 880px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.scroll-container {
+    background-color: var(--opp-purple);
+    width: 100%;
+    height: 99%;
+    min-width: 0;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 2px solid var(--opp-orange);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    transition: .3s ease;
+}
+.section-settings {
+    padding: 20px 30px;
+    position: relative;
+    height: 105%;
+    width: auto;
+    min-height: fit-content;
+}
+/* —————————————————————————— INTRO —————————————————————————— */
+.intro {
+    position: relative;
+    height: 100%;
+    min-height: fit-content;
+}
+.intro img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+.intro > div {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    top: 12vh;
+} 
+.typewriter-intro {
+    max-width: fit-content;
+    margin: 60px auto 40px auto;
+}
+.typewriter-intro h1 {
+    color: var(--opp-orange);
+    font: normal 600 60px/1 "transducer-extended", sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 4px solid var(--opp-orange); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 2px; /* Adjust as needed */
+    animation: 
+      typing 3s steps(25, end),
+      blink-caret .5s step-end infinite;
+      text-align: center;
+  }
+.intro p {
+    text-align: center;
+    font: normal 400 14px/1.25 "transducer", sans-serif;
+    letter-spacing: .5px;
+    color: var(--opp-cream);
+    margin: 0 auto;
+    max-width: 590px;
+}
+.intro svg {
+    margin: 100px auto 0 auto;
+    height: 175px;
+    display: block;
+    position: absolute;
+    bottom: 60px; left: 0; right: 0;
+}
+.intro svg {
+    transition: 1s ease;
+    animation: up-and-down 700ms ease infinite alternate;
+}
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+@media (max-width: 1265px) {
+    .typewriter-intro h1 {
+        font-size: 40px;
+    }
+    .intro p {
+        max-width: 510px;
+    }
+  }
+/* —————————————————————————— ROVER —————————————————————————— */
+.rover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.rover h2 {
+    margin: 0;
+    color: var(--opp-orange);
+}
+.rover h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-orange);
+}
+.rover img {
+    border-radius: 50%;
+    width: 80%;
+    object-fit: cover;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* —————————————————————————— ARRIVAL —————————————————————————— */
+.arrival {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.arrival h2 {
+    margin: 0;
+    color: var(--opp-orange);
+}
+.arrival h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-orange);
+}
+.arrival img{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    max-height: 75%;
+    object-fit: cover;
+    height: auto;
+    margin-top: auto;
+    object-position: top;
+}
+.arrival-dates {
+    display: flex;
+    flex-direction: row;
+    margin: 65px auto 0 auto;
+}
+.arrival-dates .date {
+    margin: 0;
+}
+.arrival-dates .important-date:first-child {
+    margin-right: 80px;
+}
+/* —————————————————————————— EAGLE —————————————————————————— */
+.eagle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../opportunity-images/eagle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.eagle h2 {
+    margin: 0;
+    color: var(--opp-orange);
+}
+.eagle h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-orange);
+}
+/* —————————————————————————— ENDURANCE —————————————————————————— */
+.endurance {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../opportunity-images/endurance.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.endurance h2 {
+    margin: 0;
+    color: var(--opp-cream);
+}
+.endurance h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-cream);
+}
+.endurance .head-line {
+    background-color: var(--opp-cream);
+}
+.endurance .section-head-row {
+    border: 2px solid var(--opp-cream)
+}
+/* —————————————————————————— ROADBLOCK —————————————————————————— */
+.roadblock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+.roadblock h2 {
+    margin: 0;
+    color: var(--opp-orange);
+}
+.roadblock h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-orange);
+}
+.roadblock-content {
+    height: 100%;
+    align-content: center;
+    transform: translateY(-10%);
+}
+.ohno {
+    max-width: 500px;
+    width: 100%;
+    min-width: 0px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(../opportunity-images/oh-no.jpg);
+    background-repeat: repeat-x;
+    background-size: auto 50px;
+    margin: 0 auto;
+    animation-name: scroll-ohno;
+    transition: .3s ease;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    }
+@keyframes scroll-ohno {
+from {background-position: 0 0;}
+to {background-position: 211px 0;}
+}
+.roadblock-content div:last-child {
+    max-width: 500px;
+    width: 100%;
+    min-width: 0px;
+    border-radius: 10px;
+    border: 2px solid var(--opp-orange);
+    background-color: #cc45360c;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px; */
+    margin: 20px auto 0;
+}
+.roadblock-content p {
+    margin: 15px;
+    font: normal 400 13px/1.35 "transducer", sans-serif;
+    letter-spacing: .5px;
+    color: var(--opp-orange);
+}
+/* —————————————————————————— VICTORIA —————————————————————————— */
+.victoria {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../opportunity-images/victoria.jpg);
+}
+.victoria h2 {
+    margin: 0;
+    color: var(--opp-cream);
+}
+.victoria h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-cream);
+}
+.victoria .head-line {
+    background-color: var(--opp-cream);
+}
+.victoria .section-head-row {
+    border: 2px solid var(--opp-cream)
+}
+/* —————————————————————————— ENDEAVOUR —————————————————————————— */
+.endeavour {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../opportunity-images/endeavour.jpg);
+}
+.endeavour h2 {
+    margin: 0;
+    color: var(--opp-orange);
+}
+.endeavour h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-orange);
+}
+.endeavour .head-line {
+    background-color: var(--opp-orange);
+}
+/* —————————————————————————— END —————————————————————————— */
+.end {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top;
+}
+.end h2 {
+    margin: 0;
+    color: var(--opp-orange);
+}
+.end h3 {
+    position: relative;
+    margin: 0;
+    color: var(--opp-orange);
+}
+.end .head-line {
+    background-color: var(--opp-orange);
+}
+.end-content {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+.end-content img {
+    max-width: 600px;
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+}
+.credits {
+    position: relative;
+    bottom: 0px; left: 0;
+    left: 0; right: 0;
+    justify-items: center;
+    justify-content: center;
+}
+.credits p {
+    margin-top: 10px;
+    color: var(--opp-orange);
+    font: normal 400 12px/1 "transducer", sans-serif;
+    letter-spacing: .5px;
+}
+.credits a {
+    text-decoration: none;
+    color: var(--opp-orange);
+}
+
+/* —————————————————————————— MEDIA QUERIES —————————————————————————— */
+/* ------- TABLET ------- */
+@media (max-width: 950px) {
+    .container {
+        max-height: none;
+    }
+    .section-settings {
+        padding: 20px 20px;
+        min-height: 105%;
+    }
+    .section-head {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 15px 20px 15px;
+        align-items: center;
+    }
+    /* ------- rover ------- */
+    .rover img {
+        width: 100%;
+    }
+}
+/* ------- BETWEEN TABLET & MOBILE ------- */
+@media (max-width: 700px) {
+    .section-settings {
+        padding: 10px 20px;
+        min-height: 105%;
+    }
+    /* ------- intro ------- */
+    .typewriter-intro h1 {
+        font: normal 600 30px/1 "transducer-extended", sans-serif;
+    }
+    .intro p {
+        font: normal 400 12px/1.25 "transducer", sans-serif;
+        max-width: 350px;
+    }
+    .section-head-row {
+        display: none;
+        position: absolute;
+    }
+    .arrival-dates {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto 0 auto;
+    }
+    .important-date {
+        display: flex;
+        flex-direction: column;
+    }
+    .important-date:first-of-type {
+        margin-top: 50px;
+    }
+    .arrival-dates .important-date:first-of-type {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .section-head-column {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 8px 0 10px 0;
+    }
+    .section-head-column > div:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .section-head-column h3 {
+        text-align: center;
+        margin: 0;
+        font-size: 14px;
+    }
+    .section-head-column .head-line {
+        height: 2px;
+        background-color: var(--opp-orange);
+        width: 100%;
+        margin: 0 10px;
+    }
+    .endurance .section-head-column,
+    .victoria .section-head-column {
+        border: 2px solid var(--opp-cream);
+    }
+    .endurance .head-line,
+    .victoria .head-line {
+        background-color: var(--opp-cream);
+    }
+    .section-caption {
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section-caption p {
+        font: normal 400 10px/1.5 "transducer", sans-serif;
+
+    }
+}
+/* ------- MOBILE ------- */
+@media (max-width: 500px) {
+    h2 {
+        font: normal 600 22px/1 "transducer-extended", sans-serif;
+    }
+    /* ------- intro ------- */
+    .typewriter-intro {
+        max-width: fit-content;
+        margin: 20px auto 0 auto;
+    }
+    .typewriter-intro h1 {
+        font: normal 600 25px/1 "transducer-extended", sans-serif;
+        letter-spacing: 1.5px;
+        border-right: 3px solid var(--opp-orange);
+        margin-bottom: 10px;
+    }
+    .intro p {
+        font: normal 400 10px/1.25 "transducer", sans-serif;
+        max-width: 300px;
+    }
+    .roadblock-content {
+        height: 100%;
+        align-content: center;
+        transform: translateY(0%);
+    }
+}
+
+input:checked {
+    transform: translateZ(10%) !important;
+}
