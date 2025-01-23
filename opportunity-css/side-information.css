@@ -57,6 +57,9 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+.mission-scroll::-webkit-scrollbar {
+    display: none;
+}
 /* The typing effect */
   @keyframes typing-small {
     from { width: 0 }

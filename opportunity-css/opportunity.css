@@ -124,6 +124,10 @@ a {
     scroll-behavior: smooth;
     transition: .3s ease;
 }
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
 .section-settings {
     padding: 20px 30px;
     position: relative;
