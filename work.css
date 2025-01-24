@@ -68,7 +68,28 @@ body {
     animation: .5s fadeInDown;
 }
 
-
+/* –——————————————————————————— CURSORS –——————————————————————————— */
+.pro-preview img:hover {
+    cursor: pointer;
+}
+.opportunity-cursor {
+    cursor: url(cursors/opportunity-cursor.png), auto !important;
+}
+.field-cursor {
+    cursor: url(cursors/field-cursor.png), auto !important;
+}
+.moi-cursor {
+    cursor: url(cursors/moi-cursor.png), auto !important;
+}
+.baybeach-cursor {
+    cursor: url(cursors/baybeach-cursor.png), auto !important;
+}
+.matchbooks-cursor {
+    cursor: url(cursors/matchbooks-cursor.png), auto !important;
+}
+.bitter-cursor {
+    cursor: url(cursors/bitter-cursor.png), auto !important;
+}
 /* –——————————————————————————— SLIDER –——————————————————————————— */
 
 /* .gif-wrapper {
@@ -252,7 +273,7 @@ body {
 .pro-preview img:hover {
     transition: .3s ease;
     transform: scale(103%);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .pro-preview:hover {
@@ -300,7 +321,7 @@ body {
         animation-duration: 8s;
     }
 }
-@media (max-width: 1044px) {
+@media (max-width: 1150px) {
     .background-gif-img {
         animation-duration: 20s;
     }
@@ -317,7 +338,7 @@ body {
 
     }
     .pro-preview h1 {
-        font-size: 40px;
+        font-size: 36px;
         color: var(--dark);
         transition: 0.2s ease;
     }
@@ -332,6 +353,9 @@ body {
         top: 675px; left: 30.5px;
     }
      */
+     .pro-des {
+        width: 350px;
+     }
 }
 @media (max-width: 900px) {
     .background-gif-img {
@@ -366,7 +390,7 @@ body {
     .work-previews h1 {
         font-size: 38px;
         margin-bottom: 0;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .pro-des p {
         margin-bottom: 40px;

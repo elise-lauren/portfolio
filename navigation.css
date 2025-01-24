@@ -281,6 +281,9 @@
   color: var(--cream);
   background-color: var(--dark);
 }
+#opportunity:hover {
+  color: var(--orange);
+}
 #fieldmuseum:hover {
   color: var(--purple);
 }
