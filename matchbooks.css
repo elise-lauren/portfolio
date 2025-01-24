@@ -55,9 +55,6 @@ h2 {
     position: relative;
     margin-bottom: 80px;
 }
-.intro p:last-child {
-    font: 300 14px/1.25 Signika, sans-serif;
-}
 /* –——————————————————————————— DETAIL IMAGES –——————————————————————————— */
 .media-imgs {
     display: none;
