@@ -69,8 +69,10 @@ body {
 }
 
 /* –——————————————————————————— CURSORS –——————————————————————————— */
-.pro-preview img:hover {
+.pro-preview > a img:hover {
     cursor: pointer;
+    transition: .3s ease;
+    transform: scale(103%);
 }
 .opportunity-cursor {
     cursor: url(cursors/opportunity-cursor.png), auto !important;
@@ -185,7 +187,7 @@ body {
     transition: 0.2s ease;
 }
 
-.pro-preview img {
+.pro-preview > a img {
     max-width: 900px;
     min-width: 0;
     height: 450px;
@@ -215,8 +217,7 @@ body {
     font: 700 60px/1.25 "kit-rounded", sans-serif;
     color: var(--dark);
     transition: 0.2s ease;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 }
 
 .pro-preview p {
@@ -226,7 +227,7 @@ body {
     letter-spacing: 1;
 }
 
-.pro-des div {
+.pro-des > div:last-child {
     color: var(--dark);
     /* font: 300 16px/.75 Tuppence, sans-serif; */
     font: 300 16px/.75 "kit-rounded", sans-serif;
@@ -240,7 +241,7 @@ body {
     width: 100%;
 }
 
-.pro-des div div:nth-child(2) {
+.pro-des > div:last-child div:nth-child(1) {
     justify-self: left;
     /* background-color: var(--red); */
     width: auto;
@@ -249,18 +250,18 @@ body {
     border: 1.3px solid var(--dark);
     border-radius: 8px;
 }
-
+/* 
 .division {
     width: 100%;
     height: 1.3px;
-    /* background-color: var(--dark); */
+    background-color: var(--dark);
     display: flex;
     flex: 1 1 auto;
     width: auto;
     margin-bottom: 2px;
-}
+} */
 
-.pro-des div div:last-child {
+.pro-des > div:last-child div:last-child {
     position: absolute;
     right: 0;
     width: auto;
@@ -268,12 +269,6 @@ body {
     margin: 0;
     border: 1.3px solid var(--dark);
     border-radius: 8px;
-}
-
-.pro-preview img:hover {
-    transition: .3s ease;
-    transform: scale(103%);
-    /* cursor: pointer; */
 }
 
 .pro-preview:hover {
@@ -293,28 +288,19 @@ body {
     object-position: right;
 }
 
-/* –——————————————————————————— SCROLL ENTRIES –——————————————————————————— */
-
-/* @keyframes animate-in-and-out {
-    entry 0%  {
-      opacity: 0; transform: translateY(100%);
-    }
-    entry 100%  {
-      opacity: 1; transform: translateY(0);
-    }
-    exit 0% {
-      opacity: 1; transform: translateY(0);
-    }
-    exit 100% {
-      opacity: 0; transform: translateY(-100%);
-    }
-  }
-  
-.pro-preview {
-    animation: 1ms linear animate-in-and-out;
-    animation-timeline: view();
-} */
-
+/* –——————————————————————————— PROGRAM ICONS –——————————————————————————— */
+.program-icon-list {
+    display: flex;
+    flex-direction: row;
+    /* height: 50px; */
+    margin: 0 0 10px 0;
+}
+.program-icon {
+    height: 35px;
+    width: 35px;
+    margin: 5px 2px;
+    object-fit: contain;
+}
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (min-width: 1500px) {
     .background-gif-img {
@@ -342,7 +328,7 @@ body {
         color: var(--dark);
         transition: 0.2s ease;
     }
-    .pro-des div div {
+    .pro-des > div:last-child div {
         font-size: 13px;
         padding: 12px 12px 4px 12px !important;
     }
@@ -358,6 +344,12 @@ body {
      }
 }
 @media (max-width: 900px) {
+    .program-icon {
+        height: 25px;
+        width: 25px;
+        margin: 5px 2px;
+        object-fit: contain;
+    }
     .background-gif-img {
         animation-duration: 25s;
     }
@@ -382,7 +374,7 @@ body {
         margin: 0;
         width: 100%;
     }
-    .pro-preview img {
+    .pro-preview > a img {
         max-width: 100%;
         margin: 0;
         height: 400px;
@@ -392,10 +384,10 @@ body {
         margin-bottom: 0;
         margin-top: 20px;
     }
-    .pro-des p {
-        margin-bottom: 40px;
+    .pro-preview p {
+         margin: 0 0 40px 0;
     }
-    .pro-des div {
+    .pro-des > div:last-child {
         /* position: absolute;
         display: none; */
         /* position: absolute; */
@@ -429,7 +421,7 @@ body {
     .pro-preview p {
         font-size: 15px;
     }
-    .pro-preview img {
+    .pro-preview > a img {
         flex-basis: auto;
         min-width: 0;
     }
@@ -467,7 +459,7 @@ body {
     .background-gif-img {
         opacity: 70%;
     }
-    .pro-preview img {
+    .pro-preview > a img {
         height: 275px !important;
         object-fit: cover;
     }
