@@ -67,7 +67,6 @@ body {
 .scrolling-gif {
     animation: .5s fadeInDown;
 }
-
 /* –——————————————————————————— CURSORS –——————————————————————————— */
 .pro-preview > a img:hover {
     cursor: pointer;
@@ -287,7 +286,13 @@ body {
 #right-align {
     object-position: right;
 }
-
+.pro-preview p span {
+    color: var(--red);
+    transition: .1s ease;
+}
+.pro-preview p span:hover {
+    font-weight: 600;
+}
 /* –——————————————————————————— PROGRAM ICONS –——————————————————————————— */
 .program-icon-list {
     display: flex;
