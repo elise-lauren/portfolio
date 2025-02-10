@@ -153,8 +153,8 @@ body {
     background-repeat: repeat-x;
     background-size: auto 415px;
     animation-name: scroll-images;
-    transition: .3s ease;
-    animation-duration: 15s;
+    transition: .3s linear;
+    animation-duration: 20s !important;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
@@ -309,12 +309,12 @@ body {
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (min-width: 1500px) {
     .background-gif-img {
-        animation-duration: 8s;
+        animation-duration: 10s;
     }
 }
 @media (max-width: 1150px) {
     .background-gif-img {
-        animation-duration: 20s;
+        animation-duration: 23s;
     }
     .pgewrapper {
         margin: 0px 70px 70px 90px;
@@ -356,7 +356,7 @@ body {
         object-fit: contain;
     }
     .background-gif-img {
-        animation-duration: 25s;
+        animation-duration: 30s;
     }
     .pgewrapper {
         margin: 0px 70px 70px 70px;
@@ -402,7 +402,7 @@ body {
 }
 @media (max-width: 615px) {
     .background-gif-img {
-        animation-duration: 40s;
+        animation-duration: 50s;
     }
     .pgewrapper {
         margin: 0px 40px 70px 50px;
