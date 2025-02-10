@@ -135,6 +135,7 @@ body {
     height: 100%;
     border-radius: 10px;
     margin: 0;
+    object-fit: cover;
 }
 
 .prototypes div figure:first-child {
