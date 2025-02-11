@@ -73,7 +73,12 @@ p {
     animation: .5s fadeInDown;
     height: 550px;
 }
-
+.color-palette img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
 @keyframes fadeInDown {
     0% {
       transform: translateY(-100%);
