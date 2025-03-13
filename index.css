@@ -331,12 +331,24 @@ body {
     margin-bottom: 5px;
 }
 /* –——————————————————————————— PROJECT HOVER –——————————————————————————— */
+.project-type {
+    color: transparent !important;
+    position: absolute;
+    left: 10px; top: 12px;
+    font: 500 12px/1 "kit-rounded", sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .4s ease;
+}
 .pro-preview:hover img {
     cursor: pointer;
     transform: scale(105%);
 }
 .pro-preview:hover figure {
     height: 417px;
+}
+.pro-preview:hover .project-type {
+    color: var(--cream) !important;
 }
 .standout:hover figure {
     height: 537px;
