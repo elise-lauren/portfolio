@@ -263,11 +263,11 @@
 }
 #about-me:hover {
   color: var(--cream);
-  background-color: var(--purple);
+  background-color: var(--red);
 }
 #work:hover {
   color: var(--cream);
-  background-color: var(--red);  
+  background-color: var(--purple);  
 }
 #archive:hover {
   color: var(--cream);

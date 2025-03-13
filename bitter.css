@@ -30,10 +30,6 @@ body {
     left: -109.5px; top: 12px;
     transition: 0.4s ease;
 }
-.pgewrapper {
-    margin: 10px 150px 90px 150px;
-    transition: 0.4s ease;
-}
 .description {
     position: relative;
     flex-direction: column !important;
@@ -69,7 +65,7 @@ body {
     margin: 0 auto;
 }
 .mockup img {
-    margin-bottom: 30px;
+    margin-bottom: 14px;
 }
 
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
@@ -79,36 +75,10 @@ body {
         display: none;
         position: absolute;
     }
-    .pgewrapper {
-        margin: 10px 70px 90px 70px;
-    }
-    .line {
-        left: 30px; top: 0px;
-    }
-    .star {
-        left: -49.5px; top: 12px;
-    }
-    .small-star {
-        left: -46.5px;
-    }
     .mockup {
         width: 100%;
     }
     .brand {
         width: 100%;
-    }
-}
-@media (max-width: 615px) {
-    .pgewrapper {
-        margin: 10px 50px 90px 50px;
-    }
-    .line {
-        left: 23px; top: 0px;
-    }
-    .star {
-        left: -36.5px; top: 12px;
-    }
-    .small-star {
-        left: -33.5px;
     }
 }

@@ -17,22 +17,6 @@
 body {
     position: relative;
 }
-.line {
-    position: absolute;
-    left: 50px; top: 0px;
-    height: 100%;
-    background-color: var(--dark);
-    transition: 0.4s ease;
-}
-.star {
-    position: absolute;
-    left: -109.5px; top: 12px;
-    transition: 0.4s ease;
-}
-.pgewrapper {
-    margin: 10px 100px 90px 150px;
-    transition: 0.4s ease;
-}
 h2 {
     margin-bottom: 40px;
 }
@@ -40,13 +24,6 @@ h2 {
     position: relative;
     flex-direction: column !important;
 }
-.small-star {
-    position: absolute;
-    left: -106.5px;
-    top: -3px;
-    transition: 0.4s ease;
-}
-
 /* –——————————————————————————— INTRO –——————————————————————————— */
 .images img {
     object-position: 90%;
@@ -67,7 +44,10 @@ h2 {
 .details img {
     border-radius: 10px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
+}
+.details > img:first-child {
+    margin-bottom: 7px !important;   
 }
 .details div {
     display: flex;
@@ -82,7 +62,7 @@ h2 {
     min-width: 0;
 }
 .details div img:first-child {
-    margin-right: 30px;
+    margin-right: 14px;
 }
 
 /* –——————————————————————————— PROCESS & PLANNING –——————————————————————————— */
@@ -99,20 +79,8 @@ h2 {
 }
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (max-width: 1144px) {
-    .pgewrapper {
-        margin: 10px 70px 90px 70px;
-    }
-    .line {
-        left: 30px; top: 0px;
-    }
-    .star {
-        left: -49.5px;
-    }
-    .small-star {
-        left: -46.5px;
-    }
     .details div img:first-child {
-        margin-right: 30px;
+        margin-right: 14px;
     }
     .details img {
         width: 100%;
@@ -124,27 +92,15 @@ h2 {
         width: 100%;
     }
 }
-@media (max-width: 615px) {
-    .pgewrapper {
-        margin: 10px 50px 90px 50px;
-    }
-    .line {
-        left: 23px; top: 0px;
-    }
-    .star {
-        left: -36.5px;
-    }
-    .small-star {
-        left: -33.5px;
-    }
+/* @media (max-width: 615px) {
     .details div img:first-child {
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .images {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .details img {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
-}
+} */

@@ -7,14 +7,14 @@
   * { text-decoration: none; color: inherit;} 
 
 #about-me {
-    color: var(--purple);
+    color: var(--red);
 }
 .contact-head a:hover {
     cursor: pointer;
-    color: var(--purple);
+    color: var(--red);
   }
 .pgewrapper {
-    margin: 50px 150px 70px 150px;
+    margin: 50px 100px 70px 100px;
     /* display: flex;
     flex: 0 1 auto; */
     transition: 0.4s ease-in-out;
@@ -450,7 +450,7 @@ body {
 
 @media (max-width: 1040px) {
     .pgewrapper {
-        margin: 50px 50px 70px 70px;
+        margin: 50px 50px 70px 50px;
     }
     #star1 {
         margin-top: 417px;
@@ -536,7 +536,7 @@ body {
         position: absolute;
     }
     .pgewrapper {
-        margin: 50px 30px 70px 50px;
+        margin: 50px 30px 70px 30px;
     }
     .line {
         left: 23px; top: 0px;

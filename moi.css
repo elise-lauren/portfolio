@@ -31,10 +31,6 @@ body {
     left: -109.5px;
     transition: 0.4s ease;
 }
-.pgewrapper {
-    margin: 10px 100px 90px 150px;
-    transition: 0.4s ease;
-}
 .description {
     position: relative;
     flex-direction: column !important;
@@ -126,7 +122,7 @@ body {
     display: flex;
     height: auto;
     flex-direction: row;
-    margin: 0 0 30px 0;
+    margin: 0 0 14px 0;
 }
 
 .prototypes div img {
@@ -139,46 +135,16 @@ body {
 }
 
 .prototypes div figure:first-child {
-    margin-right: 30px;
+    margin-right: 14px;
 }
 
 .prototypes > img {
     border-radius: 10px;
-    margin: 0 0 30px 0;
+    margin: 0 0 14px 0;
 }
 
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
-
-@media (max-width: 1154px) {
-    .pgewrapper {
-        margin: 10px 70px 90px 70px;
-    }
-    .line {
-        position: absolute;
-        left: 30px; top: 0px;
-    }
-    .star {
-        left: -49.5px;
-    }
-    .small-star {
-        left: -46.5px;
-    }
-}
-
 @media (max-width: 615px) {
-    .pgewrapper {
-        margin: 10px 50px 90px 50px;
-    }
-    .line {
-        position: absolute;
-        left: 23px; top: 0px;
-    }
-    .star {
-        left: -36.5px;
-    }
-    .small-star {
-        left: -33.5px;
-    }
     .compare {
         display: flex;
         flex-direction: column;
@@ -197,13 +163,10 @@ body {
     .prototypes div figure:first-child {
         margin-right: 0;
     }
-    /* .prototypes > img {
-        margin: 0 0 20px 0;
-    } */
-    .prototypes div img {
-        margin: 0 0 20px 0;
+    .prototypes img {
+        margin: 0 0 14px 0;
     }
-    .process div img:first-child {
-        margin-right: 20px;
+    .prototypes div figure {
+        margin: 0 0 7px 0;
     }
 }

@@ -13,14 +13,14 @@ h3 {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--dark);
-    margin: 0;
+    margin: 0 0 15px 0;
     border-radius: 10px;
     width: fit-content;
     padding: 12px 12px 4px 12px;
     border: 1.3px solid var(--dark);
 }
 h5 {
-    font: 300 14px/1.25 "kit-rounded", sans-serif;
+    font: 300 12px/1.25 "kit-rounded", sans-serif;
     color: var(--red);
   }
 span {
@@ -31,28 +31,6 @@ p {
     color: var(--dark);
     max-width: 600px;
     margin-bottom: 50px;
-}
-.line {
-    width: 1.2px;
-}
-.star {  
-    height: 25px;
-    fill: var(--cream);
-    stroke: var(--dark); 
-    stroke-width: 1.7px;
-    z-index: 10;
-    margin-top: -30px;
-}
-.intro .star {
-    margin-top: -12px;
-}
-.small-star {
-    z-index: 10;
-    height: 18px;
-    fill: var(--cream);
-    stroke: var(--dark); 
-    stroke-width: 2.5px;
-    margin-top: 8px;
 }
 .images {
     position: relative;
@@ -78,6 +56,18 @@ p {
     height: auto;
     border-radius: 10px;
     margin-bottom: 50px;
+}
+.description p {
+    margin: 0 0 20px 0;
+}
+.pgewrapper {
+    margin: 0px 40px 100px 40px;
+    transition: 0.4s ease;
+}
+@media (max-width: 575px) {
+    .pgewrapper {
+        margin: 0px 20px 100px 20px;
+    }
 }
 @keyframes fadeInDown {
     0% {

@@ -31,10 +31,6 @@ body {
     left: -109.5px;
     transition: 0.4s ease;
 }
-.pgewrapper {
-    margin: 10px 100px 90px 150px;
-    transition: 0.4s ease;
-}
 
 /* –——————————————————————————— INTRO –——————————————————————————— */
 
@@ -125,19 +121,19 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 30px 0 0 0;
+    margin: 14px 0 0 0;
 }
 
 .prototypes div figure:nth-child(2) {
-    margin: 0 30px;
+    margin: 0 14px;
 }
 
 .prototypes > img {
     border-radius: 10px;
-    margin: 0 0 30px 0;
+    margin: 0 0 14px 0;
 }
 #stationery {
-    margin-top: 20px;
+    margin-top: 7px;
 }
 #poster {
     width: 100%;
@@ -175,7 +171,7 @@ body {
 }
 .process > img {
     max-width: 1200px;
-    margin: 30px auto 40px auto;
+    margin: 14px auto 40px auto;
     height: 100%;
     align-self: start;
 }
@@ -186,7 +182,7 @@ body {
     min-width: 0;
     /* width: 100%; */
     height: auto;
-    margin-right: 30px;
+    margin-right: 14px;
 }
 .process div img:nth-child(2){
     display: flex;
@@ -204,39 +200,9 @@ body {
 }
 
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
-
-@media (max-width: 1154px) {
-    .pgewrapper {
-        margin: 10px 70px 90px 70px;
-    }
-    .line {
-        position: absolute;
-        left: 30px; top: 0px;
-    }
-    .star {
-        left: -49.5px;
-    }
-    .small-star {
-        left: -46.5px;
-    }
-}
-
 @media (max-width: 615px) {
-    .pgewrapper {
-        margin: 10px 50px 90px 50px;
-    }
-    .line {
-        position: absolute;
-        left: 23px; top: 0px;
-    }
-    .star {
-        left: -36.5px;
-    }
     #poster {
         height: 600px;
-    }
-    .small-star {
-        left: -33.5px;
     }
     .compare {
         display: flex;
@@ -252,12 +218,6 @@ body {
     .prototypes div {
         margin: 0;
         flex-direction: column;
-    }
-    /* .prototypes > img {
-        margin: 0 0 20px 0;
-    } */
-    .prototypes div img {
-        margin: 0 0 20px 0;
     }
     #stationery {
         margin-top: 0px;
