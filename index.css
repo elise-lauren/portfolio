@@ -38,6 +38,14 @@ body {
 .splash {
     animation: .5s fadeInDown;
 }
+.small-star {
+    z-index: 10;
+    height: 25px;
+    fill: var(--dark);
+    stroke: var(--purple); 
+    stroke-width: 3px;
+    margin: 0;
+}
 /* –——————————————————————————— CURSORS –——————————————————————————— */
 .spacemanagement-cursor {
     cursor: url(cursors/spacemanagement-cursor.png), auto !important;
