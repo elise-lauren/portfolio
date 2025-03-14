@@ -356,6 +356,9 @@ body {
 .pro-preview:hover .program-icons img {
     opacity: 1;
 }
+.pro-preview:hover .purple {
+    color: var(--dark) !important;
+}
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (max-width: 1120px) {
     .pro-preview-row {

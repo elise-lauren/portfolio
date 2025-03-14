@@ -126,7 +126,7 @@ body {
 .me-des p {
     color: var(--cream);
     font: 400 14px/1.5 "kit-rounded", sans-serif;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 25px 10px;
 }
 
 .me-des:hover {

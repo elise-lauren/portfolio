@@ -19,7 +19,7 @@ body {
   }
 /* –——————————————————————————— OVERALL PAGE STYLING –——————————————————————————— */
 .pgewrapper {
-    margin: 50px 100px 90px 150px;
+    margin: 50px 100px 90px 100px;
     transition: 0.4s ease;
     /* position: relative; */
 }
@@ -160,7 +160,7 @@ figcaption {
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (max-width: 1044px) {
     .pgewrapper {
-        margin: 30px 70px 70px 90px;
+        margin: 30px 70px 70px 70px;
     }
     .line {
         position: absolute;
@@ -203,7 +203,7 @@ figcaption {
 }
 @media (max-width: 615px) {
     .pgewrapper {
-        margin: 30px 40px 70px 50px;
+        margin: 30px 40px 70px 40px;
     }
     .star2 {
         position: absolute;
