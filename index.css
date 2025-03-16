@@ -340,7 +340,7 @@ body {
     letter-spacing: 2px;
     transition: .4s ease;
 }
-.pro-preview:hover img {
+.pro-preview a figure img:hover {
     transform: scale(105%);
 }
 .pro-preview:hover figure {

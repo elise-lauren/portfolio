@@ -142,10 +142,10 @@ figcaption {
   }
 .img-gallery:hover {
     cursor: pointer;
-    transform: scale(103%);
 }
 .img-gallery:hover img {
     opacity: 60%;
+    /* transform: scale(103%); */
 }
 #hover1:hover + svg {
     fill: var(--dark);
