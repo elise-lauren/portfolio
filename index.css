@@ -341,7 +341,6 @@ body {
     transition: .4s ease;
 }
 .pro-preview:hover img {
-    cursor: pointer;
     transform: scale(105%);
 }
 .pro-preview:hover figure {
@@ -368,7 +367,6 @@ body {
         margin: 0;
     }
     .pro-preview:hover img {
-        cursor: pointer;
         transform: scale(100%);
     }
     .pro-preview {

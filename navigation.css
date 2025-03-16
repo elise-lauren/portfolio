@@ -281,6 +281,9 @@
   color: var(--cream);
   background-color: var(--dark);
 }
+#spacemanagement:hover {
+  color: var(--blue);
+}
 #opportunity:hover {
   color: var(--orange);
 }

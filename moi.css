@@ -17,40 +17,16 @@
 body {
     position: relative;
 }
-.line {
-    position: absolute;
-    left: 50px; top: 0px;
-    height: 100%;
-    width: 1.5px;
-    z-index: 1;
-    background-color: var(--dark);
-    transition: 0.4s ease;
-}
-.star {
-    position: absolute;
-    left: -109.5px;
-    transition: 0.4s ease;
-}
 .description {
     position: relative;
     flex-direction: column !important;
 }
-.small-star {
-    position: absolute;
-    left: -106.5px;
-    top: -3px;
-    transition: 0.4s ease;
-}
-
 
 /* –——————————————————————————— INTRO –——————————————————————————— */
 
 .intro {
     margin: 0 0 100px 0;
     position: relative;
-}
-.intro .star {
-    top: 13px;
 }
 .intro {
     position: relative;
@@ -104,10 +80,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-.prototypes .star {
-    top: 28px;
 }
 
 .prototypes figure {
