@@ -297,7 +297,7 @@
   color: var(--blue);
 }
 #matchbooks:hover {
-  color: var(--orange);
+  color: var(--red);
 }
 #bitter:hover {
   color: var(--purple);

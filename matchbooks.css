@@ -8,11 +8,11 @@
 
 /* –——————————————————————————— OVERALL PAGE STYLING –——————————————————————————— */
 #matchbooks {
-    color: var(--orange);
+    color: var(--red);
 }
 .contact-head a:hover {
     cursor: pointer;
-    color: var(--orange);
+    color: var(--red);
   }
 body {
     position: relative;
