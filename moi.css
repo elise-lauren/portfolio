@@ -74,6 +74,24 @@ body {
     margin: 0 auto;
 }
 
+/* –——————————————————————————— COLOR PALETTE –——————————————————————————— */
+.palette-imgs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.palette-imgs div {
+    display: flex;
+    flex-direction: row;
+}
+.palette-imgs div img {
+    flex: 0 1 50%;
+    margin: 0 7px;
+    max-width: 100%;
+    min-width: 0;
+}
+
 /* –——————————————————————————— PROTOTYPES –——————————————————————————— */
 
 .prototypes {
@@ -140,5 +158,12 @@ body {
     }
     .prototypes div figure {
         margin: 0 0 7px 0;
+    }
+    .palette-imgs {
+        display: flex;
+        flex-direction: column;
+    }
+    .palette-imgs div:first-child {
+        margin-bottom: 14px;
     }
 }

@@ -166,6 +166,23 @@ body {
     margin: 10px 0 60px 0;
 }
 
+/* –——————————————————————————— COLOR PALETTE –——————————————————————————— */
+.palette-imgs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.palette-imgs img {
+    flex: 0 1 20%;
+    margin: 0 7px;
+    max-width: 100%;
+    min-width: 0;
+}
+.palette-imgs-mobile {
+    display: none;
+    position: absolute;
+}
+
 /* –——————————————————————————— PROTOTYPES –——————————————————————————— */
 
 .prototypes {
@@ -237,7 +254,33 @@ body {
         position: absolute;
     }
 }
-
+@media (max-width: 915px) {
+    .palette-imgs {
+        display: none;
+        position: absolute;
+    }
+    .palette-imgs-mobile {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .palette-imgs-mobile div {
+        display: flex;
+        flex-direction: row;
+    }
+    .palette-imgs-mobile div:first-child img {
+        flex: 0 1 50%;
+        margin: 0 7px 14px 7px;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .palette-imgs-mobile div:last-child img {
+        flex: 0 1 33%;
+        margin: 0 7px 50px 7px;
+        max-width: 100%;
+        min-width: 0;
+    }
+}
 @media (max-width: 615px) {
     .compare {
         display: flex;
