@@ -156,6 +156,12 @@ figcaption {
 .img-gallery:hover #proj-name, .img-gallery:hover #proj-date {
     opacity: 100%;
 }
+/* –——————————————————————————— FANCYBOX STYLING –——————————————————————————— */
+.fancybox__container img {
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 7px #362e4666;
+}
+
 
 /* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (max-width: 1044px) {
