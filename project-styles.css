@@ -26,6 +26,7 @@
     height: 450px;
     width: 100%;
     object-fit: cover;
+    background-color: var(--brown);
 }
 .cover-container h1 {
     font-family: "Beastly";
