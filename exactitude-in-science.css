@@ -1,0 +1,11 @@
+:root {
+    --accent-1: #f4655b;
+    --accent-2: #f4655b;
+}
+/* –——————————————————————————— IMAGE STYLING –——————————————————————————— */
+.cover-container img {
+    object-position: 90%;
+}
+.five-divide img {
+    border-radius: 0px;
+}

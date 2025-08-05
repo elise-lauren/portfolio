@@ -1,0 +1,550 @@
+::selection {
+    background-color: var(--accent-1);
+    color: var(--cream);
+}
+::-moz-selection {
+    background-color: var(--accent-1);
+    color: var(--cream);
+}
+img::selection {
+    background-color: var(--accent-2);
+}
+img::-moz-selection {
+    background-color: var(--accent-2);
+}
+/* –——————————————————————————— DESKTOP HEADER –——————————————————————————— */
+
+.desktop-head {
+    z-index: 40;
+    display: flex;
+    /* width: 100%; */
+}
+.desktop-head > header {
+    width: 100%;
+    /* background-image: radial-gradient(var(--brown) .75px, transparent 0);
+    background-size: 15px 15px; */
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 40;
+    align-items: center;
+    margin-top: 7px;
+    width: 437px;
+    left: 50%; transform: translate(-50%);
+}
+.desktop-head > header > ul {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 15px; */
+    background-color: var(--brown);
+    border-radius: 50px;
+    height: 100%;
+    width: 437px;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 30 !important; */
+}
+.desktop-head > header > ul > li {
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.desktop-head > header > ul > li:nth-child(1), .desktop-head > header > ul > li:nth-child(2), .desktop-head > header > ul > li:nth-child(3) {
+    margin-right: 10px;
+}
+header > ul > li a { /* if something fucks up in the hamburger, this is probably why; */
+    align-self: center;
+    padding: 7px 15px;
+    position: relative;
+    color: var(--brown);
+    font-family: "Bricolage Grotesque";
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    color: var(--cream);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    z-index: 1;
+}
+.desktop-head > header > ul > li a::after {
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    left: 50%; right: 0; top: 50%; bottom: 0;
+    width: 20px;
+    height: 10px;
+    transition: .2s ease;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+.desktop-head > header > ul > li a:hover::after {
+    height: 31px;
+    width: 100%;
+    z-index: -1;
+}
+.desktop-head > header > ul > li a span {
+    z-index: 50;
+    transition: .5s ease;
+}
+.desktop-head > header > ul > li a:hover span {
+    color: var(--brown);
+}
+.active-tab::before {
+    content: "";
+    border-radius: 17px !important;
+    position: absolute;
+    left: 50%; right: 0; top: 50%; bottom: 0;
+    border-radius: 15px;
+    height: 31px;
+    width: 100%;
+    z-index: 1;
+    border: 2px dashed var(--cream);
+    transform: translateX(-50%) translateY(-50%);
+    transition: .3s ease;
+}
+.active-tab:hover::after {
+    background-color: var(--cream);
+    height: 31px;
+    width: 100%;
+    z-index: -1;
+}
+.active-tab:hover::before {
+    width: 85%;
+    height: 25px;
+}
+/* –——————————————————————————— TAB CUSTOMIZATIONS –——————————————————————————— */
+
+.desktop-head > header > ul > li .accent:hover::after {
+    background-color: var(--accent-1);
+    height: 31px;
+    width: 100%;
+    z-index: -1;
+}
+.desktop-head > header > ul > li .accent:hover::after {
+    background-color: var(--accent-1);
+    height: 31px;
+    width: 100%;
+    z-index: -1;
+}
+.desktop-head > header > ul > li .accent:hover::after {
+    background-color: var(--accent-1);
+    height: 31px;
+    width: 100%;
+    z-index: -1;
+}
+.desktop-head > header > ul > li .accent-tab:hover::after {
+    background-color: var(--accent-1);
+    height: 31px;
+    width: 100%;
+    z-index: -1;
+}
+
+.active-tab, .active-tab:hover, .active-tab::after, .active-tab:hover::after, .active-tab span {
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+.accent-tab, .accent-tab:hover, .accent-tab::after, .accent-tab:hover::after, .accent-tab span {
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+/* –——————————————————————————— DROPDOWN –——————————————————————————— */
+
+.index-dropdown {
+    position: absolute;
+    left: 14%; right: 0; 
+    top: -5px;
+    width: fit-content;
+    z-index: -1 !important;
+    transition: .2s ease;
+}
+.index-dropdown li {
+    display: block;
+    position: relative;
+    left: 0; right: 0;
+    width: 185px;
+}
+.index-dropdown a {
+    border-radius: 30px;
+    background-color: var(--cream);
+    border: solid 2px var(--brown);
+    margin: 10px 0 0 0 !important;
+    padding: 10px;
+    position: absolute;
+    left: 0; top: 0; 
+    display: block;
+    width: 185px !important;
+    color: var(--brown);
+    text-align: center;
+}
+.index-dropdown:hover {
+    z-index: 1;
+    height: 282px;
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown, .index-dropdown:hover, .index-tab:hover + .index-dropdown {
+    padding-top: 55px;
+    top: -10px;
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(2) a, .index-dropdown:hover li:nth-child(2) a, .index-tab:hover + .index-dropdown li:nth-child(2) a {
+    top: 47px
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(3) a, .index-dropdown:hover li:nth-child(3) a, .index-tab:hover + .index-dropdown li:nth-child(3) a {
+    top: 94px
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(4) a, .index-dropdown:hover li:nth-child(4) a, .index-tab:hover + .index-dropdown li:nth-child(4) a {
+    top: 141px
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(5) a, .index-dropdown:hover li:nth-child(5) a, .index-tab:hover + .index-dropdown li:nth-child(5) a {
+    top: 188px
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(6) a, .index-dropdown:hover li:nth-child(6) a, .index-tab:hover + .index-dropdown li:nth-child(6) a {
+    top: 235px
+}
+.index-dropdown li:nth-child(1) a {
+    transition: 100ms ease;
+}
+.index-dropdown li:nth-child(2) a {
+    transition: 150ms ease;
+}
+.index-dropdown li:nth-child(3) a {
+    transition: 200ms ease;
+}
+.index-dropdown li:nth-child(4) a {
+    transition: 250ms ease;
+}
+.index-dropdown li:nth-child(5) a {
+    transition: 300ms ease;
+}
+.index-dropdown li:nth-child(6) a {
+    transition: 350ms ease;
+}
+.index-dropdown a:hover {
+    border: dashed 2px var(--brown);
+}
+/* –——————————————————————————— CURSORS –——————————————————————————— */
+.slumber-cursor {
+    cursor: url(cursors/slumber-cursor.svg), auto !important;
+}
+.opportunity-cursor {
+    cursor: url(cursors/opportunity-cursor.svg), auto !important;
+}
+.field-cursor {
+    cursor: url(cursors/field-cursor.svg), auto !important;
+}
+.moi-cursor {
+    cursor: url(cursors/moi-cursor.svg), auto !important;
+}
+.matchbooks-cursor {
+    cursor: url(cursors/matchbooks-cursor.svg), auto !important;
+}
+.bitter-cursor {
+    cursor: url(cursors/bitter-cursor.svg), auto !important;
+}
+/* –——————————————————————————— CONTACT BUTTONS –——————————————————————————— */
+.contact {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 11;
+    width: 100%;
+    /* margin: 7px 15px; */
+    height: 67px;
+    justify-content: space-between;
+}
+.contact div a svg a path, .contact div a svg a circle {
+    fill: var(--brown);
+    transition: .2s ease;
+}
+.contact div {
+    display: flex;
+    flex-direction: row;
+    margin: 7px 15px;
+}
+.email-button {
+    background-color: var(--accent-1);
+}
+.instagram-button {
+    background-color: var(--accent-1);
+}
+.linkedin-button {
+    background-color: var(--accent-1);
+}
+.logo-button {
+    background-color: var(--accent-1);
+}
+.email-button:hover svg a path, .email-button:hover svg a circle {
+    fill: var(--accent-1);
+}
+.instagram-button:hover svg a path, .instagram-button:hover svg a circle {
+    fill: var(--accent-1);
+}
+.linkedin-button:hover svg a path, .linkedin-button:hover svg a circle {
+    fill: var(--accent-1);
+}
+.logo-button:hover svg a path, .logo-button:hover svg a circle {
+    fill: var(--accent-1);
+}
+.contact div > a {
+    transition: .2s ease;
+    margin: 5px;
+    justify-content: center;
+    height: 38px; width: 38px;
+    border-radius: 5px;
+    border: solid 1.25px var(--brown);
+    position: relative;
+    display: block;
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+.contact div > a:hover {
+    background-color: var(--brown);
+}
+.contact svg, .contact a, .contact svg a, .contact svg a path {
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+.contact svg {
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+.email-button svg {
+    margin-top: 4px;
+}
+/* –——————————————————————————— STYLE HAMBURGER –——————————————————————————— */
+  .hamburger-nav {
+    position: absolute;
+    display: none;
+    z-index: 1001;
+    width: 310px;
+    position: fixed;
+    top: 0; bottom: 0;
+    right: -255px;
+    transition: 0.5s ease;
+  }
+  input:checked ~ .hamburger-nav {
+    right: 0;
+  }
+  
+  /* ======================= Columns ======================= */
+  .col-1 {
+    margin-top: 10px;
+    margin-right: 10px;
+    align-self: flex-start;
+    background-color: var(--brown);
+    width: 45px;
+    border-radius: 5px;
+    transition: .5s ease;
+  }
+  .col-2 {
+    padding-top: 50px;
+    /* transform: translateY(-90px); */
+    display: flex;
+    flex-grow: 1;
+    background-color: var(--brown);
+    align-items: start;
+    /* margin-left: 55px; */
+    height: 100vh;
+  }
+  
+  /* ======================= Nav Links ======================= */
+  
+  .hamburger-nav li {
+    list-style: none;
+    max-width: 250px;
+  }
+  .hamburger-nav a {
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: transparent;
+    transition: 0.2s ease;    
+    font-family: "Bricolage Grotesque";
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: var(--cream);
+  }
+  .work-hamburger li {
+    margin-bottom: 15px;
+  }
+  .col-2 > ul > li {
+    margin-bottom: 15px;
+  }
+  .col-2 > ul > li > a {
+    /* padding: 5px 20px 0px 20px; */
+    border-radius: 20px;
+    max-width: 190px;
+    min-width: 0;
+    display: block;
+    width: 100%;
+    border: dashed 2px var(--cream);
+    border-radius: 20px;
+    padding: 10px 15px;
+    /* margin-bottom: 20px; */
+  }
+  .col-2 > ul {
+    padding-left: 20px;
+  }
+  .work-hamburger li {
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+  .work-hamburger li a {
+    padding: 5px 0;
+    margin: 10px 15px;
+    border-bottom: dashed 2px var(--brown);
+  }
+  .col-2 > ul > li > a:hover {
+    background-color: var(--accent-1);
+    color: var(--brown);
+    border: solid 2px var(--brown);
+  }
+  .work-hamburger li a:hover {
+    border-bottom: dashed 2px var(--accent-1);
+  }
+
+  /* ======================= Checkbox & Label ======================= */
+  input {
+    display: none;
+  }
+  label {
+    width: 50px; height: 50px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+  }
+  label:hover {
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+  }
+  
+  /* ======================= Hamburger & Rotate Wrapper ======================= */
+  .hb_wrapper {
+    width: 45px; height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hb_rotate-wrapper {
+    width: 25px; height: 25px;
+    display: flex;
+    align-items: center;
+  }
+  input:checked + .hamburger-nav .hb_rotate-wrapper {
+    transform: rotate(135deg);
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* ======================= Hamburger Lines ======================= */
+  .hb_lines {
+    background-color: var(--accent-1);
+    width: 100%; height: 2.5px;
+    border-radius: 1px;
+  }
+  .hb_lines::before {
+    background-color: var(--accent-1);
+    width: 100%; height: 2.5px;
+    border-radius: 1px;
+  }
+  .hb_lines::after {
+    background-color: var(--accent-1);
+    width: 100%; height: 2.5px;
+    border-radius: 1px;
+  }
+  .hb_lines {
+    position: relative;
+  }
+  .hb_lines::before,
+  .hb_lines::after {
+    content: "";
+  }
+  .hb_lines::before {
+    position: absolute;
+    bottom: 9px;
+    transition: 0.5s ease;
+  }
+  .hb_lines::after {
+    position: absolute;
+    top: 9px;
+    transition: 0.5s ease;
+  }
+  input:checked + .hamburger-nav .hb_lines::before,
+  input:checked + .hamburger-nav .hb_lines::after {
+    transform: rotate(90deg);
+    top: 0;
+    background-color: var(--accent-1);
+  }
+  input:checked + .hamburger-nav .hb_lines::after {
+    opacity: 0;
+  }
+  input:checked:hover + .hamburger-nav .hb_rotate-wrapper {
+    transform: rotate(225deg);
+    transition: 0.3s ease-in-out;
+  }
+
+/* –——————————————————————————— FOOTER –——————————————————————————— */
+
+.contact-foot {
+    padding-top: 60px;
+}
+.contact-foot .dashed-border {
+    margin-top: 10px;
+}
+.footer-credit {
+    font-family: "Bricolage Grotesque";
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .25px;
+    color: var(--brown);
+    text-align: center;
+}
+footer {
+    z-index: 10;
+    height: 65px;
+    width: 100%;
+    background-size: 15px 15px;
+    background-position: 1%;
+    background-image:
+        linear-gradient(to right, var(--brown) .75px, transparent .75px),
+        linear-gradient(to bottom, var(--brown) .75px, transparent .75px);
+    position: relative;
+} 
+.footer-type-button {
+    background-color: var(--accent-1);
+    text-decoration: none;
+    width: fit-content !important;
+    border-radius: 30px !important;
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+.footer-contact-type {
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .35px;
+    color: var(--brown);
+    padding: 7px 20px;
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+}
+.footer-type-button:hover p {
+    color: var(--accent-1);
+}
+/* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
+
+@media (max-width: 765px) {
+    .desktop-head header {
+        display: none;
+        position: absolute;
+    }
+    .hamburger-nav {
+        display: flex;
+    }
+    .logo-button {
+        display: none;
+        position: absolute;
+        opacity: 0;
+    }
+    .footer-type-button {
+        display: none;
+        position: absolute;
+        opacity: 0;
+    }
+}

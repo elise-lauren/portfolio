@@ -1,0 +1,79 @@
+:root {
+    -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+    --brown: #3a272d;
+    --opacity-brown: #3a272d1f;
+    --cream: #f8f5f2;
+    --pink: #f4c3d4;
+    --teal: #bbdddb;
+    --orange: #e2765d;
+}
+
+/* –——————————————————————————— CURSOR –——————————————————————————— */
+* {
+    cursor: url(cursors/default-light.svg), auto !important;
+}
+img {
+    cursor: url(cursors/default-light.svg), auto !important;
+}
+
+.pink-point, .pink-point::before, .pink-point::after, .pink-point span {
+    cursor: url(cursors/default-pink.svg), auto !important;
+}
+.teal-point, .teal-point::before, .teal-point::after, .teal-point span {
+    cursor: url(cursors/default-teal.svg), auto !important;
+}
+.orange-point, .orange-point::before, .orange-point::after, .orange-point span {
+    cursor: url(cursors/default-orange.svg), auto !important;
+}
+/* –——————————————————————————— GLOBAL –——————————————————————————— */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    position: relative;
+    background-color: var(--cream);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+html {
+    overflow-x: hidden;
+}
+a {
+    cursor: url(cursors/pointer-light.svg), pointer;
+}
+.splash-mediums p {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: .25px;
+    margin: 0;
+    padding: 0;
+}
+
+img {border-radius: 5px;}
+
+.dashed-border {
+    --s: 1.25px;    /* control the size */
+    height: var(--s);
+    width: 100%;
+    --_g: var(--s) top 50%,var(--brown) calc(100% - 1px),#0000;
+    background: 0/calc(15*var(--s)) space no-repeat;
+    background-image: 
+        linear-gradient(90deg,#0000 25%,var(--brown) 0 75%,#0000 0);
+    z-index: 5;
+}
+@keyframes fadeInDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }

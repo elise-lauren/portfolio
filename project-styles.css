@@ -1,104 +1,201 @@
-.intro h1 {
-        font: 800 40px/1.25 "kit-rounded", sans-serif;
-        color: var(--dark);
-        margin: 0 0 5px 0;      
-}
-h2 {
-    font: 600 28px/1.25 "kit-rounded", sans-serif;
-    color: var(--dark);
-    margin: 0 0 15px 0;
-}
-h3 {
-    font: 400 12px/.75 "kit-rounded", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--dark);
-    margin: 0 0 15px 0;
-    border-radius: 10px;
-    width: fit-content;
-    padding: 12px 12px 4px 12px;
-    border: 1.3px solid var(--dark);
-}
-h5 {
-    font: 300 12px/1.25 "kit-rounded", sans-serif;
-    color: var(--red);
-  }
-span {
-    color: var(--red);
-}
-p {
-    font: 300 14px/1.5 "kit-rounded", sans-serif;
-    color: var(--dark);
-    max-width: 600px;
-    margin-bottom: 50px;
-}
-.images {
-    position: relative;
-    top: -47px;
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
-    align-items: center;
-    position: relative;
-}
-.images img{
-    min-width: 0px;
-    width: 100%;
-    display: flex;
-    object-fit: cover;
-    z-index: 10;
-    position: relative;
+/* –——————————————————————————— COVER PAGE –——————————————————————————— */
+.cover-fade {
     animation: .5s fadeInDown;
-    height: 550px;
 }
-.color-palette img {
+.cover {
+    /* cursor: url(cursors/default-light.svg), auto !important; */
+    background-size: 15px 15px;
+    background-position: 1% 1.5%;
+    background-image:
+        linear-gradient(to right, var(--brown) .75px, transparent .75px),
+        linear-gradient(to bottom, var(--brown) .75px, transparent .75px);
+    padding: 45px 0 10px 0;
+    position: relative;
+}
+.cover ~ .dashed-border {
+    margin-bottom: 40px;
+    transform: scaleY(65%);
+}
+.cover-container {
+    height: 450px;
+    border-radius: 5px;
+    border: solid 1.25px var(--brown);
+    margin: 20px;
+}
+.cover-container img {
+    height: 450px;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 50px;
+    object-fit: cover;
 }
-.description p {
-    margin: 0 0 20px 0;
+.cover-container h1 {
+    font-family: "Beastly";
+    font-weight: 100;
+    font-size: 90px;
+    color: var(--cream);
+    line-height: 1;
+    position: absolute;
+    bottom: 40px; left: 40px;
+    z-index: 10;
+    margin-right: 20px;
 }
 .pgewrapper {
-    margin: 0px 40px 100px 40px;
-    transition: 0.4s ease;
+    margin: 0 20px;
 }
-.category {
+/* –——————————————————————————— TEXT –——————————————————————————— */
+h2 {
+    color: var(--brown);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+}
+h3 {
+    color: var(--accent-2);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.project-copy {
+    color: var(--brown);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.project-copy span {
+    color: var(--accent-2);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.photo-credit {
+    color: var(--brown);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.photo-credit span {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.project-intro-text {
+    max-width: 590px;
+    min-width: 0;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+.project-para {
+    max-width: 580px;
+    min-width: 0;
+    width: 100%;
+    margin: 25px auto 30px auto;
+}
+.divider {
+    background-color: var(--accent-1);
+    height: 6px;
+    width: 30px;
+    border-radius: 1px;
+    margin: 20px auto;
+}
+.color-name {
+    color: var(--accent-2);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0 20px;
+    /* margin-top: 15px; */
+}
+.color-hex {
+    color: var(--accent-2);
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 20px;
+    /* margin-top: 15px; */
+}
+.color-des {
+    color: var(--accent-2);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 3px 20px 0 20px;
+    max-width: 500px;
+    /* margin-top: 15px; */
+}
+.light {
+    color: var(--cream);
+}
+/* –——————————————————————————— IMAGE STYLING –——————————————————————————— */
+.row {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin-bottom: 10px;
+    gap: 10px;
 }
-h6 {
-    margin: 0 0 15px 0;  
-    color: var(--cream);
-    font: 400 14px/1.5 "kit-rounded", sans-serif;
-    letter-spacing: 1.5px;
-    /* background-color: var(--dark); */
-    width: fit-content;
-    padding: 5px 7px 0px 7px;
-    border-radius: 7px;
+.color-palette {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
-h6:first-child {
-    margin-right: 7px;
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-@media (max-width: 575px) {
-    .pgewrapper {
-        margin: 0px 20px 100px 20px;
+.logo-box {
+    height: 580px;
+}
+.logo-box div {
+    border-radius: 5px;
+}
+.logo-box img:nth-child(2) {
+    height: 100%;
+}
+.logo-box div {
+    width: 100%;
+    align-content: center;
+}
+.logo-box div img {
+    width: 100%;
+    object-fit: contain;
+}
+.project-photos img {
+    width: 100%;
+}
+.even-divide {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+}
+.triple-divide {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.five-divide {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.color-palette div div div {
+    position: absolute;
+    bottom: 0; left: 0;
+    margin-bottom: 20px;
+}
+/* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
+@media (max-width: 675px) {
+    .logo-box {
+        height: 200px !important;
+    }
+    .logo-box img {
+        height: 125px;
+    }
+    .cover-container h1 {
+        font-size: 70px !important;
     }
 }
-@keyframes fadeInDown {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-  }
-@media (max-width: 615px){
-    .images img{
-        height: 400px;
+@media (max-width: 550px) {
+    .cover-container h1 {
+        font-size: 60px !important;
     }
 }

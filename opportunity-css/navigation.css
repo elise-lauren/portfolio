@@ -183,6 +183,21 @@ li {
 #arrow:hover + div .col-2 ul li:nth-child(1) {
     transition-delay: 500ms;
 }
+/* —————————————————————————— SELECTION —————————————————————————— */
+::selection {
+    background-color: var(--opp-orange);
+    color: var(--opp-purple);
+}
+::-moz-selection {
+    background-color: var(--opp-orange);
+    color: var(--opp-purple);
+}
+img::selection {
+    background-color: transparent;
+}
+img::-moz-selection {
+    background-color: transparent;
+}
 /* —————————————————————————— MEDIA QUERIES —————————————————————————— */
 /* TABLET */
 @media (max-width: 950px) {

@@ -1,22 +1,12 @@
 .hidden {
     opacity: 0;
     transition: all .5s ease;
-    transform: scale(90%);
-    filter: blur(1);
+    transform: translateY(80px);
+    filter: blur(3px);
 }
 .show {
     opacity: 1;
-    transform: scale(100%);
+    transform: translateY(0px);
     filter: blur(0);
     z-index: auto;
-}
-
-.delay1 {
-    transition-delay: 50ms;
-}
-.delay2 {
-    transition-delay: 100ms;
-}
-.delay3 {
-    transition-delay: 150ms;
 }

@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>history.replaceState("", "", "about-me");</script>
+    <script>history.replaceState("", "", "playground");</script>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/kqm3fwr.css">
-        <link rel="stylesheet" href="https://use.typekit.net/kqm3fwr.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=League+Spartan:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       
+        <style> @import url("https://use.typekit.net/cwf7cmy.css"); </style>
 
+
+        <link rel="stylesheet" href="global.css">
         <link rel="stylesheet" href="navigation.css">
         <link rel="stylesheet" href="about-me.css">
-
         <link rel="stylesheet" href="appear-transition.css">
-        <script defer src="appear.js"></script>
 
-        <title>Lauren Elise Nickels - About Me</title>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <script defer src="appear.js"></script>
     </head>
     <body>
-        <div class="contact-head">
+        <div class="desktop-head">
+            <div class="contact">
+                <div>
+                    <a href="mailto:lauren.el.design@gmail.com" class="email-button" target="_blank">
+                        <svg width="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.04 25.66">
+                            <a href="mailto:lauren.el.design@gmail.com" target="_blank">
+                                <path d="M37.04,2.89v20.55c-.29,1.08-1.06,1.9-2.14,2.23H2.14c-.85-.27-1.57-.83-1.91-1.67-.04-.11-.23-.65-.23-.7V2.89l16.24,14.87c1.3,1.17,3.32,1.15,4.61-.04L37.04,2.89Z"/>
+                                <path d="M2.21.03l32.37-.03c.52.04,1.07.23,1.44.61l-16.71,15.29c-.48.39-1.1.39-1.58,0L1.07.56,2.21.03Z"/>
+                            </a>
+                            </svg>
+                    </a>
+                    <a href="https://www.instagram.com/laurenelise.designs/" class="instagram-button" target="_blank">
+                        <svg width="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.99 37.99">
+                            <a href="https://www.instagram.com/laurenelise.designs/" target="_blank">
+                                <path d="M37.99,2.07v33.86c-.39,1.06-1.04,1.62-2.06,2.06H2.07C.81,37.44.12,36.72,0,35.31V2.68C.14,1.07,1.1.2,2.68,0h32.63c1.38.12,2.18.81,2.68,2.07ZM12.5,4.73c-4.77.39-7.52,3.4-7.82,8.14-.22,3.5-.23,8.76,0,12.26.35,5.2,3.37,7.87,8.47,8.18,3.3.2,12.12.4,14.96-.59,3.3-1.14,4.95-4.1,5.2-7.47.26-3.47.2-8.61,0-12.11-.28-4.98-2.94-8.12-8.04-8.47-3.56-.24-9.22-.25-12.76.05Z"/>
+                                <g> <path d="M15.12,7.2c3.29-.14,7.16-.17,10.42.1,3.09.26,4.93,2.23,5.17,5.29.22,2.81.21,6.66.14,9.51-.12,4.52-.23,8.21-5.71,8.6-2.73.2-6.2.21-8.96.14-4.08-.1-8.34-.04-8.85-5.18-.38-3.81-.35-9.37-.01-13.19.42-4.82,3.86-5.1,7.81-5.26ZM28.37,11.34c0-.95-.77-1.72-1.72-1.72s-1.72.77-1.72,1.72.77,1.72,1.72,1.72,1.72-.77,1.72-1.72ZM26.37,18.99c0-4.07-3.3-7.37-7.37-7.37s-7.37,3.3-7.37,7.37,3.3,7.37,7.37,7.37,7.37-3.3,7.37-7.37Z"/>
+                                <circle cx="19" cy="18.99" r="4.81"/> </g>
+                            </a>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/laurenelisenickels/" class="linkedin-button" target="_blank">
+                        <svg width="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.01 37.99">
+                            <a href="https://www.linkedin.com/in/laurenelisenickels/" target="_blank">
+                                <path d="M35.92,37.99H2.06c-1.07-.45-1.73-1.08-2.06-2.2V2.07C.48.86,1.36.12,2.68,0h32.77c1.35.11,2.47,1.17,2.55,2.55-.1,11.19.17,22.43-.14,33.6-.28,1-1.07,1.43-1.93,1.85ZM11.73,8.5c0-1.8-1.46-3.27-3.27-3.27s-3.27,1.46-3.27,3.27,1.46,3.27,3.27,3.27,3.27-1.46,3.27-3.27ZM32.35,32.35v-12.46c0-1.71-1.27-4.31-2.8-5.19-3-1.72-7.42-1.06-9.32,1.95v-2.27l-.21-.21h-4.95l-.21.21v17.96h5.51v-9.7c0-.63.4-2.14.77-2.68,1.11-1.63,4.18-1.78,5.11.1.12.24.45,1.13.45,1.34v10.74l.21.21h5.44ZM11.29,14.18h-5.64v18.17h5.64V14.18Z"/>
+                            </a>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="logo-button" href="index.html">
+                        <svg height="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.38 37.99">
+                            <a href="index.html">
+                                <path d="M30.73,31.81c-2.09,2.5-5.76,4.01-8.92,4.01h-2.88c-3.96,0-5.68-1.8-5.68-5.96v-4.1h5.55c1.72,0,3.3,1.1,3.84,2.77,0,.01,0,.03.01.04h.65v-8.28h-.65s-.02.04-.02.06l-.02-.02c-2.11,2.08-5.08,3-7.86,3h-1.5v-3.73c0-3.09,2.12-5.11,5.47-5.11h2.84c2.66,0,5.58,1.36,7.38,3.53l.72-.4-1.15-5.37H6.99v.77c3.06,1.21,4.5,2.39,4.5,6.07v4.22c-.48-.02-.63-.05-.63-.05-2.8-.36-4.63-1.9-4.63-5.18V6.55c0-3.42,1.87-4.93,5.22-5.78v-.77H0v.77c3.17,1.03,4.46,2.35,4.46,5.85v12.36c0,3.57-1.19,4.93-4.46,6v.77h11.49v5.28c0,3.53-1.3,5.08-4.5,6.18v.77h21.62l2.77-5.82-.65-.37Z"/>
+                            </a>
+                        </svg>
+                    </a>
+                </div>
+            </div>
             <header>
                 <ul>
-                    <li><a ref="https://www.linkedin.com/in/laurenelisenickels/" target="_blank"><img id="head-icon" src="navigation/linkedin-purple.png" alt=""></a></li>
-                    <li><a href="mailto: lauren.el.design@gmail.com" target="_blank"><img id="head-icon" src="navigation/email-purple.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/lauren_elise.design" target="_blank"><img id="head-icon" src="navigation/instagram-purple.png" alt=""></a></li>
-                    <li><a href="index.html">Hello there, I'm Lauren!</a></li>
-                    <li><a href="index.html"><img id="head-logo" src="navigation/logo-purple.svg" alt=""></a></li>
+                    <li><a href="about-me.html" class="active-tab"><span>About Me</span></a></li>
+                    <li><a href="index.html" class="pink-tab index-tab"><span>My Work</span></a>
+                        <ul class="index-dropdown">
+                            <li><a href="field-museum.html" class="field-cursor">The Field Museum</a></li>
+                            <li><a href="slumber.html" class="slumber-cursor">Slumber Sleepover Kit</a></li>
+                            <li><a href="museum-of-illusions.html" class="moi-cursor">Museum of Illusions</a></li>
+                            <li><a href="opportunity.html" class="opportunity-cursor" target="_blank">Opportunity's Journey</a></li>
+                            <li><a href="exactitude-in-science.html" class="matchbooks-cursor">Exactitude in Science</a></li>
+                            <li><a href="bitter.html" class="bitter-cursor">Bitter Chocolate Co.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="playground.html" class="teal-tab"><span>Playground</span></a></li>
+                    <li><a href="https://indd.adobe.com/view/bd47c0eb-ba92-45ff-8413-e1de48bbddac" target="_blank" class="orange-tab"><span>Resume</span></a></li>
                 </ul> 
             </header>
         </div>
-            <!-- <header class="name-gif">
-                <a href="index.html"><img src="navigation/name-scroll.gif"></a>
-            </header> -->
-        <nav class="navbar">
-            <ul>
-                <li id="left-list"></li>
-                <li><a href="about-me.html" class="navtab" id="about-me">About Me</a></li>
-                <li class="work-list">
-                    <div>
-                        <a href="index.html" class="navtab" id="work">Work</a>
-                        <ul id="work-dropdown">
-                            <li><a href="spacemanagement.html" id="spacemanagement">Space Management Board Game</a></li>
-                            <li><a href="moi.html" id="moi">Museum of Illusions Rebrand</a></li>
-                            <li><a href="fieldmuseum.html" id="fieldmuseum">The Field Museum Rebrand</a></li>
-                            <li><a href="opportunity.html" target="_blank" id="opportunity">Opportunity's Journey</a></li>
-                            <li><a href="baybeach.html" id="baybeach">Bay Beach Amuseument Park Rebrand</a></li>
-                            <li><a href="matchbooks.html" id="matchbooks">Exactitude in Science Matchbooks</a></li>
-                            <li><a href="bitter.html" id="bitter">Bitter Chocolate Co. Packaging</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="archive.html" class="navtab" id="archive">Archive</a></li>
-                <li><a href="https://indd.adobe.com/view/bd47c0eb-ba92-45ff-8413-e1de48bbddac" target="_blank" class="navtab" id="resume">Resume</a></li>
-                <li id="right-list"></li>
-            </ul>
-        </nav>
         <input id="hamburger" type="checkbox">
         <nav class="hamburger-nav">
             <div class="col-1">
@@ -80,121 +98,149 @@
                     <li><a href="index.html" id="work">Work</a></li>
                     <li>
                         <ul class="work-hamburger">
-                            <li><a href="spacemanagement.html" target="_blank" id="spacemanagement">Space Management Board Game</a></li>
-                            <li><a href="moi.html" id="moi">Museum of Illusions Rebrand</a></li>
-                            <li><a href="fieldmuseum.html" id="fieldmuseum">The Field Museum Rebrand</a></li>
-                            <li><a href="opportunity.html" target="_blank" id="opportunity">Opportunity's Journey</a></li>
-                            <li><a href="baybeach.html" id="baybeach">Bay Beach Amuseument Park Rebrand</a></li>
-                            <li><a href="matchbooks.html" id="matchbooks">Exactitude in Science Matchbooks</a></li>
-                            <li><a href="bitter.html" id="bitter">Bitter Chocolate Co. Packaging</a></li>
+                            <li><a href="field-museum.html" class="field-cursor">The Field Museum</a></li>
+                            <li><a href="slumber.html" class="slumber-cursor">Slumber Sleepover Kit</a></li>
+                            <li><a href="museum-of-illusions.html" class="moi-cursor">Museum of Illusions</a></li>
+                            <li><a href="opportunity.html" class="opportunity-cursor">Opportunity's Journey</a></li>
+                            <li><a href="exactitude-in-science.html" class="matchbooks-cursor">Exactitude in Science</a></li>
+                            <li><a href="bitter.html" class="bitter-cursor">Bitter Chocolate Co.</a></li>
                         </ul>
                     </li>
-                    <li><a href="archive.html" id="archive">Archive</a></li>
+                    <li><a href="playground.html">Playground</a></li>
                     <li><a href="https://indd.adobe.com/view/bd47c0eb-ba92-45ff-8413-e1de48bbddac" target="_blank" id="resume">Resume</a></li>
                   </ul>
                 </div>
         </nav>
         <div class="pgewrapper">
-            <div>
-                <div class="me">
-                    <img src="about-me/headshot-purple-background.png" class="pic-1">
-                    <div class="about-me-direction">
-                        <div class="about-me">
-                            <div class="me-des hidden" id="me">
-                                <h1>Hello there!
-                                    <style>@import url("https://use.typekit.net/kqm3fwr.css");</style>
-                                </h1>
-                                <h2>I'm Lauren Nickels</h2>
-                                <p>I'm a graphic designer currently studying at the School of the Art Institute of Chicago. </p>
-                                <p>I'm passionate about branding and packaging design, and my hobbies include intense debates regarding font choice, petting cats, and walks in Lincoln Park.</p>
-                                <p>I'm currently on the lookout for graphic design internships for summer 2025. Feel free to reach out!</p>
-                            </div>
-                            <div class="socials hidden">
-                                <div class="email-button"> 
-                                        <a href="mailto: lauren.el.design@gmail.com" target="_blank">
-                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.59 66.26"><metadata><c2pa:manifest xmlns:c2pa="http://c2pa.org/manifest"></c2pa:manifest></metadata>
-                                            <path d="M95.59,7.36v51.49c0,4.09-3.07,7.42-6.84,7.42H6.83c-3.76,0-6.83-3.33-6.83-7.42V7.42l41.86,38.35c1.66,1.51,3.75,2.34,5.91,2.34s4.24-.83,5.88-2.34L95.59,7.36Z"/>
-                                            <path d="M92.9,1.53l-43.11,39.47c-.14.14-.3.25-.45.35-.97.6-2.18.6-3.14.01-.16-.11-.31-.23-.47-.36L2.65,1.55C3.83.54,5.29,0,6.83,0h81.93C90.27,0,91.73.54,92.9,1.53Z"/>
-                                            </svg>
-                                            <div>lauren.el.design@gmail.com</div>
-                                        </a>
-                                </div>
-                                <div class="linkedin-button">
-                                        <a href="https://www.linkedin.com/in/laurenelisenickels/" target="_blank">
-                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.27 66.25"><metadata><c2pa:manifest xmlns:c2pa="http://c2pa.org/manifest"></c2pa:manifest></metadata>
-                                            <path d="M62.04,66.25H4.18c-.05-.08-.13-.06-.2-.07-1.26-.26-2.29-.89-3.06-1.93C.23,63.32,0,62.27,0,61.13,0,42.44,0,23.76,0,5.07c0-.08,0-.15,0-.23C-.03,1.87,2.47,0,4.95,0,23.78.01,42.6,0,61.43,0c.9,0,1.74.22,2.51.69,1.52.92,2.3,2.28,2.35,4.06,0,.15-.02.3-.02.45,0,18.64,0,37.28,0,55.91,0,.13,0,.26,0,.39-.11,2.15-1.18,3.62-3.16,4.44-.34.14-.72.21-1.08.31ZM25.83,40.61c0,5.14,0,10.28,0,15.42,0,.3.05.4.38.4,3-.01,6.01-.02,9.01,0,.35,0,.4-.11.4-.42,0-5.14-.01-10.28,0-15.42,0-1.53.12-3.05.65-4.51.5-1.39,1.37-2.44,2.78-2.99,1-.39,2.04-.47,3.1-.4.86.06,1.66.29,2.37.8.86.61,1.35,1.48,1.65,2.46.42,1.37.5,2.79.5,4.21,0,5.3,0,10.61,0,15.91,0,.28.06.36.35.36,3.06-.01,6.12-.01,9.18,0,.27,0,.34-.07.34-.34-.01-2.48,0-4.97,0-7.45-.02-3.99.09-7.98-.07-11.97-.09-2.25-.4-4.46-1.24-6.57-1.03-2.56-2.8-4.36-5.43-5.27-1.75-.61-3.56-.79-5.4-.75-1.86.04-3.62.48-5.25,1.39-1.51.85-2.74,1.99-3.62,3.5-.05.08-.06.21-.19.18-.16-.04-.08-.18-.08-.27,0-1.23-.01-2.45,0-3.68,0-.31-.09-.38-.38-.38-2.86,0-5.73,0-8.59,0q-.42,0-.42.42c0,5.12,0,10.24,0,15.36ZM19.63,40.68c0-5.15,0-10.3,0-15.45,0-.3-.06-.4-.39-.4-3.01.01-6.03.01-9.04,0-.3,0-.37.08-.37.38,0,10.29,0,20.58,0,30.87,0,.27.05.36.35.36,3.01-.01,6.03-.01,9.04,0,.32,0,.41-.07.41-.4-.01-5.12,0-10.24,0-15.35ZM9.06,14.81c-.01,3.14,2.54,5.71,5.69,5.72,3.15,0,5.73-2.57,5.73-5.72,0-3.12-2.57-5.69-5.71-5.7-3.14-.01-5.69,2.54-5.7,5.7Z"/>
-                                            </svg>
-                                            <div>Lauren Nickels</div>   
-                                        </a>                            
-                                </div>
-                                <div class="instagram-button">
-                                        <a href="https://www.instagram.com/lauren_elise.design" target="_blank">
-                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.28 66.26"><metadata><c2pa:manifest xmlns:c2pa="http://c2pa.org/manifest"></c2pa:manifest></metadata>
-                                            <path d="M66.27,52.5s0,0,0,0V13.77s0,0,0,0V5.21c0-.15.01-.3.02-.45-.05-1.78-.83-3.14-2.35-4.06-.76-.47-1.61-.69-2.51-.69-6.13,0-12.26,0-18.39,0C35.83,0,28.63,0,21.42,0,15.93,0,10.44,0,4.95,0,2.47,0-.03,1.87,0,4.85v.23c0,18.69,0,37.37,0,56.06,0,1.14.23,2.19.92,3.12.77,1.04,1.8,1.67,3.06,1.93.07.02.16-.01.2.07h57.86c.36-.1.73-.17,1.07-.31,1.98-.81,3.06-2.28,3.16-4.44,0-.13,0-.26,0-.39v-8.62ZM58.06,42.24c-.02,2.07-.19,4.14-.81,6.13-1.55,4.93-4.89,7.93-9.88,9.14-1.69.41-3.42.53-5.16.55-4.68.04-9.36.07-14.04.06-2.15,0-4.3-.05-6.45-.19-2.87-.18-5.58-.94-7.94-2.67-2.79-2.05-4.43-4.83-5.14-8.19-.32-1.52-.46-3.07-.47-4.62-.04-5.71-.07-11.42-.05-17.13,0-1.85.08-3.71.4-5.54.72-4.1,2.7-7.37,6.33-9.53,1.77-1.05,3.71-1.61,5.74-1.86,2.44-.3,4.9-.32,7.36-.32,4.2,0,8.4-.01,12.6.03,1.98.02,3.96.07,5.91.41,4.33.77,7.71,2.93,9.81,6.88.94,1.78,1.47,3.7,1.61,5.69.15,2.02.21,4.05.25,6.08.04,1.99,0,3.98,0,5.96-.02,0-.04,0-.06,0,0,3.04.02,6.08,0,9.11Z"/>
-                                            <path d="M12.52,33.1c.03-2.86.05-5.73.11-8.59.03-1.64.09-3.28.5-4.89.96-3.75,3.4-5.95,7.16-6.63,1.35-.24,2.73-.34,4.1-.37,3.87-.07,7.75-.09,11.62-.08,2.37,0,4.75.07,7.12.13,1.57.04,3.13.24,4.61.81,2.8,1.06,4.52,3.1,5.29,5.97.31,1.14.46,2.3.48,3.47.06,3.93.12,7.87.14,11.8.01,2.32-.02,4.65-.07,6.97-.04,1.65-.09,3.3-.51,4.91-.97,3.74-3.4,5.92-7.16,6.6-1.39.25-2.81.35-4.23.37-4.35.07-8.71.08-13.06.07-2.17,0-4.34-.09-6.51-.19-1.63-.08-3.22-.42-4.67-1.18-2.36-1.24-3.74-3.23-4.36-5.79-.38-1.58-.45-3.19-.48-4.8-.06-2.86-.07-5.73-.11-8.59ZM45.97,33.09c0-7.1-5.75-12.85-12.86-12.84-7.11,0-12.85,5.75-12.85,12.85,0,7.11,5.73,12.85,12.84,12.86,7.12,0,12.87-5.74,12.87-12.87ZM49.46,19.79c.02-1.67-1.29-3.01-2.95-3.03-1.67-.02-3.04,1.31-3.05,2.97-.01,1.64,1.33,3.01,2.97,3.03,1.65.02,3.01-1.31,3.03-2.96Z"/>
-                                            <path d="M41.49,33.11c-.02,4.67-3.79,8.39-8.45,8.37-4.62-.03-8.33-3.83-8.3-8.49.03-4.58,3.83-8.28,8.47-8.26,4.55.02,8.31,3.82,8.28,8.39Z"/>
-                                            </svg>
-                                            <div>@lauren_elise.design</div>
-                                        </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="colorstack hidden"></div>
+            <div class="me-intro hidden">
+                <div class="me-photo">
+                    <img src="about-me/about-me-photograph.png">
+                </div>
+                <div class="me-intro-des">
+                    <div class="stickers">
+                        <img src="about-me/about-me-tape.png">
+                        <img src="about-me/about-me-scribble-star.png">
+                        <img src="about-me/about-me-scribble-bolt.png">
+                        <img src="about-me/about-me-logo-sticker.png">
                     </div>
-                    <div class="currently hidden">
-                        <h3>Currently I am . . .</h3>
-                        <div class="listening">
-                            <h4>listening to . . .</h4>
-                            <div>Sabrina Carpenter</div>
-                            <div>Conan Gray</div>
-                            <div>Boys Go to Jupiter</div>
-                        </div>
-                        <div class="learning">
-                            <h4>learning to . . .</h4>
-                            <div>rollerskate</div>
-                            <div>play the piano</div>
-                            <div>speak french</div>
+                    <div class="intro-text">
+                        <div>
+                            <p>I'm a graphic designer currently studying at the School of the Art Institute of Chicago.</p>
+                            <p>I'm passionate about branding and packaging design, and my hobbies include intense debates about font choice, petting cats, and watching nature documentaries.</p>
+                            <p>I'm currently on the lookout for graphic design internships for spring 2026. Feel free to reach out!</p>
                         </div>
                     </div>
                 </div>
-                <div class="additional">
-                    <div class="tools hidden">
-                        <div>
-                            <h3>My Tools are . . .</h3>
-                            <ul>
-                                <li><div>Adobe Illustrator</div></li>
-                                <li><div>Adobe Photoshop</div></li>
-                                <li><div>Adobe Indesign</div></li>
-                                <li><div>Adobe Acrobat</div></li>
-                                <li><div>Adobe Premiere Pro</div></li>
-                                <li><div>Adobe Express</div></li>
-                                <li><div>Procreate</div></li>
-                                <li><div>Apple Suite</div></li>
-                                <li><div>Google Suite</div></li>
-                                <li><div>Microsoft Suite</div></li>
-                                <li><div>Canva</div></li>
-                                <li><div>Figma</div></li>
-                                <li><div>Traditional Illustration</div></li>
-                                <li><div>HTML</div></li>
-                                <li><div>CSS</div></li>
-                            </ul>
+            </div>
+            <div class="experience">
+                <div class="skills hidden">
+                    <div class="skills-box">
+                        <p class="experience-title">My Skills</p>
+                        <div class="experience-row">
+                            <div class="experience-col">
+                                <p class="experience-skill">Branding</p>
+                                <p class="experience-skill">Illustration</p>
+                                <p class="experience-skill">HTML & CSS<br>Coding</p>
+                                <p class="experience-skill">Logo Design</p>
+                                <p class="experience-skill">Packaging</p>
+                                <p class="experience-skill">UI & UX Design</p>
+                            </div>
+                            <div class="experience-col">
+                                <p class="experience-skill">UI & UX Design</p>
+                                <p class="experience-skill">Collaboration</p>
+                                <p class="experience-skill">Problem Solving</p>
+                                <p class="experience-skill">Critical Thinking</p>
+                                <p class="experience-skill">Attention<br>to Detail</p>
+                            </div>
                         </div>
-                        <div class="colorblock hidden"></div>
+                        <div class="skills-corner corner-1"></div>
+                        <div class="skills-corner corner-2"></div>
+                        <div class="skills-corner corner-3"></div>
+                        <div class="skills-corner corner-4"></div>
                     </div>
-                    <img src="about-me/photo-2.webp" class="pic-2" loading="lazy">
+                    <div class="skills-list">
+                        <div>
+                            <p class="experience-title">Education</p>
+                        </div>
+                        <div class="experience-position">
+                            <p class="experience-year">2022–2025 (projected)</p>
+                            <p class="experience-location">The School of the Art Institute of Chicago</p>
+                            <p class="experience-copy">Bachelor’s Degree in Fine Arts – Visual Communication</p>
+                        </div>
+                        <div class="experience-position">
+                            <p class="experience-year">07.2021 – 08.2021</p>
+                            <p class="experience-location">Minneapolis College of Art and Design</p>
+                            <p class="experience-copy">Pre-College Program – Graphic Design</p>
+                        </div>
+                        <div>
+                            <p class="experience-title">Experience</p>
+                        </div>
+                        <div class="experience-position">
+                            <p class="experience-year">05.2025 – Present</p>
+                            <p class="experience-location">Chicago Transit Authority</p>
+                            <p class="experience-copy">Graphic Design Intern</p>
+                        </div>
+                        <div class="experience-position">
+                            <p class="experience-year">03.2022 – Present</p>
+                            <p class="experience-location">Power of Dance</p>
+                            <p class="experience-copy">Freelance Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="envelope hidden">
+                    <img src="about-me/about-me-envelope-programs.png">
                 </div>
             </div>
         </div>
+        <div class="reach-out-container">
+            <a href="mailto:lauren.el.design@gmail.com" target="_blank"><p>Reach out to me!</p></a>
+        </div>
+        <!-- <div class="pgewrapper">
+        </div> -->
         <div class="contact-foot">
-            <h5>♡ Coded and designed by Lauren Elise Nickels ♡</h5>
             <footer>
-                <ul>
-                    <li><a ref="https://www.linkedin.com/in/laurenelisenickels/" target="_blank"><img id="foot-icon" src="navigation/linkedin-purple.png" alt=""></a></li>
-                    <li><a href="mailto: lauren.el.design@gmail.com" target="_blank"><img id="foot-icon" src="navigation/email-purple.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/lauren_elise.design" target="_blank"><img id="foot-icon" src="navigation/instagram-purple.png" alt=""></a></li>
-                    <li><h6>Let's Keep in Touch!</h6></li>
-                    <li><a href="index.html"><img id="foot-logo" src="navigation/logo-purple.svg" alt=""></a></li>
-                </ul> 
+                <div class="contact">
+                    <div>
+                        <a href="mailto:lauren.el.design@gmail.com" class="email-button" target="_blank">
+                            <svg width="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.04 25.66">
+                                <a href="mailto:lauren.el.design@gmail.com" target="_blank">
+                                    <path d="M37.04,2.89v20.55c-.29,1.08-1.06,1.9-2.14,2.23H2.14c-.85-.27-1.57-.83-1.91-1.67-.04-.11-.23-.65-.23-.7V2.89l16.24,14.87c1.3,1.17,3.32,1.15,4.61-.04L37.04,2.89Z"/>
+                                    <path d="M2.21.03l32.37-.03c.52.04,1.07.23,1.44.61l-16.71,15.29c-.48.39-1.1.39-1.58,0L1.07.56,2.21.03Z"/>
+                                </a>
+                                </svg>
+                        </a>
+                        <a href="https://www.instagram.com/laurenelise.designs/" class="instagram-button" target="_blank">
+                            <svg width="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.99 37.99">
+                                <a href="https://www.instagram.com/laurenelise.designs/" target="_blank">
+                                    <path d="M37.99,2.07v33.86c-.39,1.06-1.04,1.62-2.06,2.06H2.07C.81,37.44.12,36.72,0,35.31V2.68C.14,1.07,1.1.2,2.68,0h32.63c1.38.12,2.18.81,2.68,2.07ZM12.5,4.73c-4.77.39-7.52,3.4-7.82,8.14-.22,3.5-.23,8.76,0,12.26.35,5.2,3.37,7.87,8.47,8.18,3.3.2,12.12.4,14.96-.59,3.3-1.14,4.95-4.1,5.2-7.47.26-3.47.2-8.61,0-12.11-.28-4.98-2.94-8.12-8.04-8.47-3.56-.24-9.22-.25-12.76.05Z"/>
+                                    <g> <path d="M15.12,7.2c3.29-.14,7.16-.17,10.42.1,3.09.26,4.93,2.23,5.17,5.29.22,2.81.21,6.66.14,9.51-.12,4.52-.23,8.21-5.71,8.6-2.73.2-6.2.21-8.96.14-4.08-.1-8.34-.04-8.85-5.18-.38-3.81-.35-9.37-.01-13.19.42-4.82,3.86-5.1,7.81-5.26ZM28.37,11.34c0-.95-.77-1.72-1.72-1.72s-1.72.77-1.72,1.72.77,1.72,1.72,1.72,1.72-.77,1.72-1.72ZM26.37,18.99c0-4.07-3.3-7.37-7.37-7.37s-7.37,3.3-7.37,7.37,3.3,7.37,7.37,7.37,7.37-3.3,7.37-7.37Z"/>
+                                    <circle cx="19" cy="18.99" r="4.81"/> </g>
+                                </a>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/laurenelisenickels/" class="linkedin-button" target="_blank">
+                            <svg width="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.01 37.99">
+                                <a href="https://www.linkedin.com/in/laurenelisenickels/" target="_blank">
+                                    <path d="M35.92,37.99H2.06c-1.07-.45-1.73-1.08-2.06-2.2V2.07C.48.86,1.36.12,2.68,0h32.77c1.35.11,2.47,1.17,2.55,2.55-.1,11.19.17,22.43-.14,33.6-.28,1-1.07,1.43-1.93,1.85ZM11.73,8.5c0-1.8-1.46-3.27-3.27-3.27s-3.27,1.46-3.27,3.27,1.46,3.27,3.27,3.27,3.27-1.46,3.27-3.27ZM32.35,32.35v-12.46c0-1.71-1.27-4.31-2.8-5.19-3-1.72-7.42-1.06-9.32,1.95v-2.27l-.21-.21h-4.95l-.21.21v17.96h5.51v-9.7c0-.63.4-2.14.77-2.68,1.11-1.63,4.18-1.78,5.11.1.12.24.45,1.13.45,1.34v10.74l.21.21h5.44ZM11.29,14.18h-5.64v18.17h5.64V14.18Z"/>
+                                </a>
+                            </svg>
+                        </a>
+                        <a href="mailto:lauren.el.design@gmail.com" class="footer-type-button" target="_blank">
+                            <p class="footer-contact-type">
+                                Let's keep in touch!
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="logo-button" href="index.html">
+                            <svg height="28px" id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.38 37.99">
+                                <a href="index.html">
+                                    <path d="M30.73,31.81c-2.09,2.5-5.76,4.01-8.92,4.01h-2.88c-3.96,0-5.68-1.8-5.68-5.96v-4.1h5.55c1.72,0,3.3,1.1,3.84,2.77,0,.01,0,.03.01.04h.65v-8.28h-.65s-.02.04-.02.06l-.02-.02c-2.11,2.08-5.08,3-7.86,3h-1.5v-3.73c0-3.09,2.12-5.11,5.47-5.11h2.84c2.66,0,5.58,1.36,7.38,3.53l.72-.4-1.15-5.37H6.99v.77c3.06,1.21,4.5,2.39,4.5,6.07v4.22c-.48-.02-.63-.05-.63-.05-2.8-.36-4.63-1.9-4.63-5.18V6.55c0-3.42,1.87-4.93,5.22-5.78v-.77H0v.77c3.17,1.03,4.46,2.35,4.46,5.85v12.36c0,3.57-1.19,4.93-4.46,6v.77h11.49v5.28c0,3.53-1.3,5.08-4.5,6.18v.77h21.62l2.77-5.82-.65-.37Z"/>
+                                </a>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </footer>
         </div>
     </body>

@@ -1,11 +1,11 @@
 :root {
---fancybox-accent-color: var(--dark) !important;
---carousel-button-shadow: #ffffff00 !important;
+--fancybox-accent-color: var(--brown) !important;
+--carousel-button-shadow: #f8f5f2 !important;
 }
 
 .carousel {
     position: relative;
-    box-sizing: border-box
+    box-sizing: border-box;  
 }
 
 .carousel *,
@@ -15,20 +15,22 @@
 }
 
 .carousel.is-draggable {
-    cursor: move;
-    cursor: grab
+    /* cursor: move;
+    cursor: grab; */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .carousel.is-dragging {
-    cursor: move;
-    cursor: grabbing
+    /* cursor: move;
+    cursor: grabbing; */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .carousel__viewport {
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
 }
 
 .carousel__track {
@@ -70,7 +72,8 @@
     position: relative;
     width: 22px;
     height: 22px;
-    cursor: pointer
+    /* cursor: pointer */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .carousel__dots .carousel__dot:after {
@@ -100,7 +103,8 @@
     justify-content: center;
     align-items: center;
     pointer-events: all;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
     color: var(--carousel-button-color, currentColor);
     background: var(--carousel-button-bg, transparent);
     border-radius: var(--carousel-button-border-radius, 50%);
@@ -124,7 +128,8 @@
 }
 
 .carousel__button[disabled] {
-    cursor: default;
+    /* cursor: default; */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
     opacity: .3
 }
 
@@ -138,7 +143,7 @@
     stroke-linecap: round;
     filter: none;
     pointer-events: none;
-    color: var(--dark) !important;
+    color: var(--brown) !important;
 }
 
 html.with-fancybox {
@@ -176,6 +181,11 @@ body.compensate-for-scrollbar {
     --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4))
 }
 
+.fancybox__container img {
+    border-radius: 5px !important;
+    box-shadow: 0px 0px 5px #3a272d80;
+}
+
 .fancybox__container *,
 .fancybox__container *::before,
 .fancybox__container *::after {
@@ -187,7 +197,7 @@ body.compensate-for-scrollbar {
 }
 
 body:not(.is-using-mouse) .fancybox__container :focus {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--fancybox-accent-color, rgba(1, 210, 232, 0.94))
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--fancybox-accent-color)
 }
 
 @media all and (min-width: 1024px) {
@@ -227,7 +237,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     width: 100%;
     height: 100%;
     overflow: visible;
-    cursor: default
+    /* cursor: default */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__track {
@@ -291,7 +302,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     line-height: 1.375;
     color: var(--fancybox-color, currentColor);
     visibility: visible;
-    cursor: auto;
+    /* cursor: auto; */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
     flex-shrink: 0;
     overflow-wrap: anywhere
 }
@@ -367,7 +379,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .fancybox__slide .fancybox__spinner {
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
     z-index: 1053
 }
 
@@ -537,36 +550,43 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .fancybox__carousel.is-draggable .fancybox__slide,
 .fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
-    cursor: move;
-    cursor: grab
+    /* cursor: move;
+    cursor: grab */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__carousel.is-dragging .fancybox__slide,
 .fancybox__carousel.is-dragging .fancybox__slide .fancybox__content {
-    cursor: move;
-    cursor: grabbing
+    /* cursor: move;
+    cursor: grabbing */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__carousel .fancybox__slide .fancybox__content {
-    cursor: auto
+    /* cursor: auto */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
-    cursor: zoom-in
+    /* cursor: zoom-in */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__carousel .fancybox__slide.can-zoom_out .fancybox__content {
-    cursor: zoom-out
+    /* cursor: zoom-out */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__carousel .fancybox__slide.is-draggable .fancybox__content {
-    cursor: move;
-    cursor: grab
+    /* cursor: move;
+    cursor: grab */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__carousel .fancybox__slide.is-dragging .fancybox__content {
-    cursor: move;
-    cursor: grabbing
+    /* cursor: move;
+    cursor: grabbing */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__image {
@@ -716,7 +736,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     align-items: center;
     justify-content: center;
     overflow: visible;
-    cursor: pointer
+    /* cursor: pointer */
+    cursor: url(cursors/pointer-light.svg), pointer !important;  
 }
 
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {
@@ -756,8 +777,9 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .fancybox__toolbar {
     text-shadow: none !important;
-    color: var(--dark) !important;
+    color: var(--brown) !important;
     font-weight: 400 !important;
+    font-family: "Bricolage Grotesque", sans-serif;
     position: absolute;
     top: 0;
     right: 0;
@@ -822,7 +844,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .fancybox__progress {
-    background: var(--fancybox-accent-color, rgba(34, 213, 233, 0.96));
+    /* background: var(--fancybox-accent-color, rgba(34, 213, 233, 0.96)); */
     height: 3px;
     left: 0;
     position: absolute;
@@ -867,4 +889,21 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox-fx-fade.fancybox-slide--current {
   opacity: 1;
   transition-duration: 150ms;
+}
+
+/* Target the slide element */
+.fancybox__slide {
+  opacity: 0 !;  /* Initially hide the slide */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Target the current slide and apply fade-in */
+.fancybox-slide--current,
+.fancybox-is-open .fancybox-slide {
+  opacity: 1; /* Fade in the slide */
+}
+
+/* Optional: Add a slight delay for a smoother feel */
+.fancybox-is-open .fancybox-slide {
+  transition-delay: 0.1s;
 }
