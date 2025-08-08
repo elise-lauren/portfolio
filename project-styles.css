@@ -200,3 +200,8 @@ h3 {
         font-size: 60px !important;
     }
 }
+@media (max-width: 450px) {
+    .cover-container h1 {
+        font-size: 45px !important;
+    }
+}

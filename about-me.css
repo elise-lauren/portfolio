@@ -311,7 +311,8 @@ footer {
     border: solid 1.25px var(--brown);
     border-radius: 200px;
     width: fit-content;
-    justify-self: center;
+    /* justify-self: center; */
+    margin: auto;
     cursor: url(cursors/pointer-light.svg), pointer !important;
     text-align: center;
     transition: .3s ease;
@@ -417,7 +418,7 @@ footer {
         max-width: 450px;
         min-width: 0;
         width: 60vw;
-        margin: 0 20px;
+        /* margin: 0 20px; */
         height: 100%;
         align-content: center;
     }
@@ -505,9 +506,6 @@ footer {
     .experience-skill {
         font-size: 16px;
     }
-    .skills-box {
-        
-    }
     .experience-col {
         max-width: 250px;
         min-width: 150px;
@@ -521,5 +519,17 @@ footer {
     .experience-col:last-child {
         display: none;
         position: absolute;
+    }
+}
+@media (max-width: 450px) {
+    .me-intro-des {
+        width: 90%;
+        min-width: 100px;
+    }
+    .stickers img:nth-child(1) {
+        width: 230px;
+        /* transform: rotate(12deg);
+        position: absolute;
+        top: -110px; right: 80px;    */
     }
 }
