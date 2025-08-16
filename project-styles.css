@@ -53,33 +53,34 @@ h3 {
     color: var(--accent-2);
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 15px;
 }
 .project-copy {
     color: var(--brown);
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 15px;
 }
 .project-copy span {
     color: var(--accent-2);
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
 }
 .photo-credit {
     color: var(--brown);
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 15px;
+    text-align: center;
 }
 .photo-credit span {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
 }
 .project-intro-text {
     max-width: 590px;
