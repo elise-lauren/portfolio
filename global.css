@@ -3,6 +3,8 @@
             text-size-adjust: none;
     --brown: #3a272d;
     --opacity-brown: #3a272d1f;
+    --mid-opacity-brown: #3a272d72;
+    --dark-opacity-brown: #3a272da0;
     --cream: #f8f5f2;
     --pink: #f4c3d4;
     --teal: #bbdddb;
@@ -46,19 +48,13 @@ html {
 a {
     cursor: url(cursors/pointer-light.svg), pointer;
 }
-.splash-mediums p {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: .25px;
-    margin: 0;
-    padding: 0;
+img {
+    border-radius: 5px !important;
 }
-
-img {border-radius: 5px;}
+/* figure {border-radius: 5px !important;} */
 
 .dashed-border {
-    --s: 1.25px;    /* control the size */
+    --s: 1px;
     height: var(--s);
     width: 100%;
     --_g: var(--s) top 50%,var(--brown) calc(100% - 1px),#0000;

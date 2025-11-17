@@ -20,7 +20,7 @@
     width: 60%;
 }
 .color-palette > div > div {
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
 }
 .color-palette .color-first > div:nth-child(1){

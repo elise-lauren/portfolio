@@ -26,23 +26,23 @@
 }
 .color-palette .color-first > div:nth-child(1){
     background-color: #da8888;
-    height: 200px;
+    height: 197px;
     width: 100%;
 }
 .color-palette .color-first > div:nth-child(2){
     background-color: #8b4e4a;
-    height: 450px;
+    height: 447px;
 }
 .color-palette .color-last {
     width: 45%;
 }
 .color-palette .color-last > div:nth-child(1){
     background-color: #859f96;
-    height: 325px;
+    height: 322px;
 }
 .color-palette .color-last > div:nth-child(2){
     background-color: #e8d2ca;
-    height: 325px;
+    height: 322px;
 }
 .color-image {
     width: 300px;

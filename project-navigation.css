@@ -100,7 +100,7 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
     height: 31px;
     width: 100%;
     z-index: 1;
-    border: 2px dashed var(--cream);
+    border: 1px dashed var(--cream);
     transform: translateX(-50%) translateY(-50%);
     transition: .3s ease;
 }
@@ -166,7 +166,7 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 .index-dropdown a {
     border-radius: 30px;
     background-color: var(--cream);
-    border: solid 2px var(--brown);
+    border: solid 1px var(--brown);
     margin: 10px 0 0 0 !important;
     padding: 10px;
     position: absolute;
@@ -178,7 +178,8 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 }
 .index-dropdown:hover {
     z-index: 1;
-    height: 282px;
+    /* height: 376px; */
+    height: 281px;
     cursor: url(cursors/pointer-light.svg), pointer !important;
 }
 .desktop-head > header > ul > li:nth-child(2):hover .index-dropdown, .index-dropdown:hover, .index-tab:hover + .index-dropdown {
@@ -200,6 +201,12 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 .desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(6) a, .index-dropdown:hover li:nth-child(6) a, .index-tab:hover + .index-dropdown li:nth-child(6) a {
     top: 235px
 }
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(7) a, .index-dropdown:hover li:nth-child(7) a, .index-tab:hover + .index-dropdown li:nth-child(7) a {
+    top: 282px
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(8) a, .index-dropdown:hover li:nth-child(8) a, .index-tab:hover + .index-dropdown li:nth-child(8) a {
+    top: 329px
+}
 .index-dropdown li:nth-child(1) a {
     transition: 100ms ease;
 }
@@ -218,8 +225,14 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 .index-dropdown li:nth-child(6) a {
     transition: 350ms ease;
 }
+.index-dropdown li:nth-child(7) a {
+    transition: 400ms ease;
+}
+.index-dropdown li:nth-child(8) a {
+    transition: 450ms ease;
+}
 .index-dropdown a:hover {
-    border: dashed 2px var(--brown);
+    border: dashed 1px var(--brown);
 }
 /* –——————————————————————————— CURSORS –——————————————————————————— */
 .slumber-cursor {
@@ -291,10 +304,10 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
     justify-content: center;
     height: 38px; width: 38px;
     border-radius: 5px;
-    border: solid 1.25px var(--brown);
+    border: solid 1px var(--brown);
     position: relative;
     display: block;
-    cursor: url(cursors/pointer-light.svg), pointer !important;
+    /* cursor: url(cursors/pointer-light.svg), pointer !important; */
 }
 .contact div > a:hover {
     background-color: var(--brown);
@@ -376,7 +389,7 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
     min-width: 0;
     display: block;
     width: 100%;
-    border: dashed 2px var(--cream);
+    border: dashed 1px var(--cream);
     border-radius: 20px;
     padding: 10px 15px;
     /* margin-bottom: 20px; */
@@ -391,15 +404,15 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
   .work-hamburger li a {
     padding: 5px 0;
     margin: 10px 15px;
-    border-bottom: dashed 2px var(--brown);
+    border-bottom: dashed 1px var(--brown);
   }
   .col-2 > ul > li > a:hover {
     background-color: var(--accent-1);
     color: var(--brown);
-    border: solid 2px var(--brown);
+    border: solid 1px var(--brown);
   }
   .work-hamburger li a:hover {
-    border-bottom: dashed 2px var(--accent-1);
+    border-bottom: dashed 1px var(--accent-1);
   }
 
   /* ======================= Checkbox & Label ======================= */
@@ -503,8 +516,8 @@ footer {
     background-size: 15px 15px;
     background-position: 1%;
     background-image:
-        linear-gradient(to right, var(--brown) .75px, transparent .75px),
-        linear-gradient(to bottom, var(--brown) .75px, transparent .75px);
+        linear-gradient(to right, var(--mid-opacity-brown) .75px, transparent .75px),
+        linear-gradient(to bottom, var(--mid-opacity-brown) .75px, transparent .75px);
     position: relative;
 } 
 .footer-type-button {

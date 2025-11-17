@@ -21,28 +21,28 @@
     width: 60%;
 }
 .color-palette > div > div {
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
 }
 .color-palette .color-first > div:nth-child(1){
     background-color: #8b89be;
-    height: 200px;
+    height: 197px;
     width: 100%;
 }
 .color-palette .color-first > div:nth-child(2){
     background-color: #333B89;
-    height: 450px;
+    height: 447px;
 }
 .color-palette .color-last {
     width: 45%;
 }
 .color-palette .color-last > div:nth-child(1){
     background-color: #c3465c;
-    height: 325px;
+    height: 322px;
 }
 .color-palette .color-last > div:nth-child(2){
     background-color: #dce150;
-    height: 325px;
+    height: 322px;
 }
 .color-image {
     width: 250px;

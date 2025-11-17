@@ -12,20 +12,20 @@ img::selection {
 img::-moz-selection {
     background-color: var(--pink);
 }
+body {
+    background-size: 15px 15px;
+    background-position: 1% 1.5%;
+    background-image:
+        linear-gradient(to right, var(--opacity-brown) .75px, transparent .75px),
+        linear-gradient(to bottom, var(--opacity-brown) .75px, transparent .75px);
+}
 /* –——————————————————————————— SPLASH PAGE –——————————————————————————— */
 .splash-fade {
     animation: .5s fadeInDown;
 }
 .splash {
-    background-size: 15px 15px;
-    background-position: 1% 1.5%;
-    background-image:
-        linear-gradient(to right, var(--brown) .75px, transparent .75px),
-        linear-gradient(to bottom, var(--brown) .75px, transparent .75px);
     padding: 45px 0 10px 0;
-    /* box-shadow: inset 0px -3px 5px -2px var(--opacity-brown); */
     overflow: hidden;
-    /* margin-bottom: 40px; */
     position: relative;
 }
 .splash ~ .dashed-border {
@@ -35,133 +35,28 @@ img::-moz-selection {
 .splash > div:first-child {
     margin: 20px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background-position: 1% 1.5%;
-    background-image: radial-gradient(var(--brown) .75px, transparent 0);
     background-size: 15px 15px;
-    background-color: var(--cream);
-    border-radius: 6px;
-    border: solid 1.25px var(--brown);
+    border-radius: 5px;
 }
-.splash-text {
-    padding: 0px 20px 20px 20px;
-    position: relative;
+.web-screen-intro {
+    width: 80%;
+    margin: 0 auto 20px auto;
 }
-.splash-mediums {
-    display: flex;
-    flex-direction: row !important;
-}
-.splash-mediums div {
-    border-radius: 30px;
-    /* border: solid 1.25px var(--brown); */
-    width: fit-content;
-    padding: 10px 20px;
-    max-width: 325px;
-    min-width: fit-content;
-    width: 100%;
-    /* justify-items: center; */
-    margin: 0;
-    transition: .3s ease;
-    position: relative;
-    z-index: 1;
-}
-.splash-mediums div p {
-    margin: auto;
-    width: 50%;
-    overflow: visible;
-    text-wrap-mode: nowrap;
-    text-align: center;
-}
-h1 {
-    font-family: "Beastly";
-    font-weight: 100;
-    font-size: 90px;
-    color: var(--brown);
-}
-.splash-mediums div::after {
-    content: "";
-    border-radius: 30px;
+.mobile-screen-intro {
+    display: none;
     position: absolute;
-    left: 50%; right: 0; top: 50%; bottom: 0;
-    width: 95%;
-    height: 35px;
-    transition: .2s ease;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-}
-.splash-mediums div span {
-    z-index: 10;
-    /* margin: 0 auto; */
-}
-.splash-mediums div:hover::after {
-    width: 100%;
-    height: 47.7px;
-    background-color: var(--brown);
-    z-index: -1;
-}
-.splash-mediums div::before {
-    border: 2px dashed var(--brown);
-    height: 50.5px;
-    content: "";
-    border-radius: 30px;
-    position: absolute;
-    left: 50%; right: 0; top: 50%; bottom: 0;
-    width: 98.7%;
-    height: 42.7px;
-    transition: .7s ease;
-    transform: translateX(-50%) translateY(-50%);
-}
-.splash-mediums div:nth-child(1):before {
-    z-index: -1;
-    background-color: var(--pink);
-}
-.splash-mediums div:nth-child(2):before {
-    z-index: -1;
-    background-color: var(--teal);
-}
-.splash-mediums div:nth-child(3):before {
-    z-index: -1;
-    background-color: var(--orange);
-}
-.splash-mediums div:hover::before {
-    width: 97%;
-    height: 40px;
-}
-.splash-mediums div:nth-child(1):hover {
-    color: var(--pink);
-}
-.splash-text:has(.splash-mediums div:hover) ~ div:nth-child(2) {
-    opacity: 0;
-}
-.splash-text:has(.splash-mediums div:nth-child(1):hover) ~ div div:nth-child(1) {
-    opacity: 1;
-}
-.splash-text:has(.splash-mediums div:nth-child(2):hover) ~ div div:nth-child(2) {
-    opacity: 1;
-}
-.splash-text:has(.splash-mediums div:nth-child(3):hover) ~ div div:nth-child(3) {
-    opacity: 1;
-}
-.splash-mediums div:nth-child(2):hover {
-    /* background-color: var(--brown); */
-    color: var(--teal);
-}
-.splash-mediums div:nth-child(3):hover {
-    /* background-color: var(--brown); */
-    color: var(--orange);
-}
-.splash-mediums div:nth-child(1), .splash-mediums div:nth-child(2) {
-    margin-right: 20px;
 }
 /* –——————————————————————————— GIF SCROLL –——————————————————————————— */
-.gif-main, .gif-branding, .gif-packaging, .gif-uiux, .gif-main-constant {
-    max-width: 3600px;
-    width: 100%;
+.gif-main {
+    max-width: 1800px;
+    width: 300;
     min-width: 0px;
-    height: 300px;
-    border-radius: 10px;
+    height: 200px;
+    border-radius: 5px;
     background-repeat: repeat-x;
-    background-size: 3600px 300px;
+    background-size: 1800px 150px;
     margin: 0 auto;
     animation-name: scroll-gif;
     animation-duration: 50s;
@@ -169,15 +64,17 @@ h1 {
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     transition: .2s ease;
+    margin-top: 40px;
 }
 @keyframes scroll-gif {
 from {background-position: 0 0;}
-to {background-position: 3600px 0;}
+to {background-position: 1800px 0;}
 }
 .gif-main {
-    height: 300px;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
+    height: 150px;
+    width: 70%;
+    border-radius: 100px;
+    border: solid 1.25px var(--brown);
     z-index: 2;
     background-color: var(--brown);
     background-image: url(index/main-gif.jpg);
@@ -185,80 +82,31 @@ to {background-position: 3600px 0;}
 .gif-main ~ div {
     position: relative;
 }
-.gif-branding {
-    height: 300px;
-    width: 100%;
-    background-color: var(--pink);
-    border-radius: 5px 5px 0 0;
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-    background-image: url(index/branding-gif.jpg);
-}
-.gif-packaging {
-    height: 300px;
-    width: 100%;
-    background-color: var(--teal);
-    border-radius: 5px 5px 0 0;
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-    background-image: url(index/packaging-gif.jpg);
-}
-.gif-uiux {
-    height: 300px;
-    width: 100%;
-    background-color: var(--orange);
-    border-radius: 5px 5px 0 0;
-    opacity: 0;
-    position: absolute;
-    z-index: 1;
-    background-image: url(index/uiux-gif.jpg);
-}
 /* –——————————————————————————— PROJECT PREVIEWS –——————————————————————————— */
-
-.pro-preview div p:nth-child(1) {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 800;
-    font-size: 46px;
-    letter-spacing: .35px;
-    color: var(--cream);
-}
-.pro-preview div p:nth-child(2) {
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: .5px;
-    color: var(--cream);
-}
 .work-previews {
     display: flex;
-    flex-direction: column;
-    width: 100 vw;
-    margin: 0 20px;
+    margin: 0 40px;
 }
-.pro-preview-row {
+.pro-preview-wrap {
     display: flex;
-    flex-direction: row;
-    /* width: 100%; */
+    flex-wrap: wrap;
+    width: 100%;
     align-self: center;
-    margin-bottom: 10px;
-}
-.pro-preview-row:last-child {
-    margin-bottom: 0;
+    gap: 20px;
 }
 .pro-preview {
     display: flex;
     flex-direction: column;
-    /* max-width: 1800px;
-    min-width: 0;
-    width: auto; */
     height: 440px;
-    overflow: hidden;
+    flex-basis: calc(50% - 10px);
+    position: relative;
+    justify-content: space-around;
+    margin: 0;
+    box-sizing: border-box;
 }
 .pro-preview figure {
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: 1800px;
     min-width: 0;
     width: 100%;
@@ -272,53 +120,73 @@ to {background-position: 3600px 0;}
     transition: .3s ease;
 }
 .pro-preview div {
-    justify-content: flex-end;
-    position: absolute;
-    margin: 450px 15px 0 15px;
+    align-self: center;
     opacity: 0;
-    height: 0;
     transition: .3s ease;
+    position: absolute;
+    margin: 0 20px;
+    top: 50%;
+    transform: translatey(-45%) scale(90%);
+}
+.pro-preview div p:nth-child(1) {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    line-height: 1.05;
+    font-size: 50px;
+    letter-spacing: .35px;
+    color: var(--cream);
+    text-align: center;
+}
+.pro-preview div p:nth-child(2) {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: var(--cream);
+    text-align: center;
+    white-space: normal;
 }
 .pro-preview a figure {
     background-color: var(--brown);
 }
+.pro-preview a:hover {
+    height: 80%;
+}
 .pro-preview a:hover img {
     filter: blur(5px);
     transform: scale(105%);
-    opacity: 75%;
+    opacity: 65%;
 }
 .pro-preview a:hover div {
     opacity: 1;
-    transform: translatey(-100px);
     height: auto;
+    transform: translatey(-50%) scale(100%);
 }
-.pro-preview-row .pro-preview:first-child {
-    margin-right: 5px;
+/* .pro-preview-wrap .pro-preview:first-child {
+    margin-right: 7.5px;
 }
-.pro-preview-row .pro-preview:last-child {
-    margin-left: 5px;
-}
-.work-previews .pro-preview-row:nth-child(1) {
+.pro-preview-wrap .pro-preview:last-child {
+    margin-left: 7.5px;
+} */
+.work-previews .pro-preview-wrap:nth-child(1) {
     z-index: 1;
 }
-.work-previews .pro-preview-row:nth-child(2) {
+.work-previews .pro-preview-wrap:nth-child(2) {
     z-index: 2;
 }
-.work-previews .pro-preview-row:nth-child(3) {
+.work-previews .pro-preview-wrap:nth-child(3) {
     z-index: 3;
 }
-/* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
-@media (max-width: 1425px) {
-    .pro-preview div p:nth-child(1) {
-        font-size: 40px !important;
-    }
+.work-previews .pro-preview-wrap:nth-child(4) {
+    z-index: 4;
 }
+.two-line-header {
+    transform: translateY(-55px);
+}
+/* –——————————————————————————— MEDIA QUERIES –——————————————————————————— */
 @media (max-width: 1250px) {
     h1 {
         width: 585px !important;
-    }
-    .pro-preview div p:nth-child(1) {
-        font-size: 36px !important;
     }
     #line-1::after {
         content: "\a";
@@ -351,56 +219,22 @@ to {background-position: 3600px 0;}
         padding: 10px 20px;
         margin: 10px 0 10px auto;
     }
-}
-@media (max-width: 1150px) {
-    .pro-preview div p:nth-child(1) {
-        font-size: 30px !important;
+    .two-line-header {
+        transform: translateY(-40px);
     }
-}
-@media (max-width: 985px) {
-    .pro-preview-row {
-        flex-direction: column;
-        margin-bottom: 0;
-        width: 100%;
+    .gif-main {
+        width: 80%;
+    }
+    .splash div img {
+        width: 90%;
     }
     .pro-preview {
-        margin: 0 0 10px 0 !important;
-        padding: 0;
-        width: 100%;
-    }
-    .pro-preview div p:nth-child(1) {
-        font-size: 46px !important;
-    }
-    .splash-text {
-        display: flex;
-        flex-direction: column;
-    }
-    .splash-mediums {
-        display: flex;
-        flex-direction: row !important;
-        margin: 0;
-        width: 100%;
-    }
-    .splash-mediums div {
-        border-radius: 30px;
-        width: fit-content;
-        padding: 10px 20px;
-        max-width: 800px;
-        min-width: fit-content;
-        width: 100%;
-        justify-items: center;
-        margin: 0;
-        transition: .3s ease;
-        position: relative;
-        z-index: 1;
-    }
-    .splash-mediums div:nth-child(1), .splash-mediums div:nth-child(2) {
-        margin-right: 20px;
+        flex-basis: calc(50% - 10px);
     }
 }
 @media (max-width: 765px) {
-    .pro-preview div p:nth-child(1) {
-        font-size: 40px !important;
+    .pro-preview {
+        flex-basis: 100%;
     }
     .splash-text {
         position: relative;
@@ -420,23 +254,49 @@ to {background-position: 3600px 0;}
         width: auto;
         margin-top: 10px; margin-bottom: 10px;
     }
+    .two-line-header {
+        transform: translateY(-40px);
+    }
+    .gif-main {
+        width: 70%;
+        height: 100px;
+    }
+    .web-screen-intro {
+        display: none;
+        position: absolute;
+    }
+    .mobile-screen-intro {
+        margin-top: 20px !important;
+        display: block;
+        position: relative;
+        width: 75% !important;
+        margin: 0 auto 20px auto;
+    }
 }
 @media (max-width: 645px) {
     h1 {
         font-size: 70px;
     }
-    .pro-preview div p:nth-child(1) {
-        font-size: 32px !important;
+    .gif-main {
+        width: 80%;
+    }
+    .web-screen-intro {
+        display: none;
+        position: absolute;
+    }
+    .mobile-screen-intro {
+        margin-top: 20px !important;
+        display: block;
+        position: relative;
+        width: 90% !important;
+        margin: 0 auto 20px auto;
     }
 }
 @media (max-width: 535px) {
     h1 {
         font-size: 50px;
     }
-    .pro-preview div p:nth-child(1) {
-        font-size: 28px !important;
-    }
-    .pro-preview div p:nth-child(2) {
-        font-size: 12px;
+    .two-line-header {
+        transform: translateY(-30px);
     }
 }
