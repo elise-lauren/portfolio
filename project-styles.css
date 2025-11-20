@@ -199,6 +199,9 @@ h3 {
     .pgewrapper {
     margin: 0 20px;
     }
+    h1 {
+    font-size: 50px;
+    }
 }
 @media (max-width: 675px) {
     .logo-box {
