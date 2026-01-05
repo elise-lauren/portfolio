@@ -85,8 +85,9 @@ footer {
 .intro-text p {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: .25px;
+    line-height: 1.25;
 }
 .intro-text p:not(:last-child) {
     margin-bottom: 20px;
@@ -328,7 +329,7 @@ footer {
         width: 500px;
     }
     .intro-text p {
-        font-size: 16px;
+        font-size: 15px;
     }
     .me-intro-des {
         height: 400px;
@@ -342,7 +343,7 @@ footer {
         width: 450px;
     }
     .intro-text p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .me-intro-des {
         height: 350px;
