@@ -119,6 +119,14 @@ to {background-position: 1800px 0;}
     height: 100%;
     transition: .3s ease;
 }
+.pro-preview video {
+    width: 100%;
+    object-fit: cover;
+    min-height: 440px;
+    max-height: 1000px;
+    height: 100%;
+    transition: .3s ease;
+}
 .pro-preview div {
     align-self: center;
     opacity: 0;
@@ -153,6 +161,11 @@ to {background-position: 1800px 0;}
     height: 80%;
 }
 .pro-preview a:hover img {
+    filter: blur(5px);
+    transform: scale(105%);
+    opacity: 65%;
+}
+.pro-preview a:hover video {
     filter: blur(5px);
     transform: scale(105%);
     opacity: 65%;
