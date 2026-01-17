@@ -178,8 +178,7 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 }
 .index-dropdown:hover {
     z-index: 1;
-    /* height: 376px; */
-    height: 281px;
+    height: 377px;
     cursor: url(cursors/pointer-light.svg), pointer !important;
 }
 .desktop-head > header > ul > li:nth-child(2):hover .index-dropdown, .index-dropdown:hover, .index-tab:hover + .index-dropdown {
@@ -202,11 +201,17 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
     top: 235px
 }
 .desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(7) a, .index-dropdown:hover li:nth-child(7) a, .index-tab:hover + .index-dropdown li:nth-child(7) a {
-    top: 282px
+    top: 281px
 }
 .desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(8) a, .index-dropdown:hover li:nth-child(8) a, .index-tab:hover + .index-dropdown li:nth-child(8) a {
     top: 329px
 }
+/* .desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(9) a, .index-dropdown:hover li:nth-child(9) a, .index-tab:hover + .index-dropdown li:nth-child(9) a {
+    top: 377px
+}
+.desktop-head > header > ul > li:nth-child(2):hover .index-dropdown li:nth-child(10) a, .index-dropdown:hover li:nth-child(10) a, .index-tab:hover + .index-dropdown li:nth-child(10) a {
+    top: 425px
+} */
 .index-dropdown li:nth-child(1) a {
     transition: 100ms ease;
 }
@@ -231,6 +236,12 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 .index-dropdown li:nth-child(8) a {
     transition: 450ms ease;
 }
+/* .index-dropdown li:nth-child(9) a {
+    transition: 500ms ease;
+}
+.index-dropdown li:nth-child(10) a {
+    transition: 550ms ease;
+} */
 .index-dropdown a:hover {
     border: dashed 1px var(--brown);
 }
@@ -252,6 +263,12 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 }
 .bitter-cursor {
     cursor: url(cursors/bitter-cursor.svg), auto !important;
+}
+.artbash-cursor {
+    cursor: url(cursors/artbash-cursor.svg), auto !important;
+}
+.americangirl-cursor {
+    cursor: url(cursors/americangirl-cursor.svg), auto !important;
 }
 /* –——————————————————————————— CONTACT BUTTONS –——————————————————————————— */
 .contact {

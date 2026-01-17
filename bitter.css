@@ -1,6 +1,6 @@
 :root {
-    --accent-1: #dd888b;
-    --accent-2: #dd888b;
+    --accent-1: #ec8f92;
+    --accent-2: #ec8f92;
 }
 /* –——————————————————————————— IMAGE STYLING –——————————————————————————— */
 .logo-box div {
@@ -25,7 +25,7 @@
     position: relative;
 }
 .color-palette .color-first > div:nth-child(1){
-    background-color: #da8888;
+    background-color: #ec8f92;
     height: 197px;
     width: 100%;
 }

@@ -407,7 +407,7 @@ footer {
     .intro-text p {
         font-family: "Bricolage Grotesque", sans-serif;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: .25px;
     }
     .me-intro-des {
@@ -533,5 +533,10 @@ footer {
         /* transform: rotate(12deg);
         position: absolute;
         top: -110px; right: 80px;    */
+    }
+    .stickers img:nth-child(3) {
+        /* height: 40px; */
+        position: absolute;
+        bottom: 50px; right: 50px; 
     }
 }
