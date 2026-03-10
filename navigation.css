@@ -263,6 +263,9 @@ header > ul > li a { /* if something fucks up in the hamburger, this is probably
 .americangirl-cursor {
     cursor: url(cursors/americangirl-cursor.svg), auto !important;
 }
+.fellow-cursor {
+    cursor: url(cursors/fellow-cursor.svg), auto !important;
+}
 /* –——————————————————————————— CONTACT BUTTONS –——————————————————————————— */
 .contact {
     display: flex;
