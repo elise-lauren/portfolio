@@ -246,7 +246,7 @@ footer {
     justify-self: center;
 }
 .experience-position {
-    margin: 15px 0 35px 0;
+    margin: 10px 0 20px 0;
 }
 .experience-year {
     font-family: "Bricolage Grotesque", sans-serif;
@@ -366,7 +366,7 @@ footer {
         bottom: -75px; right: 25px;
     }
     .experience-position {
-        margin: 15px 0 20px 0;
+        margin: 10px 0 15px 0;
     }
     .experience-location {
         font-size: 18px;
