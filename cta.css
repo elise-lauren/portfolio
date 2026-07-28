@@ -1,0 +1,30 @@
+:root {
+    --accent-1: #17A0DB;
+    --accent-2: #D31145;
+}
+/* –——————————————————————————— IMAGE STYLING –——————————————————————————— */
+.animation-1 video, .animation-2 video {
+    /* max-width: 2500px;
+    width: 100%; */
+    border-radius: 5px;
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+    cursor: url(cursors/pointer-light.svg), pointer !important;
+    cursor: url(cursors/pointer-light.svg), hand !important;
+}
+.animation-1 {
+    display: grid !important;
+    gap: 10;
+    grid-template-columns: 2.65fr 1fr;
+}
+.animation-2 {
+    display: grid !important;
+    gap: 10;
+    grid-template-columns: 1fr 2.65fr;
+}
+.split {
+    display: grid !important;
+    gap: 10;
+    grid-template-columns: .773fr 1fr;
+}
