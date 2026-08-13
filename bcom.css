@@ -44,6 +44,7 @@ to {background-position: -2555px 0;}
     height: 100px;
     width: 100%;
     z-index: 2;
+    background-color: #0281FF;
     background-image: url(bcom/bcom-logoscroll.jpg);
 }
 .logo-scroll ~ div {
